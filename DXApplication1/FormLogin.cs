@@ -10,6 +10,8 @@ namespace DXApplication1
             InitializeComponent();
         }
 
+        FormRegister frmRegister = new FormRegister();
+
         private void svgImageBox1_Click(object sender, EventArgs e)
         {
 
@@ -22,6 +24,7 @@ namespace DXApplication1
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+            frmRegister.Show();
         }
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
@@ -93,6 +96,33 @@ namespace DXApplication1
 
             }
 
+        }
+
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Left += 10;
+            label3.Text = frmRegister.Size.ToString();
+            if (frmRegister.Left >= 1000)
+            {
+                timer1.Stop();
+                this.TopMost = false;
+                frmRegister.TopMost = true;
+                timer2.Start();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Left -= 10;
+            if (frmRegister.Left <= 700)
+            {
+                timer2.Stop();
+            }
         }
     }
 }

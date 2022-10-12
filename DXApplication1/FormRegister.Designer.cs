@@ -92,6 +92,7 @@ namespace DXApplication1
             this.txtFristname_Register.TabIndex = 19;
             this.txtFristname_Register.TabStop = false;
             this.txtFristname_Register.Text = "Fristname";
+            this.txtFristname_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtFristname_Register_MouseClick_1);
             // 
             // pn1_Register
             // 
@@ -122,6 +123,8 @@ namespace DXApplication1
             this.txtLastname_Register.TabIndex = 28;
             this.txtLastname_Register.TabStop = false;
             this.txtLastname_Register.Text = "Lastname";
+            this.txtLastname_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtLastname_Register_MouseClick);
+            this.txtLastname_Register.TextChanged += new System.EventHandler(this.txtLastname_Register_TextChanged);
             // 
             // txtUsername_Register
             // 
@@ -136,6 +139,7 @@ namespace DXApplication1
             this.txtUsername_Register.TabIndex = 29;
             this.txtUsername_Register.TabStop = false;
             this.txtUsername_Register.Text = "Username";
+            this.txtUsername_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_Register_MouseClick);
             // 
             // txtEmail_Register
             // 
@@ -150,6 +154,7 @@ namespace DXApplication1
             this.txtEmail_Register.TabIndex = 31;
             this.txtEmail_Register.TabStop = false;
             this.txtEmail_Register.Text = "Email";
+            this.txtEmail_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtEmail_Register_MouseClick);
             // 
             // pn5_Register
             // 
@@ -185,6 +190,7 @@ namespace DXApplication1
             this.txtPassword_Register.TabIndex = 34;
             this.txtPassword_Register.TabStop = false;
             this.txtPassword_Register.Text = "Password";
+            this.txtPassword_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPassword_Register_MouseClick);
             // 
             // pn4_Register
             // 
@@ -243,12 +249,13 @@ namespace DXApplication1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(235, 28);
+            this.button1.Location = new System.Drawing.Point(242, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 39;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // FormRegister
             // 
@@ -308,14 +315,6 @@ namespace DXApplication1
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl2;
         private System.Windows.Forms.Button button1;
-
-        public static System.
-
-   
-
-
-
-
     }
 }
 

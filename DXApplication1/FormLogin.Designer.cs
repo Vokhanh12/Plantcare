@@ -29,6 +29,7 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btLogin = new System.Windows.Forms.Button();
@@ -42,6 +43,9 @@ namespace DXApplication1
             this.picUsername = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).BeginInit();
@@ -91,6 +95,7 @@ namespace DXApplication1
             this.btRegister.TabIndex = 17;
             this.btRegister.Text = "Register";
             this.btRegister.UseVisualStyleBackColor = false;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
             // label2
             // 
@@ -196,6 +201,26 @@ namespace DXApplication1
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 10;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(391, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "label3";
+            // 
             // FormLogin
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
@@ -205,6 +230,7 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPassword_Login);
             this.Controls.Add(this.txtUsername_Login);
             this.Controls.Add(this.label2);
@@ -248,6 +274,9 @@ namespace DXApplication1
         private System.Windows.Forms.TextBox txtUsername_Login;
         private System.Windows.Forms.TextBox txtPassword_Login;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
