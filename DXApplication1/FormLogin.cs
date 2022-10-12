@@ -105,9 +105,9 @@ namespace DXApplication1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            frmRegister.Left += 10;
+            frmRegister.Left += 18;
             label3.Text = frmRegister.Size.ToString();
-            if (frmRegister.Left >= 1000)
+            if (frmRegister.Left >= 1100)
             {
                 timer1.Stop();
                 this.TopMost = false;
@@ -118,7 +118,7 @@ namespace DXApplication1
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            frmRegister.Left -= 10;
+            frmRegister.Left -= 18;
             if (frmRegister.Left <= 700)
             {
                 timer2.Stop();
