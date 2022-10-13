@@ -1,51 +1,26 @@
 ﻿using System;
 using System.Drawing;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace DXApplication1
 {
-    public partial class FormLogin : DevExpress.XtraEditors.XtraForm
+    public partial class FormLogin : DevExpress.XtraEditors.XtraForm 
     {
+        Dashboard_System dbSystem = new Dashboard_System();
+        FormRegister frmRegister = new FormRegister();
+        int isbtRegister = 0;
         public FormLogin()
         {
             InitializeComponent();
         }
 
-        FormRegister frmRegister = new FormRegister();
-
-        private void svgImageBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            frmRegister.Show();
+
+          
         }
-        private void textEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void svgImageBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_Click(object sender, EventArgs e)
         {
 
@@ -100,10 +75,71 @@ namespace DXApplication1
 
         private void btRegister_Click(object sender, EventArgs e)
         {
+            
             timer1.Start();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer3.Start();
+
+            
+            
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Left -= 18;
+            if (frmRegister.Left <= 700)
+            {
+                timer2.Stop();
+                timer4.Stop();
+            }
+        }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            //Check Username Password 
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-3EEP3M4;Initial Catalog=Database_Plantcare;Integrated Security=True");
+            string query = "Select * From LoginDB Where Username_Login = '"+txtUsername_Login.Text.Trim()+"' and Password_Login = '"+txtPassword_Login.Text.Trim()+"'";
+            SqlDataAdapter sqlDA = new SqlDataAdapter(query, sqlcon);
+            DataTable dtb_LoginDB = new DataTable();
+            sqlDA.Fill(dtb_LoginDB);
+            if (dtb_LoginDB.Rows.Count == 1)
+            {
+                //Close Form_Login and Form_Register
+                this.Hide();
+                frmRegister.Hide();
+
+                //Show dashbroad
+                dbSystem.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại. Xin vui lòng thử lại.");
+
+                txtPassword_Login.ForeColor = Color.WhiteSmoke;
+                txtUsername_Login.ForeColor = Color.WhiteSmoke;
+
+                txtPassword_Login.Text = "Password";
+                txtUsername_Login.Text = "Username";
+              
+                picUsername.Image = Properties.Resources.userlogo;
+                picPassword.Image = Properties.Resources.private_icon1;
+                
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Show();
+            timer4.Start();
+
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
         {
             frmRegister.Left += 18;
             label3.Text = frmRegister.Size.ToString();
@@ -113,15 +149,6 @@ namespace DXApplication1
                 this.TopMost = false;
                 frmRegister.TopMost = true;
                 timer2.Start();
-            }
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            frmRegister.Left -= 18;
-            if (frmRegister.Left <= 700)
-            {
-                timer2.Stop();
             }
         }
     }

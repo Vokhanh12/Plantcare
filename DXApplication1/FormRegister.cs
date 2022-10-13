@@ -13,12 +13,8 @@ namespace DXApplication1
         {
             InitializeComponent();
         }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
+ 
         private void txtLastname_Register_MouseClick(object sender, MouseEventArgs e)
         {
 
@@ -319,23 +315,42 @@ namespace DXApplication1
             }
         }
 
+
+        private void hyperlinkLabelControl3_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
         private void FormRegister_Load(object sender, EventArgs e)
         {
-
+           
         }
 
-      
-
-        private void button1_Click_1(object sender, EventArgs e)
+      /*  private void timer1_Tick(object sender, EventArgs e)
         {
-          
+            frmLogin.Left += 18;
+            if (frmLogin.Left >= 1100)
+            {
+                timer1.Stop();
+                this.TopMost = false;
+                frmLogin.TopMost = true;
+                timer2.Start();
+            }
         }
 
-        private void txtLastname_Register_TextChanged(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e)
         {
-
+            frmLogin.Left -= 18;
+            if (frmLogin.Left <= 700)
+            {
+                timer2.Stop();
+            }
         }
-
         
+        private void hyperlinkLabelControl3_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+      */
     }
 }

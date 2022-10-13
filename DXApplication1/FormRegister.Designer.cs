@@ -29,6 +29,7 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pn3_Register = new System.Windows.Forms.Panel();
@@ -46,7 +47,11 @@ namespace DXApplication1
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.button1 = new System.Windows.Forms.Button();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.hyperlinkLabelControl3 = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,7 +129,6 @@ namespace DXApplication1
             this.txtLastname_Register.TabStop = false;
             this.txtLastname_Register.Text = "Lastname";
             this.txtLastname_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtLastname_Register_MouseClick);
-            this.txtLastname_Register.TextChanged += new System.EventHandler(this.txtLastname_Register_TextChanged);
             // 
             // txtUsername_Register
             // 
@@ -170,7 +174,7 @@ namespace DXApplication1
             this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegister.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegister.ForeColor = System.Drawing.Color.White;
-            this.btRegister.Location = new System.Drawing.Point(80, 555);
+            this.btRegister.Location = new System.Drawing.Point(80, 553);
             this.btRegister.Name = "btRegister";
             this.btRegister.Size = new System.Drawing.Size(350, 40);
             this.btRegister.TabIndex = 32;
@@ -211,12 +215,11 @@ namespace DXApplication1
             this.chlb_Register.TabIndex = 35;
             this.chlb_Register.Text = "I agree with the";
             this.chlb_Register.UseVisualStyleBackColor = true;
-            this.chlb_Register.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // hyperlinkLabelControl1
             // 
             this.hyperlinkLabelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hyperlinkLabelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.hyperlinkLabelControl1.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl1.Appearance.Options.UseFont = true;
             this.hyperlinkLabelControl1.Appearance.Options.UseForeColor = true;
             this.hyperlinkLabelControl1.Location = new System.Drawing.Point(202, 507);
@@ -240,22 +243,44 @@ namespace DXApplication1
             // hyperlinkLabelControl2
             // 
             this.hyperlinkLabelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hyperlinkLabelControl2.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl2.Appearance.Options.UseFont = true;
+            this.hyperlinkLabelControl2.Appearance.Options.UseForeColor = true;
             this.hyperlinkLabelControl2.Location = new System.Drawing.Point(382, 507);
             this.hyperlinkLabelControl2.Name = "hyperlinkLabelControl2";
             this.hyperlinkLabelControl2.Size = new System.Drawing.Size(76, 16);
             this.hyperlinkLabelControl2.TabIndex = 38;
             this.hyperlinkLabelControl2.Text = "Privacy Policy";
             // 
-            // button1
+            // labelControl2
             // 
-            this.button1.Location = new System.Drawing.Point(242, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.labelControl2.Location = new System.Drawing.Point(0, 0);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(75, 16);
+            this.labelControl2.TabIndex = 40;
+            this.labelControl2.Text = "labelControl2";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Location = new System.Drawing.Point(150, 613);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(144, 16);
+            this.labelControl3.TabIndex = 41;
+            this.labelControl3.Text = " Have arleady an account";
+            // 
+            // hyperlinkLabelControl3
+            // 
+            this.hyperlinkLabelControl3.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.hyperlinkLabelControl3.Appearance.Options.UseForeColor = true;
+            this.hyperlinkLabelControl3.Location = new System.Drawing.Point(300, 613);
+            this.hyperlinkLabelControl3.Name = "hyperlinkLabelControl3";
+            this.hyperlinkLabelControl3.Size = new System.Drawing.Size(60, 16);
+            this.hyperlinkLabelControl3.TabIndex = 42;
+            this.hyperlinkLabelControl3.Text = "Login here";
+     
+            this.hyperlinkLabelControl3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hyperlinkLabelControl3_MouseClick);
             // 
             // FormRegister
             // 
@@ -266,7 +291,9 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.hyperlinkLabelControl3);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.hyperlinkLabelControl2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.hyperlinkLabelControl1);
@@ -314,7 +341,11 @@ namespace DXApplication1
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl2;
-        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl3;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
