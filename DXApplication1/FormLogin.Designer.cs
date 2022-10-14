@@ -1,7 +1,6 @@
-﻿
-namespace DXApplication1
+﻿namespace DXApplication1
 {
-   
+
     partial class FormLogin
     {
         /// <summary>
@@ -203,6 +202,7 @@ namespace DXApplication1
             this.pictureBox1.Size = new System.Drawing.Size(503, 210);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // timer1
             // 
@@ -227,7 +227,6 @@ namespace DXApplication1
             // timer3
             // 
             this.timer3.Interval = 2000;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // timer4
             // 
@@ -305,4 +304,3 @@ namespace DXApplication1
         private System.Windows.Forms.Label label4;
     }
 }
-

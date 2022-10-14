@@ -47,11 +47,13 @@ namespace DXApplication1
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.hyperlinkLabelControl3 = new DevExpress.XtraEditors.HyperlinkLabelControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -252,14 +254,6 @@ namespace DXApplication1
             this.hyperlinkLabelControl2.TabIndex = 38;
             this.hyperlinkLabelControl2.Text = "Privacy Policy";
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(0, 0);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(75, 16);
-            this.labelControl2.TabIndex = 40;
-            this.labelControl2.Text = "labelControl2";
-            // 
             // labelControl3
             // 
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
@@ -279,8 +273,18 @@ namespace DXApplication1
             this.hyperlinkLabelControl3.Size = new System.Drawing.Size(60, 16);
             this.hyperlinkLabelControl3.TabIndex = 42;
             this.hyperlinkLabelControl3.Text = "Login here";
-     
             this.hyperlinkLabelControl3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hyperlinkLabelControl3_MouseClick);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(355, 237);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+      
             // 
             // FormRegister
             // 
@@ -291,9 +295,9 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.hyperlinkLabelControl3);
             this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.hyperlinkLabelControl2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.hyperlinkLabelControl1);
@@ -341,11 +345,13 @@ namespace DXApplication1
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Button button1;
     }
 }
 

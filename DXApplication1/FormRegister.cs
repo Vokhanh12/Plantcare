@@ -6,8 +6,7 @@ namespace DXApplication1
 {
     public partial class FormRegister : DevExpress.XtraEditors.XtraForm
     {
-
-       
+     
 
         public FormRegister()
         {
@@ -318,39 +317,40 @@ namespace DXApplication1
 
         private void hyperlinkLabelControl3_MouseClick(object sender, MouseEventArgs e)
         {
-            
+            timer1.Start();
         }
 
         private void FormRegister_Load(object sender, EventArgs e)
         {
-           
         }
 
-      /*  private void timer1_Tick(object sender, EventArgs e)
-        {
-            frmLogin.Left += 18;
-            if (frmLogin.Left >= 1100)
-            {
-                timer1.Stop();
-                this.TopMost = false;
-                frmLogin.TopMost = true;
-                timer2.Start();
-            }
-        }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            frmLogin.Left -= 18;
-            if (frmLogin.Left <= 700)
-            {
-                timer2.Stop();
-            }
-        }
-        
-        private void hyperlinkLabelControl3_Click(object sender, EventArgs e)
+        /* private void timer1_Tick(object sender, EventArgs e)
+          {
+              frmLogin.Left += 18;
+              if (frmLogin.Left >= 1100)
+              {
+                  timer1.Stop();
+                  this.TopMost = false;
+                  frmLogin.TopMost = true;
+                  timer2.Start();
+              }
+          }
+
+          private void timer2_Tick(object sender, EventArgs e)
+          {
+              frmLogin.Left -= 18;
+              if (frmLogin.Left <= 700)
+              {
+                  timer2.Stop();
+              }
+          }
+       
+        private void button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
+
         }
-      */
+        */
     }
 }

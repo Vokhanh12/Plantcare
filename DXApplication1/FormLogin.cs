@@ -6,11 +6,9 @@ using System.Data;
 
 namespace DXApplication1
 {
-    public partial class FormLogin : DevExpress.XtraEditors.XtraForm 
+    public partial class FormLogin : DevExpress.XtraEditors.XtraForm
     {
-        Dashboard_System dbSystem = new Dashboard_System();
         FormRegister frmRegister = new FormRegister();
-        int isbtRegister = 0;
         public FormLogin()
         {
             InitializeComponent();
@@ -73,31 +71,6 @@ namespace DXApplication1
 
         }
 
-        private void btRegister_Click(object sender, EventArgs e)
-        {
-            
-            timer1.Start();
-            
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer3.Start();
-
-            
-            
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            frmRegister.Left -= 18;
-            if (frmRegister.Left <= 700)
-            {
-                timer2.Stop();
-                timer4.Stop();
-            }
-        }
-
         private void btLogin_Click(object sender, EventArgs e)
         {
             //Check Username Password 
@@ -113,7 +86,7 @@ namespace DXApplication1
                 frmRegister.Hide();
 
                 //Show dashbroad
-                dbSystem.Show();
+                //dbSystem.Show();
 
             }
             else
@@ -132,12 +105,40 @@ namespace DXApplication1
             }
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
+        private void btRegister_Click(object sender, EventArgs e)
         {
             frmRegister.Show();
-            timer4.Start();
+            this.Hide();
+            this.Show();
+            timer1.Start();
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Left += 18;
+            label3.Text = frmRegister.Size.ToString();
+            if (frmRegister.Left >= 1100)
+            {
+                timer1.Stop();
+                this.TopMost = false;
+                frmRegister.TopMost = true;
+                timer2.Start();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            frmRegister.Left -= 18;
+            if (frmRegister.Left <= 700)
+            {
+                timer2.Stop();
+                timer4.Stop();
+                
+            }
+            
+        }
+
 
         private void timer4_Tick(object sender, EventArgs e)
         {
@@ -150,6 +151,39 @@ namespace DXApplication1
                 frmRegister.TopMost = true;
                 timer2.Start();
             }
+            else
+            {
+                this.Close();
+                frmRegister.Show();
+            }
+
+
+           
+        }
+
+        private void timer4_Tick_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_MouseClick(object sender, MouseEventArgs e)
+        {
+            Close();
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

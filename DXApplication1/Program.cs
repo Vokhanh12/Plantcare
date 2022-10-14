@@ -1,14 +1,17 @@
 ﻿using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
+using DXApplication1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace DXApplication1
 {
-    
+
+
     static class Program
     {
 
@@ -19,7 +22,7 @@ namespace DXApplication1
         static void Main()
         {
 
-            
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
