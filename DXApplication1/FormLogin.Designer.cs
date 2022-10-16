@@ -45,10 +45,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPassword)).BeginInit();
@@ -202,7 +200,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(503, 210);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // timer1
             // 
@@ -214,16 +211,6 @@
             this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(395, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 17);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "label3";
-            // 
             // timer3
             // 
             this.timer3.Interval = 2000;
@@ -231,16 +218,6 @@
             // timer4
             // 
             this.timer4.Interval = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(322, 245);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 17);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "label4";
             // 
             // FormLogin
             // 
@@ -251,8 +228,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPassword_Login);
             this.Controls.Add(this.txtUsername_Login);
             this.Controls.Add(this.label2);
@@ -298,9 +273,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.Label label4;
     }
 }

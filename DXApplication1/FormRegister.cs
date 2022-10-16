@@ -6,7 +6,7 @@ namespace DXApplication1
 {
     public partial class FormRegister : DevExpress.XtraEditors.XtraForm
     {
-     
+        
 
         public FormRegister()
         {
@@ -317,11 +317,27 @@ namespace DXApplication1
 
         private void hyperlinkLabelControl3_MouseClick(object sender, MouseEventArgs e)
         {
-            timer1.Start();
+            //Display
+            this.Hide();
+            using (FormLogin frmLogin= new FormLogin())
+            {
+                
+                frmLogin.ShowDialog();
+                
+            }
+            
+           
         }
 
         private void FormRegister_Load(object sender, EventArgs e)
         {
+            
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("test");
         }
 
 

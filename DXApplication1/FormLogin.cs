@@ -12,11 +12,12 @@ namespace DXApplication1
         public FormLogin()
         {
             InitializeComponent();
+
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-
+            WinAPI.AnimateWindow(this.Handle, 1000, WinAPI.HOR_NEGATIVE);
           
         }
         private void textBox1_Click(object sender, EventArgs e)
@@ -107,17 +108,18 @@ namespace DXApplication1
 
         private void btRegister_Click(object sender, EventArgs e)
         {
-            frmRegister.Show();
             this.Hide();
+            frmRegister.Show();
             this.Show();
+
             timer1.Start();
+            
 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             frmRegister.Left += 18;
-            label3.Text = frmRegister.Size.ToString();
             if (frmRegister.Left >= 1100)
             {
                 timer1.Stop();
@@ -134,7 +136,8 @@ namespace DXApplication1
             {
                 timer2.Stop();
                 timer4.Stop();
-                
+                //hide Display FormLogin
+                this.Hide();
             }
             
         }
@@ -143,7 +146,6 @@ namespace DXApplication1
         private void timer4_Tick(object sender, EventArgs e)
         {
             frmRegister.Left += 18;
-            label3.Text = frmRegister.Size.ToString();
             if (frmRegister.Left >= 1100)
             {
                 timer1.Stop();
@@ -161,29 +163,5 @@ namespace DXApplication1
            
         }
 
-        private void timer4_Tick_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_MouseClick(object sender, MouseEventArgs e)
-        {
-            Close();
-        }
-
-        private void timer5_Tick(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

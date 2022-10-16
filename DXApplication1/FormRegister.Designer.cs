@@ -53,7 +53,6 @@ namespace DXApplication1
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -268,23 +267,12 @@ namespace DXApplication1
             // 
             this.hyperlinkLabelControl3.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl3.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl3.Location = new System.Drawing.Point(300, 613);
+            this.hyperlinkLabelControl3.Location = new System.Drawing.Point(300, 615);
             this.hyperlinkLabelControl3.Name = "hyperlinkLabelControl3";
             this.hyperlinkLabelControl3.Size = new System.Drawing.Size(60, 16);
             this.hyperlinkLabelControl3.TabIndex = 42;
             this.hyperlinkLabelControl3.Text = "Login here";
             this.hyperlinkLabelControl3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hyperlinkLabelControl3_MouseClick);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(355, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-      
             // 
             // FormRegister
             // 
@@ -295,7 +283,6 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.hyperlinkLabelControl3);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.hyperlinkLabelControl2);
@@ -351,7 +338,6 @@ namespace DXApplication1
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.Button button1;
     }
 }
 
