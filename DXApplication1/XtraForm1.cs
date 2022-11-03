@@ -16,8 +16,9 @@ namespace DXApplication1
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private void asd() { }
         
-        //Constructor
+        //Constructor 
         public XtraForm1()
         {
             InitializeComponent();
