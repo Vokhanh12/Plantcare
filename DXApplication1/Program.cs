@@ -28,7 +28,7 @@ namespace DXApplication1
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(FormRegister());
+            Application.Run(new XtraForm1());
 
 
 
