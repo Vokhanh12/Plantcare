@@ -25,11 +25,11 @@ namespace DXApplication1
             {
                 txtFristname_Register.Text = "Fristname";
                 txtFristname_Register.ForeColor = Color.WhiteSmoke;
-                pn1_Register.ForeColor = Color.WhiteSmoke;
+                pn1_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn1_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn1_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtFristname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -38,11 +38,11 @@ namespace DXApplication1
             {
                 txtUsername_Register.Text = "Username";
                 txtUsername_Register.ForeColor = Color.WhiteSmoke;
-                pn3_Register.ForeColor = Color.WhiteSmoke;
+                pn3_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn3_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn3_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtUsername_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -51,11 +51,11 @@ namespace DXApplication1
             {
                 txtPassword_Register.Text = "Password";
                 txtPassword_Register.ForeColor = Color.WhiteSmoke;
-                pn4_Register.ForeColor = Color.WhiteSmoke;
+                pn4_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn4_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtPassword_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -64,11 +64,11 @@ namespace DXApplication1
             {
                 txtEmail_Register.Text = "Email";
                 txtEmail_Register.ForeColor = Color.WhiteSmoke;
-                pn5_Register.ForeColor = Color.WhiteSmoke;
+                pn5_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn5_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn5_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtEmail_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -85,11 +85,11 @@ namespace DXApplication1
             {
                 txtLastname_Register.Text = "Lastname";
                 txtLastname_Register.ForeColor = Color.WhiteSmoke;
-                pn2_Register.ForeColor = Color.WhiteSmoke;
+                pn2_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn2_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn2_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtLastname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -98,11 +98,11 @@ namespace DXApplication1
             {
                 txtFristname_Register.Text = "Fristname";
                 txtFristname_Register.ForeColor = Color.WhiteSmoke;
-                pn1_Register.ForeColor = Color.WhiteSmoke;
+                pn1_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn1_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn1_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtFristname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -111,11 +111,11 @@ namespace DXApplication1
             {
                 txtPassword_Register.Text = "Password";
                 txtPassword_Register.ForeColor = Color.WhiteSmoke;
-                pn4_Register.ForeColor = Color.WhiteSmoke;
+                pn4_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn4_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtPassword_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -124,11 +124,11 @@ namespace DXApplication1
             {
                 txtEmail_Register.Text = "Email";
                 txtEmail_Register.ForeColor = Color.WhiteSmoke;
-                pn5_Register.ForeColor = Color.WhiteSmoke;
+                pn5_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn5_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn5_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtEmail_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -145,11 +145,11 @@ namespace DXApplication1
             {
                 txtLastname_Register.Text = "Lastname";
                 txtLastname_Register.ForeColor = Color.WhiteSmoke;
-                pn2_Register.ForeColor = Color.WhiteSmoke;
+                pn2_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn2_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn2_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtLastname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -158,11 +158,11 @@ namespace DXApplication1
             {
                 txtUsername_Register.Text = "Username";
                 txtUsername_Register.ForeColor = Color.WhiteSmoke;
-                pn3_Register.ForeColor = Color.WhiteSmoke;
+                pn3_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn3_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn3_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtUsername_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -171,11 +171,11 @@ namespace DXApplication1
             {
                 txtPassword_Register.Text = "Password";
                 txtPassword_Register.ForeColor = Color.WhiteSmoke;
-                pn4_Register.ForeColor = Color.WhiteSmoke;
+                pn4_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn4_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtPassword_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -184,11 +184,11 @@ namespace DXApplication1
             {
                 txtEmail_Register.Text = "Email";
                 txtEmail_Register.ForeColor = Color.WhiteSmoke;
-                pn5_Register.ForeColor = Color.WhiteSmoke;
+                pn5_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn5_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn5_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtEmail_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -201,28 +201,28 @@ namespace DXApplication1
             txtPassword_Register.ForeColor = Color.FromArgb(78, 183, 206);
             pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
 
-            if (txtLastname_Register.Text == "" || txtLastname_Register.Text == "Fristname")
+            if (txtLastname_Register.Text == "" || txtLastname_Register.Text == "Lastname")
             {
-                txtLastname_Register.Text = "Fristname";
+                txtLastname_Register.Text = "Lastname";
                 txtLastname_Register.ForeColor = Color.WhiteSmoke;
-                pn2_Register.ForeColor = Color.WhiteSmoke;
+                pn2_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn2_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn2_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtLastname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
 
-            if (txtUsername_Register.Text == "" || txtUsername_Register.Text == "Fristname")
+            if (txtUsername_Register.Text == "" || txtUsername_Register.Text == "Username")
             {
                 txtUsername_Register.Text = "Username";
                 txtUsername_Register.ForeColor = Color.WhiteSmoke;
-                pn3_Register.ForeColor = Color.WhiteSmoke;
+                pn3_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn3_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn3_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtUsername_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -231,11 +231,11 @@ namespace DXApplication1
             {
                 txtFristname_Register.Text = "Fristname";
                 txtFristname_Register.ForeColor = Color.WhiteSmoke;
-                pn1_Register.ForeColor = Color.WhiteSmoke;
+                pn1_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn4_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtFristname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -244,11 +244,11 @@ namespace DXApplication1
             {
                 txtEmail_Register.Text = "Email";
                 txtEmail_Register.ForeColor = Color.WhiteSmoke;
-                pn5_Register.ForeColor = Color.WhiteSmoke;
+                pn5_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn5_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn5_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtEmail_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -261,41 +261,41 @@ namespace DXApplication1
             txtEmail_Register.ForeColor = Color.FromArgb(78, 183, 206);
             pn5_Register.BackColor = Color.FromArgb(78, 184, 206);
 
-            if (txtLastname_Register.Text == "" || txtLastname_Register.Text == "Fristname")
+            if (txtLastname_Register.Text == "" || txtLastname_Register.Text == "Lastname")
             {
-                txtLastname_Register.Text = "Fristname";
+                txtLastname_Register.Text = "Lastname";
                 txtLastname_Register.ForeColor = Color.WhiteSmoke;
-                pn2_Register.ForeColor = Color.WhiteSmoke;
+                pn2_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn2_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn2_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtLastname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
 
-            if (txtUsername_Register.Text == "" || txtUsername_Register.Text == "Fristname")
+            if (txtUsername_Register.Text == "" || txtUsername_Register.Text == "Username")
             {
                 txtUsername_Register.Text = "Username";
                 txtUsername_Register.ForeColor = Color.WhiteSmoke;
-                pn3_Register.ForeColor = Color.WhiteSmoke;
+                pn3_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn3_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn3_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtUsername_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
 
-            if (txtPassword_Register.Text == "" || txtPassword_Register.Text == "Fristname")
+            if (txtPassword_Register.Text == "" || txtPassword_Register.Text == "Password")
             {
                 txtPassword_Register.Text = "Password";
                 txtPassword_Register.ForeColor = Color.WhiteSmoke;
-                pn4_Register.ForeColor = Color.WhiteSmoke;
+                pn4_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn4_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn4_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtPassword_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
@@ -304,11 +304,11 @@ namespace DXApplication1
             {
                 txtFristname_Register.Text = "Fristname";
                 txtFristname_Register.ForeColor = Color.WhiteSmoke;
-                pn1_Register.ForeColor = Color.WhiteSmoke;
+                pn1_Register.BackColor = Color.WhiteSmoke;
             }
             else
             {
-                pn1_Register.ForeColor = Color.FromArgb(78, 184, 206);
+                pn1_Register.BackColor = Color.FromArgb(78, 184, 206);
                 txtFristname_Register.ForeColor = Color.FromArgb(78, 184, 206);
 
             }
