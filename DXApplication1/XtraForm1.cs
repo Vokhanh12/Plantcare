@@ -25,6 +25,11 @@ namespace DXApplication1
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(10,60);
             panelMenu.Controls.Add(leftBorderBtn);
+            //Form
+            
+            
+
+
         }
         //Structs
         private struct RGBColors

@@ -38,6 +38,9 @@ namespace DXApplication1
             this.ibtHome = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bntHome = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bntHome)).BeginInit();
@@ -46,6 +49,7 @@ namespace DXApplication1
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.iconButton6);
             this.panelMenu.Controls.Add(this.iconGumshoe);
             this.panelMenu.Controls.Add(this.ibtWarehouse);
@@ -53,10 +57,11 @@ namespace DXApplication1
             this.panelMenu.Controls.Add(this.ibtItem);
             this.panelMenu.Controls.Add(this.ibtHome);
             this.panelMenu.Controls.Add(this.panel1);
-            this.panelMenu.Location = new System.Drawing.Point(0, 12);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 7);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.panelMenu.Size = new System.Drawing.Size(246, 617);
+            this.panelMenu.Size = new System.Drawing.Size(256, 500);
             this.panelMenu.TabIndex = 2;
             // 
             // iconButton6
@@ -75,7 +80,7 @@ namespace DXApplication1
             this.iconButton6.Location = new System.Drawing.Point(10, 431);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.iconButton6.Size = new System.Drawing.Size(216, 60);
+            this.iconButton6.Size = new System.Drawing.Size(226, 60);
             this.iconButton6.TabIndex = 7;
             this.iconButton6.Text = "Khác";
             this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,7 +104,7 @@ namespace DXApplication1
             this.iconGumshoe.Location = new System.Drawing.Point(10, 371);
             this.iconGumshoe.Name = "iconGumshoe";
             this.iconGumshoe.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.iconGumshoe.Size = new System.Drawing.Size(216, 60);
+            this.iconGumshoe.Size = new System.Drawing.Size(226, 60);
             this.iconGumshoe.TabIndex = 6;
             this.iconGumshoe.Text = "Theo dõi cây trồng";
             this.iconGumshoe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,7 +128,7 @@ namespace DXApplication1
             this.ibtWarehouse.Location = new System.Drawing.Point(10, 311);
             this.ibtWarehouse.Name = "ibtWarehouse";
             this.ibtWarehouse.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtWarehouse.Size = new System.Drawing.Size(216, 60);
+            this.ibtWarehouse.Size = new System.Drawing.Size(226, 60);
             this.ibtWarehouse.TabIndex = 5;
             this.ibtWarehouse.Text = "Quản lý kho hàng";
             this.ibtWarehouse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,7 +152,7 @@ namespace DXApplication1
             this.ibtUser.Location = new System.Drawing.Point(10, 251);
             this.ibtUser.Name = "ibtUser";
             this.ibtUser.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtUser.Size = new System.Drawing.Size(216, 60);
+            this.ibtUser.Size = new System.Drawing.Size(226, 60);
             this.ibtUser.TabIndex = 4;
             this.ibtUser.Text = "Quản lý khách hàng";
             this.ibtUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,7 +176,7 @@ namespace DXApplication1
             this.ibtItem.Location = new System.Drawing.Point(10, 191);
             this.ibtItem.Name = "ibtItem";
             this.ibtItem.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtItem.Size = new System.Drawing.Size(216, 60);
+            this.ibtItem.Size = new System.Drawing.Size(226, 60);
             this.ibtItem.TabIndex = 3;
             this.ibtItem.Text = "Quản lý sản phẩm";
             this.ibtItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -195,7 +200,7 @@ namespace DXApplication1
             this.ibtHome.Location = new System.Drawing.Point(10, 131);
             this.ibtHome.Name = "ibtHome";
             this.ibtHome.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtHome.Size = new System.Drawing.Size(216, 60);
+            this.ibtHome.Size = new System.Drawing.Size(226, 60);
             this.ibtHome.TabIndex = 2;
             this.ibtHome.Text = "Trang chủ";
             this.ibtHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,13 +214,13 @@ namespace DXApplication1
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(10, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 131);
+            this.panel1.Size = new System.Drawing.Size(226, 131);
             this.panel1.TabIndex = 1;
             // 
             // bntHome
             // 
             this.bntHome.Image = global::DXApplication1.Properties.Resources.RongPlant;
-            this.bntHome.Location = new System.Drawing.Point(-45, -64);
+            this.bntHome.Location = new System.Drawing.Point(-39, -81);
             this.bntHome.Name = "bntHome";
             this.bntHome.Size = new System.Drawing.Size(301, 272);
             this.bntHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,14 +228,48 @@ namespace DXApplication1
             this.bntHome.TabStop = false;
             this.bntHome.Click += new System.EventHandler(this.bntHome_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(256, 7);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(343, 100);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(256, 103);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(540, 450);
+            this.panel3.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(256, 107);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(343, 400);
+            this.panel4.TabIndex = 4;
+            // 
             // XtraForm1
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.Appearance.ForeColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
+            this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 622);
+            this.ClientSize = new System.Drawing.Size(599, 514);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "XtraForm1";
-            this.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
+            this.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "XtraForm1";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -251,5 +290,8 @@ namespace DXApplication1
         private FontAwesome.Sharp.IconButton ibtUser;
         private FontAwesome.Sharp.IconButton ibtItem;
         private System.Windows.Forms.PictureBox bntHome;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
