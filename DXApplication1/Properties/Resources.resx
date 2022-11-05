@@ -142,6 +142,9 @@
   <data name="facebook-icon(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facebook-icon(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RongPlant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RongPlant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="27224554" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\27224554.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,13 +160,19 @@
   <data name="facebook-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facebook-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Plant Happy and healthy (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plant Happy and healthy (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plant Happy and healthy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plant Happy and healthy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Màu chàm và Xanh dương Hiện đại Màu chuyển tiếp Bác sĩ Biểu trưng Y tế" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Màu chàm và Xanh dương Hiện đại Màu chuyển tiếp Bác sĩ Biểu trưng Y tế.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="onpic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\onpic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RongPlant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RongPlant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iconfind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

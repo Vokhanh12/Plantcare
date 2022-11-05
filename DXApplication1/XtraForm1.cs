@@ -23,11 +23,13 @@ namespace DXApplication1
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10,60);
+            leftBorderBtn.Size = new Size(10,50);
             panelMenu.Controls.Add(leftBorderBtn);
             //Form
+            cbList.Items.Add("Hello");
             
-            
+
+
 
 
         }
@@ -47,7 +49,7 @@ namespace DXApplication1
             if(senderBtn != null)
             {
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(20, 29, 55);
+                currentBtn.BackColor = Color.FromArgb(0, 128, 255);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -125,6 +127,39 @@ namespace DXApplication1
         {
             DisableButton();
             leftBorderBtn.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbDashbroad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMenuLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbList_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (cbList.Text == "Hello")
+            {
+                lbDashbroad.Text = "Hello";
+            }
+        }
+
+        private void cbList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -113,6 +113,16 @@ namespace DXApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfind {
+            get {
+                object obj = ResourceManager.GetObject("iconfind", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Màu_chàm_và_Xanh_dương_Hiện_đại_Màu_chuyển_tiếp_Bác_sĩ_Biểu_trưng_Y_tế {
             get {
                 object obj = ResourceManager.GetObject("Màu chàm và Xanh dương Hiện đại Màu chuyển tiếp Bác sĩ Biểu trưng Y tế", resourceCulture);
@@ -146,6 +156,26 @@ namespace DXApplication1.Properties {
         internal static System.Drawing.Bitmap onpic {
             get {
                 object obj = ResourceManager.GetObject("onpic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plant_Happy_and_healthy {
+            get {
+                object obj = ResourceManager.GetObject("Plant Happy and healthy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plant_Happy_and_healthy__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Plant Happy and healthy (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
