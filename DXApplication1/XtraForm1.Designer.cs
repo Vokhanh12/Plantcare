@@ -29,10 +29,11 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconGumshoe = new FontAwesome.Sharp.IconButton();
+            this.ibtReport = new FontAwesome.Sharp.IconButton();
+            this.ibtSell = new FontAwesome.Sharp.IconButton();
             this.ibtWarehouse = new FontAwesome.Sharp.IconButton();
             this.ibtUser = new FontAwesome.Sharp.IconButton();
             this.ibtItem = new FontAwesome.Sharp.IconButton();
@@ -49,9 +50,18 @@ namespace DXApplication1
             this.panel7 = new System.Windows.Forms.Panel();
             this.picUsername = new System.Windows.Forms.PictureBox();
             this.plMenuRight = new System.Windows.Forms.Panel();
-            this.cbList = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDashbroad = new System.Windows.Forms.Panel();
+            this.rjDropdownMenu_Accout = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+            this.viewMyProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accontDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.whatAbotRongplantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ibtGumshoe = new FontAwesome.Sharp.IconButton();
+            this.ibtHelp = new FontAwesome.Sharp.IconButton();
+            this.lbVersion = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,14 +72,18 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).BeginInit();
             this.plMenuRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.rjDropdownMenu_Accout.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.panelMenu.Controls.Add(this.lbVersion);
+            this.panelMenu.Controls.Add(this.ibtHelp);
+            this.panelMenu.Controls.Add(this.ibtGumshoe);
             this.panelMenu.Controls.Add(this.panel3);
-            this.panelMenu.Controls.Add(this.iconButton6);
-            this.panelMenu.Controls.Add(this.iconGumshoe);
+            this.panelMenu.Controls.Add(this.ibtReport);
+            this.panelMenu.Controls.Add(this.ibtSell);
             this.panelMenu.Controls.Add(this.ibtWarehouse);
             this.panelMenu.Controls.Add(this.ibtUser);
             this.panelMenu.Controls.Add(this.ibtItem);
@@ -89,53 +103,57 @@ namespace DXApplication1
             this.panel3.Size = new System.Drawing.Size(540, 450);
             this.panel3.TabIndex = 4;
             // 
-            // iconButton6
+            // ibtReport
             // 
-            this.iconButton6.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.ForeColor = System.Drawing.Color.White;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton6.IconColor = System.Drawing.Color.White;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 35;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(10, 381);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.iconButton6.Size = new System.Drawing.Size(226, 50);
-            this.iconButton6.TabIndex = 7;
-            this.iconButton6.Text = "Khác";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton6.UseVisualStyleBackColor = false;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
+            this.ibtReport.BackColor = System.Drawing.Color.Transparent;
+            this.ibtReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtReport.FlatAppearance.BorderSize = 0;
+            this.ibtReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtReport.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtReport.ForeColor = System.Drawing.Color.White;
+            this.ibtReport.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            this.ibtReport.IconColor = System.Drawing.Color.White;
+            this.ibtReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtReport.IconSize = 35;
+            this.ibtReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtReport.Location = new System.Drawing.Point(10, 381);
+            this.ibtReport.Name = "ibtReport";
+            this.ibtReport.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
+            this.ibtReport.Size = new System.Drawing.Size(226, 50);
+            this.ibtReport.TabIndex = 7;
+            this.ibtReport.Text = "Báo cáo";
+            this.ibtReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtReport.UseVisualStyleBackColor = false;
+            this.ibtReport.Click += new System.EventHandler(this.iconButton6_Click);
+            this.ibtReport.MouseEnter += new System.EventHandler(this.iconButton6_MouseEnter);
+            this.ibtReport.MouseLeave += new System.EventHandler(this.iconButton6_MouseLeave);
             // 
-            // iconGumshoe
+            // ibtSell
             // 
-            this.iconGumshoe.BackColor = System.Drawing.Color.Transparent;
-            this.iconGumshoe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconGumshoe.FlatAppearance.BorderSize = 0;
-            this.iconGumshoe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconGumshoe.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconGumshoe.ForeColor = System.Drawing.Color.White;
-            this.iconGumshoe.IconChar = FontAwesome.Sharp.IconChar.Desktop;
-            this.iconGumshoe.IconColor = System.Drawing.Color.White;
-            this.iconGumshoe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconGumshoe.IconSize = 35;
-            this.iconGumshoe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconGumshoe.Location = new System.Drawing.Point(10, 331);
-            this.iconGumshoe.Name = "iconGumshoe";
-            this.iconGumshoe.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.iconGumshoe.Size = new System.Drawing.Size(226, 50);
-            this.iconGumshoe.TabIndex = 6;
-            this.iconGumshoe.Text = "Theo dõi cây trồng";
-            this.iconGumshoe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconGumshoe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconGumshoe.UseVisualStyleBackColor = false;
-            this.iconGumshoe.Click += new System.EventHandler(this.iconGumshoe_Click);
+            this.ibtSell.BackColor = System.Drawing.Color.Transparent;
+            this.ibtSell.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtSell.FlatAppearance.BorderSize = 0;
+            this.ibtSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtSell.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtSell.ForeColor = System.Drawing.Color.White;
+            this.ibtSell.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.ibtSell.IconColor = System.Drawing.Color.White;
+            this.ibtSell.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtSell.IconSize = 35;
+            this.ibtSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtSell.Location = new System.Drawing.Point(10, 331);
+            this.ibtSell.Name = "ibtSell";
+            this.ibtSell.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
+            this.ibtSell.Size = new System.Drawing.Size(226, 50);
+            this.ibtSell.TabIndex = 6;
+            this.ibtSell.Text = "Bán hàng";
+            this.ibtSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtSell.UseVisualStyleBackColor = false;
+            this.ibtSell.Click += new System.EventHandler(this.iconGumshoe_Click);
+            this.ibtSell.MouseEnter += new System.EventHandler(this.iconGumshoe_MouseEnter);
+            this.ibtSell.MouseLeave += new System.EventHandler(this.iconGumshoe_MouseLeave);
             // 
             // ibtWarehouse
             // 
@@ -155,11 +173,13 @@ namespace DXApplication1
             this.ibtWarehouse.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
             this.ibtWarehouse.Size = new System.Drawing.Size(226, 50);
             this.ibtWarehouse.TabIndex = 5;
-            this.ibtWarehouse.Text = "Quản lý kho hàng";
+            this.ibtWarehouse.Text = "Kho hàng";
             this.ibtWarehouse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ibtWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtWarehouse.UseVisualStyleBackColor = false;
             this.ibtWarehouse.Click += new System.EventHandler(this.ibtWarehouse_Click);
+            this.ibtWarehouse.MouseEnter += new System.EventHandler(this.ibtWarehouse_MouseEnter);
+            this.ibtWarehouse.MouseLeave += new System.EventHandler(this.ibtWarehouse_MouseLeave);
             // 
             // ibtUser
             // 
@@ -179,11 +199,13 @@ namespace DXApplication1
             this.ibtUser.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
             this.ibtUser.Size = new System.Drawing.Size(226, 50);
             this.ibtUser.TabIndex = 4;
-            this.ibtUser.Text = "Quản lý khách hàng";
+            this.ibtUser.Text = "Khách hàng";
             this.ibtUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ibtUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtUser.UseVisualStyleBackColor = false;
             this.ibtUser.Click += new System.EventHandler(this.ibtUser_Click);
+            this.ibtUser.MouseEnter += new System.EventHandler(this.ibtUser_MouseEnter);
+            this.ibtUser.MouseLeave += new System.EventHandler(this.ibtUser_MouseLeave);
             // 
             // ibtItem
             // 
@@ -203,11 +225,13 @@ namespace DXApplication1
             this.ibtItem.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
             this.ibtItem.Size = new System.Drawing.Size(226, 50);
             this.ibtItem.TabIndex = 3;
-            this.ibtItem.Text = "Quản lý sản phẩm";
+            this.ibtItem.Text = "Sản phẩm";
             this.ibtItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ibtItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtItem.UseVisualStyleBackColor = false;
             this.ibtItem.Click += new System.EventHandler(this.ibtItem_Click);
+            this.ibtItem.MouseEnter += new System.EventHandler(this.ibtItem_MouseEnter);
+            this.ibtItem.MouseLeave += new System.EventHandler(this.ibtItem_MouseLeave);
             // 
             // ibtHome
             // 
@@ -232,6 +256,8 @@ namespace DXApplication1
             this.ibtHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibtHome.UseVisualStyleBackColor = false;
             this.ibtHome.Click += new System.EventHandler(this.ibtHome_Click);
+            this.ibtHome.MouseEnter += new System.EventHandler(this.ibtHome_MouseEnter);
+            this.ibtHome.MouseLeave += new System.EventHandler(this.ibtHome_MouseLeave);
             // 
             // panel1
             // 
@@ -356,7 +382,7 @@ namespace DXApplication1
             // 
             // plMenuRight
             // 
-            this.plMenuRight.Controls.Add(this.cbList);
+            this.plMenuRight.Controls.Add(this.button1);
             this.plMenuRight.Controls.Add(this.pictureBox2);
             this.plMenuRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.plMenuRight.Location = new System.Drawing.Point(844, 0);
@@ -364,25 +390,29 @@ namespace DXApplication1
             this.plMenuRight.Size = new System.Drawing.Size(200, 62);
             this.plMenuRight.TabIndex = 23;
             // 
-            // cbList
+            // button1
             // 
-            this.cbList.FormattingEnabled = true;
-            this.cbList.Items.AddRange(new object[] {
-            "Nguyễn Võ Khánh"});
-            this.cbList.Location = new System.Drawing.Point(66, 20);
-            this.cbList.Name = "cbList";
-            this.cbList.Size = new System.Drawing.Size(121, 21);
-            this.cbList.TabIndex = 26;
-            this.cbList.SelectedIndexChanged += new System.EventHandler(this.cbList_SelectedIndexChanged);
-            this.cbList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbList_MouseClick);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(102)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(66, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Nguyễn Võ Khánh ▼";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DXApplication1.Properties.Resources.userlogo;
-            this.pictureBox2.Location = new System.Drawing.Point(22, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(26, 14);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(34, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
@@ -395,6 +425,109 @@ namespace DXApplication1
             this.panelDashbroad.Name = "panelDashbroad";
             this.panelDashbroad.Size = new System.Drawing.Size(1044, 485);
             this.panelDashbroad.TabIndex = 4;
+            this.panelDashbroad.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashbroad_Paint);
+            // 
+            // rjDropdownMenu_Accout
+            // 
+            this.rjDropdownMenu_Accout.IsMainMenu = false;
+            this.rjDropdownMenu_Accout.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewMyProfileToolStripMenuItem,
+            this.accontDetailsToolStripMenuItem,
+            this.logOutToolStripMenuItem,
+            this.logOutToolStripMenuItem1,
+            this.whatAbotRongplantToolStripMenuItem});
+            this.rjDropdownMenu_Accout.MenuItemHeight = 25;
+            this.rjDropdownMenu_Accout.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Accout.Name = "rjDropdownMenu_Accout";
+            this.rjDropdownMenu_Accout.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Accout.Size = new System.Drawing.Size(200, 114);
+            // 
+            // viewMyProfileToolStripMenuItem
+            // 
+            this.viewMyProfileToolStripMenuItem.Name = "viewMyProfileToolStripMenuItem";
+            this.viewMyProfileToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.viewMyProfileToolStripMenuItem.Text = "View my profile";
+            // 
+            // accontDetailsToolStripMenuItem
+            // 
+            this.accontDetailsToolStripMenuItem.Name = "accontDetailsToolStripMenuItem";
+            this.accontDetailsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.accontDetailsToolStripMenuItem.Text = "Accont details";
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.logOutToolStripMenuItem.Text = "Change password";
+            // 
+            // logOutToolStripMenuItem1
+            // 
+            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
+            this.logOutToolStripMenuItem1.Text = "Log out";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
+            // 
+            // whatAbotRongplantToolStripMenuItem
+            // 
+            this.whatAbotRongplantToolStripMenuItem.Name = "whatAbotRongplantToolStripMenuItem";
+            this.whatAbotRongplantToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.whatAbotRongplantToolStripMenuItem.Text = "What about Rongplant?";
+            // 
+            // ibtGumshoe
+            // 
+            this.ibtGumshoe.BackColor = System.Drawing.Color.Transparent;
+            this.ibtGumshoe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtGumshoe.FlatAppearance.BorderSize = 0;
+            this.ibtGumshoe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtGumshoe.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtGumshoe.ForeColor = System.Drawing.Color.White;
+            this.ibtGumshoe.IconChar = FontAwesome.Sharp.IconChar.Computer;
+            this.ibtGumshoe.IconColor = System.Drawing.Color.White;
+            this.ibtGumshoe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtGumshoe.IconSize = 35;
+            this.ibtGumshoe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtGumshoe.Location = new System.Drawing.Point(10, 431);
+            this.ibtGumshoe.Name = "ibtGumshoe";
+            this.ibtGumshoe.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
+            this.ibtGumshoe.Size = new System.Drawing.Size(226, 50);
+            this.ibtGumshoe.TabIndex = 8;
+            this.ibtGumshoe.Text = "Cây trồng";
+            this.ibtGumshoe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtGumshoe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtGumshoe.UseVisualStyleBackColor = false;
+            // 
+            // ibtHelp
+            // 
+            this.ibtHelp.BackColor = System.Drawing.Color.Transparent;
+            this.ibtHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtHelp.FlatAppearance.BorderSize = 0;
+            this.ibtHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtHelp.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtHelp.ForeColor = System.Drawing.Color.White;
+            this.ibtHelp.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.ibtHelp.IconColor = System.Drawing.Color.White;
+            this.ibtHelp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtHelp.IconSize = 35;
+            this.ibtHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtHelp.Location = new System.Drawing.Point(10, 481);
+            this.ibtHelp.Name = "ibtHelp";
+            this.ibtHelp.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
+            this.ibtHelp.Size = new System.Drawing.Size(226, 50);
+            this.ibtHelp.TabIndex = 9;
+            this.ibtHelp.Text = "Trợ giúp";
+            this.ibtHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtHelp.UseVisualStyleBackColor = false;
+            // 
+            // lbVersion
+            // 
+            this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbVersion.AutoSize = true;
+            this.lbVersion.Location = new System.Drawing.Point(184, 572);
+            this.lbVersion.Name = "lbVersion";
+            this.lbVersion.Size = new System.Drawing.Size(72, 13);
+            this.lbVersion.TabIndex = 10;
+            this.lbVersion.Text = "Version:1.6.2";
             // 
             // XtraForm1
             // 
@@ -416,6 +549,7 @@ namespace DXApplication1
             this.Text = "XtraForm1";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -427,6 +561,7 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).EndInit();
             this.plMenuRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.rjDropdownMenu_Accout.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -436,8 +571,8 @@ namespace DXApplication1
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton ibtHome;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconGumshoe;
+        private FontAwesome.Sharp.IconButton ibtReport;
+        private FontAwesome.Sharp.IconButton ibtSell;
         private FontAwesome.Sharp.IconButton ibtWarehouse;
         private FontAwesome.Sharp.IconButton ibtUser;
         private FontAwesome.Sharp.IconButton ibtItem;
@@ -455,6 +590,15 @@ namespace DXApplication1
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox picUsername;
         private System.Windows.Forms.Panel panelMenuMind;
-        private System.Windows.Forms.ComboBox cbList;
+        private System.Windows.Forms.Button button1;
+        private RJControls.RJDropdownMenu rjDropdownMenu_Accout;
+        private System.Windows.Forms.ToolStripMenuItem viewMyProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accontDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem whatAbotRongplantToolStripMenuItem;
+        private FontAwesome.Sharp.IconButton ibtHelp;
+        private FontAwesome.Sharp.IconButton ibtGumshoe;
+        private System.Windows.Forms.Label lbVersion;
     }
 }

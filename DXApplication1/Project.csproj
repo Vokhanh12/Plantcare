@@ -86,6 +86,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RJControls\MenuColorTable.cs" />
+    <Compile Include="RJControls\MenuRenderer.cs" />
+    <Compile Include="RJControls\RJDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +138,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RJControls\RJDropdownMenu.resx">
+      <DependentUpon>RJDropdownMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>

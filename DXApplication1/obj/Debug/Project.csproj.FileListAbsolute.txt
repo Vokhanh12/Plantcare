@@ -439,3 +439,4 @@ C:\Users\Samsung\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DevEx
 C:\Users\Samsung\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.XtraForm1.resources
 C:\Users\Samsung\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.exe.licenses
 C:\Users\Samsung\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Samsung\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.RJControls.RJDropdownMenu.resources
