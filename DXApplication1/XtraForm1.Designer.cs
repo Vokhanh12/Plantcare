@@ -29,8 +29,10 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lbVersion = new System.Windows.Forms.Label();
+            this.ibtHelp = new FontAwesome.Sharp.IconButton();
+            this.ibtGumshoe = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ibtReport = new FontAwesome.Sharp.IconButton();
             this.ibtSell = new FontAwesome.Sharp.IconButton();
@@ -53,15 +55,11 @@ namespace DXApplication1
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDashbroad = new System.Windows.Forms.Panel();
-            this.rjDropdownMenu_Accout = new DXApplication1.RJControls.RJDropdownMenu(this.components);
             this.viewMyProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accontDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.whatAbotRongplantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ibtGumshoe = new FontAwesome.Sharp.IconButton();
-            this.ibtHelp = new FontAwesome.Sharp.IconButton();
-            this.lbVersion = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +70,6 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).BeginInit();
             this.plMenuRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.rjDropdownMenu_Accout.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -90,17 +87,77 @@ namespace DXApplication1
             this.panelMenu.Controls.Add(this.ibtHome);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 7);
+            this.panelMenu.Location = new System.Drawing.Point(0, 9);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.panelMenu.Size = new System.Drawing.Size(256, 585);
+            this.panelMenu.Padding = new System.Windows.Forms.Padding(12, 0, 23, 0);
+            this.panelMenu.Size = new System.Drawing.Size(299, 719);
             this.panelMenu.TabIndex = 2;
+            // 
+            // lbVersion
+            // 
+            this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbVersion.AutoSize = true;
+            this.lbVersion.Location = new System.Drawing.Point(215, 703);
+            this.lbVersion.Name = "lbVersion";
+            this.lbVersion.Size = new System.Drawing.Size(89, 17);
+            this.lbVersion.TabIndex = 10;
+            this.lbVersion.Text = "Version:1.6.2";
+            // 
+            // ibtHelp
+            // 
+            this.ibtHelp.BackColor = System.Drawing.Color.Transparent;
+            this.ibtHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtHelp.FlatAppearance.BorderSize = 0;
+            this.ibtHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtHelp.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtHelp.ForeColor = System.Drawing.Color.White;
+            this.ibtHelp.IconChar = FontAwesome.Sharp.IconChar.Question;
+            this.ibtHelp.IconColor = System.Drawing.Color.White;
+            this.ibtHelp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtHelp.IconSize = 35;
+            this.ibtHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtHelp.Location = new System.Drawing.Point(12, 595);
+            this.ibtHelp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ibtHelp.Name = "ibtHelp";
+            this.ibtHelp.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtHelp.Size = new System.Drawing.Size(264, 62);
+            this.ibtHelp.TabIndex = 9;
+            this.ibtHelp.Text = "Trợ giúp";
+            this.ibtHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtHelp.UseVisualStyleBackColor = false;
+            // 
+            // ibtGumshoe
+            // 
+            this.ibtGumshoe.BackColor = System.Drawing.Color.Transparent;
+            this.ibtGumshoe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ibtGumshoe.FlatAppearance.BorderSize = 0;
+            this.ibtGumshoe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtGumshoe.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtGumshoe.ForeColor = System.Drawing.Color.White;
+            this.ibtGumshoe.IconChar = FontAwesome.Sharp.IconChar.Computer;
+            this.ibtGumshoe.IconColor = System.Drawing.Color.White;
+            this.ibtGumshoe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtGumshoe.IconSize = 35;
+            this.ibtGumshoe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtGumshoe.Location = new System.Drawing.Point(12, 533);
+            this.ibtGumshoe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ibtGumshoe.Name = "ibtGumshoe";
+            this.ibtGumshoe.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtGumshoe.Size = new System.Drawing.Size(264, 62);
+            this.ibtGumshoe.TabIndex = 8;
+            this.ibtGumshoe.Text = "Cây trồng";
+            this.ibtGumshoe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibtGumshoe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibtGumshoe.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(256, 103);
+            this.panel3.Location = new System.Drawing.Point(299, 127);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(540, 450);
+            this.panel3.Size = new System.Drawing.Size(630, 554);
             this.panel3.TabIndex = 4;
             // 
             // ibtReport
@@ -116,10 +173,11 @@ namespace DXApplication1
             this.ibtReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtReport.IconSize = 35;
             this.ibtReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtReport.Location = new System.Drawing.Point(10, 381);
+            this.ibtReport.Location = new System.Drawing.Point(12, 471);
+            this.ibtReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtReport.Name = "ibtReport";
-            this.ibtReport.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtReport.Size = new System.Drawing.Size(226, 50);
+            this.ibtReport.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtReport.Size = new System.Drawing.Size(264, 62);
             this.ibtReport.TabIndex = 7;
             this.ibtReport.Text = "Báo cáo";
             this.ibtReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,10 +200,11 @@ namespace DXApplication1
             this.ibtSell.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtSell.IconSize = 35;
             this.ibtSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtSell.Location = new System.Drawing.Point(10, 331);
+            this.ibtSell.Location = new System.Drawing.Point(12, 409);
+            this.ibtSell.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtSell.Name = "ibtSell";
-            this.ibtSell.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtSell.Size = new System.Drawing.Size(226, 50);
+            this.ibtSell.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtSell.Size = new System.Drawing.Size(264, 62);
             this.ibtSell.TabIndex = 6;
             this.ibtSell.Text = "Bán hàng";
             this.ibtSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,10 +227,11 @@ namespace DXApplication1
             this.ibtWarehouse.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtWarehouse.IconSize = 35;
             this.ibtWarehouse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtWarehouse.Location = new System.Drawing.Point(10, 281);
+            this.ibtWarehouse.Location = new System.Drawing.Point(12, 347);
+            this.ibtWarehouse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtWarehouse.Name = "ibtWarehouse";
-            this.ibtWarehouse.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtWarehouse.Size = new System.Drawing.Size(226, 50);
+            this.ibtWarehouse.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtWarehouse.Size = new System.Drawing.Size(264, 62);
             this.ibtWarehouse.TabIndex = 5;
             this.ibtWarehouse.Text = "Kho hàng";
             this.ibtWarehouse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,10 +254,11 @@ namespace DXApplication1
             this.ibtUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtUser.IconSize = 35;
             this.ibtUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtUser.Location = new System.Drawing.Point(10, 231);
+            this.ibtUser.Location = new System.Drawing.Point(12, 285);
+            this.ibtUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtUser.Name = "ibtUser";
-            this.ibtUser.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtUser.Size = new System.Drawing.Size(226, 50);
+            this.ibtUser.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtUser.Size = new System.Drawing.Size(264, 62);
             this.ibtUser.TabIndex = 4;
             this.ibtUser.Text = "Khách hàng";
             this.ibtUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,10 +281,11 @@ namespace DXApplication1
             this.ibtItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtItem.IconSize = 35;
             this.ibtItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtItem.Location = new System.Drawing.Point(10, 181);
+            this.ibtItem.Location = new System.Drawing.Point(12, 223);
+            this.ibtItem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtItem.Name = "ibtItem";
-            this.ibtItem.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtItem.Size = new System.Drawing.Size(226, 50);
+            this.ibtItem.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtItem.Size = new System.Drawing.Size(264, 62);
             this.ibtItem.TabIndex = 3;
             this.ibtItem.Text = "Sản phẩm";
             this.ibtItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,10 +308,11 @@ namespace DXApplication1
             this.ibtHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtHome.IconSize = 35;
             this.ibtHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtHome.Location = new System.Drawing.Point(10, 131);
+            this.ibtHome.Location = new System.Drawing.Point(12, 161);
+            this.ibtHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtHome.Name = "ibtHome";
-            this.ibtHome.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtHome.Size = new System.Drawing.Size(226, 50);
+            this.ibtHome.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
+            this.ibtHome.Size = new System.Drawing.Size(264, 62);
             this.ibtHome.TabIndex = 2;
             this.ibtHome.Text = "Trang chủ";
             this.ibtHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,17 +326,19 @@ namespace DXApplication1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(10, 0);
+            this.panel1.Location = new System.Drawing.Point(12, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 131);
+            this.panel1.Size = new System.Drawing.Size(264, 161);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.Plant_Happy_and_healthy__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-38, -82);
+            this.pictureBox1.Location = new System.Drawing.Point(-44, -101);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(303, 293);
+            this.pictureBox1.Size = new System.Drawing.Size(353, 361);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -285,9 +350,10 @@ namespace DXApplication1
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(256, 7);
+            this.panel2.Location = new System.Drawing.Point(299, 9);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1044, 100);
+            this.panel2.Size = new System.Drawing.Size(1218, 123);
             this.panel2.TabIndex = 3;
             // 
             // panel6
@@ -295,9 +361,10 @@ namespace DXApplication1
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(63)))));
             this.panel6.Controls.Add(this.lbDashbroad);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 62);
+            this.panel6.Location = new System.Drawing.Point(0, 76);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1044, 38);
+            this.panel6.Size = new System.Drawing.Size(1218, 47);
             this.panel6.TabIndex = 1;
             // 
             // lbDashbroad
@@ -306,10 +373,10 @@ namespace DXApplication1
             this.lbDashbroad.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lbDashbroad.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDashbroad.ForeColor = System.Drawing.Color.White;
-            this.lbDashbroad.Location = new System.Drawing.Point(0, 9);
+            this.lbDashbroad.Location = new System.Drawing.Point(0, 12);
             this.lbDashbroad.Name = "lbDashbroad";
-            this.lbDashbroad.Padding = new System.Windows.Forms.Padding(5, 0, 0, 7);
-            this.lbDashbroad.Size = new System.Drawing.Size(89, 29);
+            this.lbDashbroad.Padding = new System.Windows.Forms.Padding(6, 0, 0, 9);
+            this.lbDashbroad.Size = new System.Drawing.Size(112, 35);
             this.lbDashbroad.TabIndex = 0;
             this.lbDashbroad.Text = "Dashbroad";
             this.lbDashbroad.Click += new System.EventHandler(this.lbDashbroad_Click);
@@ -322,16 +389,18 @@ namespace DXApplication1
             this.panel5.Controls.Add(this.plMenuRight);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1044, 62);
+            this.panel5.Size = new System.Drawing.Size(1218, 76);
             this.panel5.TabIndex = 0;
             // 
             // panelMenuMind
             // 
             this.panelMenuMind.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMenuMind.Location = new System.Drawing.Point(477, 0);
+            this.panelMenuMind.Location = new System.Drawing.Point(556, 0);
+            this.panelMenuMind.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenuMind.Name = "panelMenuMind";
-            this.panelMenuMind.Size = new System.Drawing.Size(367, 62);
+            this.panelMenuMind.Size = new System.Drawing.Size(429, 76);
             this.panelMenuMind.TabIndex = 25;
             // 
             // panelMenuLeft
@@ -341,8 +410,9 @@ namespace DXApplication1
             this.panelMenuLeft.Controls.Add(this.picUsername);
             this.panelMenuLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenuLeft.Name = "panelMenuLeft";
-            this.panelMenuLeft.Size = new System.Drawing.Size(477, 62);
+            this.panelMenuLeft.Size = new System.Drawing.Size(556, 76);
             this.panelMenuLeft.TabIndex = 24;
             this.panelMenuLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenuLeft_Paint);
             // 
@@ -353,29 +423,29 @@ namespace DXApplication1
             this.txtFind.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFind.ForeColor = System.Drawing.Color.White;
             this.txtFind.HideSelection = false;
-            this.txtFind.Location = new System.Drawing.Point(54, 24);
+            this.txtFind.Location = new System.Drawing.Point(63, 30);
             this.txtFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(250, 17);
+            this.txtFind.Size = new System.Drawing.Size(292, 21);
             this.txtFind.TabIndex = 25;
             this.txtFind.TabStop = false;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(54, 45);
+            this.panel7.Location = new System.Drawing.Point(63, 55);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(250, 1);
+            this.panel7.Size = new System.Drawing.Size(292, 1);
             this.panel7.TabIndex = 24;
             // 
             // picUsername
             // 
             this.picUsername.Image = global::DXApplication1.Properties.Resources.iconfind;
-            this.picUsername.Location = new System.Drawing.Point(13, 14);
+            this.picUsername.Location = new System.Drawing.Point(15, 17);
             this.picUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUsername.Name = "picUsername";
-            this.picUsername.Size = new System.Drawing.Size(35, 32);
+            this.picUsername.Size = new System.Drawing.Size(41, 39);
             this.picUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUsername.TabIndex = 23;
             this.picUsername.TabStop = false;
@@ -385,9 +455,10 @@ namespace DXApplication1
             this.plMenuRight.Controls.Add(this.button1);
             this.plMenuRight.Controls.Add(this.pictureBox2);
             this.plMenuRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.plMenuRight.Location = new System.Drawing.Point(844, 0);
+            this.plMenuRight.Location = new System.Drawing.Point(985, 0);
+            this.plMenuRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.plMenuRight.Name = "plMenuRight";
-            this.plMenuRight.Size = new System.Drawing.Size(200, 62);
+            this.plMenuRight.Size = new System.Drawing.Size(233, 76);
             this.plMenuRight.TabIndex = 23;
             // 
             // button1
@@ -398,9 +469,10 @@ namespace DXApplication1
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(66, 18);
+            this.button1.Location = new System.Drawing.Point(77, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.Size = new System.Drawing.Size(138, 28);
             this.button1.TabIndex = 26;
             this.button1.Text = "Nguyễn Võ Khánh ▼";
             this.button1.UseVisualStyleBackColor = false;
@@ -409,10 +481,10 @@ namespace DXApplication1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DXApplication1.Properties.Resources.userlogo;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(30, 17);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
@@ -421,113 +493,43 @@ namespace DXApplication1
             // 
             this.panelDashbroad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(67)))));
             this.panelDashbroad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDashbroad.Location = new System.Drawing.Point(256, 107);
+            this.panelDashbroad.Location = new System.Drawing.Point(299, 132);
+            this.panelDashbroad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDashbroad.Name = "panelDashbroad";
-            this.panelDashbroad.Size = new System.Drawing.Size(1044, 485);
+            this.panelDashbroad.Size = new System.Drawing.Size(1218, 596);
             this.panelDashbroad.TabIndex = 4;
             this.panelDashbroad.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashbroad_Paint);
-            // 
-            // rjDropdownMenu_Accout
-            // 
-            this.rjDropdownMenu_Accout.IsMainMenu = false;
-            this.rjDropdownMenu_Accout.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewMyProfileToolStripMenuItem,
-            this.accontDetailsToolStripMenuItem,
-            this.logOutToolStripMenuItem,
-            this.logOutToolStripMenuItem1,
-            this.whatAbotRongplantToolStripMenuItem});
-            this.rjDropdownMenu_Accout.MenuItemHeight = 25;
-            this.rjDropdownMenu_Accout.MenuItemTextColor = System.Drawing.Color.Empty;
-            this.rjDropdownMenu_Accout.Name = "rjDropdownMenu_Accout";
-            this.rjDropdownMenu_Accout.PrimaryColor = System.Drawing.Color.Empty;
-            this.rjDropdownMenu_Accout.Size = new System.Drawing.Size(200, 114);
             // 
             // viewMyProfileToolStripMenuItem
             // 
             this.viewMyProfileToolStripMenuItem.Name = "viewMyProfileToolStripMenuItem";
-            this.viewMyProfileToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.viewMyProfileToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.viewMyProfileToolStripMenuItem.Text = "View my profile";
             // 
             // accontDetailsToolStripMenuItem
             // 
             this.accontDetailsToolStripMenuItem.Name = "accontDetailsToolStripMenuItem";
-            this.accontDetailsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.accontDetailsToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.accontDetailsToolStripMenuItem.Text = "Accont details";
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.logOutToolStripMenuItem.Text = "Change password";
             // 
             // logOutToolStripMenuItem1
             // 
             this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(236, 24);
             this.logOutToolStripMenuItem1.Text = "Log out";
             this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
             // whatAbotRongplantToolStripMenuItem
             // 
             this.whatAbotRongplantToolStripMenuItem.Name = "whatAbotRongplantToolStripMenuItem";
-            this.whatAbotRongplantToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.whatAbotRongplantToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.whatAbotRongplantToolStripMenuItem.Text = "What about Rongplant?";
-            // 
-            // ibtGumshoe
-            // 
-            this.ibtGumshoe.BackColor = System.Drawing.Color.Transparent;
-            this.ibtGumshoe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtGumshoe.FlatAppearance.BorderSize = 0;
-            this.ibtGumshoe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtGumshoe.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtGumshoe.ForeColor = System.Drawing.Color.White;
-            this.ibtGumshoe.IconChar = FontAwesome.Sharp.IconChar.Computer;
-            this.ibtGumshoe.IconColor = System.Drawing.Color.White;
-            this.ibtGumshoe.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtGumshoe.IconSize = 35;
-            this.ibtGumshoe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtGumshoe.Location = new System.Drawing.Point(10, 431);
-            this.ibtGumshoe.Name = "ibtGumshoe";
-            this.ibtGumshoe.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtGumshoe.Size = new System.Drawing.Size(226, 50);
-            this.ibtGumshoe.TabIndex = 8;
-            this.ibtGumshoe.Text = "Cây trồng";
-            this.ibtGumshoe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtGumshoe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtGumshoe.UseVisualStyleBackColor = false;
-            // 
-            // ibtHelp
-            // 
-            this.ibtHelp.BackColor = System.Drawing.Color.Transparent;
-            this.ibtHelp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtHelp.FlatAppearance.BorderSize = 0;
-            this.ibtHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtHelp.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtHelp.ForeColor = System.Drawing.Color.White;
-            this.ibtHelp.IconChar = FontAwesome.Sharp.IconChar.Question;
-            this.ibtHelp.IconColor = System.Drawing.Color.White;
-            this.ibtHelp.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtHelp.IconSize = 35;
-            this.ibtHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtHelp.Location = new System.Drawing.Point(10, 481);
-            this.ibtHelp.Name = "ibtHelp";
-            this.ibtHelp.Padding = new System.Windows.Forms.Padding(10, 1, 20, 1);
-            this.ibtHelp.Size = new System.Drawing.Size(226, 50);
-            this.ibtHelp.TabIndex = 9;
-            this.ibtHelp.Text = "Trợ giúp";
-            this.ibtHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtHelp.UseVisualStyleBackColor = false;
-            // 
-            // lbVersion
-            // 
-            this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(184, 572);
-            this.lbVersion.Name = "lbVersion";
-            this.lbVersion.Size = new System.Drawing.Size(72, 13);
-            this.lbVersion.TabIndex = 10;
-            this.lbVersion.Text = "Version:1.6.2";
             // 
             // XtraForm1
             // 
@@ -535,16 +537,17 @@ namespace DXApplication1
             this.Appearance.ForeColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 599);
+            this.ClientSize = new System.Drawing.Size(1517, 737);
             this.Controls.Add(this.panelDashbroad);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "XtraForm1";
-            this.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
+            this.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "XtraForm1";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
@@ -561,7 +564,6 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).EndInit();
             this.plMenuRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.rjDropdownMenu_Accout.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
