@@ -83,7 +83,7 @@ namespace DXApplication1
         private void XtraForm1_Load(object sender, EventArgs e)
         {
             //load button menu
-            rjDropdownMenu_Accout.IsMainMenu = true;
+            rjDropdownMenu1.IsMainMenu = true;
 
         }
 
@@ -240,7 +240,7 @@ namespace DXApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             //Show button menu
-            rjDropdownMenu_Accout.Show(button1,0,button1.Height);
+            rjDropdownMenu1.Show(button1,0,button1.Height);
         }
 
         private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)

@@ -1,4 +1,6 @@
 ﻿
+using DXApplication1.RJControls;
+
 namespace DXApplication1
 {
     partial class XtraForm1
@@ -7,7 +9,6 @@ namespace DXApplication1
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -29,6 +30,7 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.lbVersion = new System.Windows.Forms.Label();
             this.ibtHelp = new FontAwesome.Sharp.IconButton();
@@ -60,6 +62,15 @@ namespace DXApplication1
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.whatAbotRongplantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rjDropdownMenu1 = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+            this.asdToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aasdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asdToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +81,7 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).BeginInit();
             this.plMenuRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.rjDropdownMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -531,6 +543,71 @@ namespace DXApplication1
             this.whatAbotRongplantToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.whatAbotRongplantToolStripMenuItem.Text = "What about Rongplant?";
             // 
+            // asdToolStripMenuItem
+            // 
+            this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
+            this.asdToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
+            this.asdToolStripMenuItem.Text = "asd";
+            // 
+            // asdToolStripMenuItem1
+            // 
+            this.asdToolStripMenuItem1.Name = "asdToolStripMenuItem1";
+            this.asdToolStripMenuItem1.Size = new System.Drawing.Size(101, 24);
+            this.asdToolStripMenuItem1.Text = "asd";
+            // 
+            // asdToolStripMenuItem2
+            // 
+            this.asdToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asdToolStripMenuItem3});
+            this.asdToolStripMenuItem2.Name = "asdToolStripMenuItem2";
+            this.asdToolStripMenuItem2.Size = new System.Drawing.Size(101, 24);
+            this.asdToolStripMenuItem2.Text = "asd";
+            // 
+            // asdToolStripMenuItem3
+            // 
+            this.asdToolStripMenuItem3.Name = "asdToolStripMenuItem3";
+            this.asdToolStripMenuItem3.Size = new System.Drawing.Size(115, 26);
+            this.asdToolStripMenuItem3.Text = "asd";
+            // 
+            // rjDropdownMenu1
+            // 
+            this.rjDropdownMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropdownMenu1.IsMainMenu = false;
+            this.rjDropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asdToolStripMenuItem4,
+            this.aasdToolStripMenuItem,
+            this.toolStripMenuItem1});
+            this.rjDropdownMenu1.MenuItemHeight = 25;
+            this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu1.Name = "rjDropdownMenu1";
+            this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu1.Size = new System.Drawing.Size(211, 104);
+            // 
+            // asdToolStripMenuItem4
+            // 
+            this.asdToolStripMenuItem4.Name = "asdToolStripMenuItem4";
+            this.asdToolStripMenuItem4.Size = new System.Drawing.Size(210, 24);
+            this.asdToolStripMenuItem4.Text = "asd";
+            // 
+            // aasdToolStripMenuItem
+            // 
+            this.aasdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.asdToolStripMenuItem5});
+            this.aasdToolStripMenuItem.Name = "aasdToolStripMenuItem";
+            this.aasdToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.aasdToolStripMenuItem.Text = "aasd";
+            // 
+            // asdToolStripMenuItem5
+            // 
+            this.asdToolStripMenuItem5.Name = "asdToolStripMenuItem5";
+            this.asdToolStripMenuItem5.Size = new System.Drawing.Size(115, 26);
+            this.asdToolStripMenuItem5.Text = "asd";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            // 
             // XtraForm1
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
@@ -564,6 +641,7 @@ namespace DXApplication1
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).EndInit();
             this.plMenuRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.rjDropdownMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -593,7 +671,6 @@ namespace DXApplication1
         private System.Windows.Forms.PictureBox picUsername;
         private System.Windows.Forms.Panel panelMenuMind;
         private System.Windows.Forms.Button button1;
-        private RJControls.RJDropdownMenu rjDropdownMenu_Accout;
         private System.Windows.Forms.ToolStripMenuItem viewMyProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accontDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
@@ -602,5 +679,15 @@ namespace DXApplication1
         private FontAwesome.Sharp.IconButton ibtHelp;
         private FontAwesome.Sharp.IconButton ibtGumshoe;
         private System.Windows.Forms.Label lbVersion;
+
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem3;
+        private RJControls.RJDropdownMenu rjDropdownMenu1;
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem aasdToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
