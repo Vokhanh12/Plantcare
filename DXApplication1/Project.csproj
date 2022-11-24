@@ -87,6 +87,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
+    <Compile Include="RJControls\CallRJDropmenu.cs" />
     <Compile Include="RJControls\MenuColorTable.cs" />
     <Compile Include="RJControls\MenuRenderer.cs" />
     <Compile Include="RJControls\RJDropdownMenu.cs">
@@ -257,6 +259,7 @@
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

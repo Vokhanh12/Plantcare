@@ -10,33 +10,75 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using DXApplication1.RJControls;
+using DXApplication1.ChangeColorButton;
 
 namespace DXApplication1
 {
+
     public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
     {
         //Fiel
-        private IconButton currentBtn;
-        private Panel leftBorderBtn;
-       
+        
 
-        
-        
+
+        private RJDropdownMenu rjDropdownMenu1;
+        private System.Windows.Forms.ToolStripMenuItem CheckInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SignOutToolStripMenuItem;
+
+
         //Constructor 
         public XtraForm1()
         {
+
             InitializeComponent();
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10,50);
-            panelMenu.Controls.Add(leftBorderBtn);
+            //add Compoinent because Erro delete code.maybe i shound do this it
+            //Open
+            this.components = new System.ComponentModel.Container();
+
+            this.rjDropdownMenu1 = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+
+            this.CheckInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SignOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            this.rjDropdownMenu1.SuspendLayout();
+
+            this.rjDropdownMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropdownMenu1.IsMainMenu = false;
+            this.rjDropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CheckInfoToolStripMenuItem,
+                this.SignOutToolStripMenuItem });
+            this.rjDropdownMenu1.MenuItemHeight = 25;
+            this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu1.Name = "rjDropdownMenu1";
+            this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu1.Size = new System.Drawing.Size(87, 28);
+
+            this.CheckInfoToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.CheckInfoToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.CheckInfoToolStripMenuItem.Text = "a";
+
+            this.SignOutToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.SignOutToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.SignOutToolStripMenuItem.Text = "b";
+
+            this.rjDropdownMenu1.ResumeLayout(false);
+
+            this.ResumeLayout(false);
+            //Close
+
+
+            ClinkChangeColor.leftBorderBtn = new Panel();
+            ClinkChangeColor.leftBorderBtn.Size = new Size(10,50);
+            panelMenu.Controls.Add(ClinkChangeColor.leftBorderBtn);
             //Form
 
+        
 
 
 
 
         }
-        //Structs
+        //Structs Color
         private struct RGBColors
         {
           public static Color color1 = Color.FromArgb(172,126,241);  
@@ -44,99 +86,72 @@ namespace DXApplication1
           public static Color color3 = Color.FromArgb(253,138,167);  
           public static Color color4 = Color.FromArgb(95,77,221);  
           public static Color color5 = Color.FromArgb(249,88,155);  
-          public static Color color6 = Color.FromArgb(24,161,251);  
-        }
-        //Method
-        private void ActivateButton(object senderBtn,Color color)
-        {
-            if(senderBtn != null)
-            {
-                currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(0, 128, 255);
-                currentBtn.ForeColor = color;
-                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
-                currentBtn.IconColor = color;
-                currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
-                //Left border button
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+          public static Color color6 = Color.FromArgb(24,161,251);
 
-            }
+          public static Color ColorEnter = Color.FromArgb(0, 128, 255);
+          public static Color ColorLeave = Color.FromArgb(0, 0, 51);
         }
-        private void DisableButton()
-        {
-            if(currentBtn != null)
-            {
-                currentBtn.BackColor = Color.FromArgb(0, 0, 51);
-                currentBtn.ForeColor = Color.White;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.White;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-            }
-        }
+        
 
 
         private void XtraForm1_Load(object sender, EventArgs e)
         {
-            //load button menu
+
+            //Loadropdownmenu is true;
             rjDropdownMenu1.IsMainMenu = true;
 
-        }
 
+        }
+        //the constructors change color and backcolor
         private void ibtHome_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
-
-           
-            
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
            
         }
 
         private void ibtItem_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
         private void ibtUser_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
         private void ibtWarehouse_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
         private void iconGumshoe_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            ActivateButton(sender, RGBColors.color6);
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void bntHome_Click(object sender, EventArgs e)
+        private void ibtGumshoe_Click(object sender, EventArgs e)
         {
-            Reset();
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void Reset()
+        private void ibtHelp_Click(object sender, EventArgs e)
         {
-            DisableButton();
-            leftBorderBtn.Visible = false;
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -153,9 +168,6 @@ namespace DXApplication1
 
         }
 
-    
-
-
         private void cbList_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -165,67 +177,90 @@ namespace DXApplication1
         {
 
         }
-
+        //Event mouseEnter and mouseLeave button => change Backcolor button
+        //Open
         private void ibtHome_MouseEnter(object sender, EventArgs e)
         {
-            ibtHome.BackColor = Color.FromArgb(0,128,255);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
         private void ibtHome_MouseLeave(object sender, EventArgs e)
         {
-            ibtHome.BackColor = Color.FromArgb(0, 0, 51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
         private void ibtItem_MouseEnter(object sender, EventArgs e)
         {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
 
-            ibtItem.BackColor = Color.FromArgb(0, 128, 255);
         }
 
         private void ibtItem_MouseLeave(object sender, EventArgs e)
         {
-            ibtItem.BackColor = Color.FromArgb(0, 0, 51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
         private void ibtUser_MouseEnter(object sender, EventArgs e)
         {
-            ibtUser.BackColor = Color.FromArgb(0,128,255);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
         private void ibtUser_MouseLeave(object sender, EventArgs e)
         {
-            ibtUser.BackColor = Color.FromArgb(0,0,51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
         private void ibtWarehouse_MouseEnter(object sender, EventArgs e)
         {
-            ibtWarehouse.BackColor = Color.FromArgb(0,128,255);
+           ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
         private void ibtWarehouse_MouseLeave(object sender, EventArgs e)
         {
-            ibtWarehouse.BackColor = Color.FromArgb(0,0,51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
         private void iconGumshoe_MouseEnter(object sender, EventArgs e)
         {
-            ibtSell.BackColor = Color.FromArgb(0,128,255);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
         private void iconGumshoe_MouseLeave(object sender, EventArgs e)
         {
-            ibtSell.BackColor = Color.FromArgb(0,0,51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
         private void iconButton6_MouseEnter(object sender, EventArgs e)
         {
-            ibtReport.BackColor = Color.FromArgb(0, 128, 255);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
         private void iconButton6_MouseLeave(object sender, EventArgs e)
         {
-            ibtReport.BackColor = Color.FromArgb(0, 0, 51);
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
+        private void ibtGumshoe_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
+        }
+
+        private void ibtGumshoe_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+
+        private void ibtHelp_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
+        }
+
+        private void ibtHelp_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+        //Close
+
+
 
         private void testTSMI_Click(object sender, EventArgs e)
         {
@@ -239,8 +274,9 @@ namespace DXApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Show button menu
-            rjDropdownMenu1.Show(button1,0,button1.Height);
+            rjDropdownMenu1.Show(btnAcount, 0, btnAcount.Height);
+
+
         }
 
         private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -248,6 +284,24 @@ namespace DXApplication1
             this.Close();
         }
 
-      
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjDropdownMenu2_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void rjDropdownMenu2_Opening_1(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
