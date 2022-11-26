@@ -22,8 +22,12 @@ namespace DXApplication1
 
 
         private RJDropdownMenu rjDropdownMenu1;
-        private System.Windows.Forms.ToolStripMenuItem CheckInfoToolStripMenuItem;
+
+        private System.Windows.Forms.ToolStripMenuItem ViewmyProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AccoutDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SignOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem WhatabRongplantToolStripMenuItem;
+
 
 
         //Constructor 
@@ -31,35 +35,49 @@ namespace DXApplication1
         {
 
             InitializeComponent();
-            //add Compoinent because Erro delete code.maybe i shound do this it
+            //add Compoinent because Error delete code.maybe i shound do this it
             //Open
             this.components = new System.ComponentModel.Container();
 
             this.rjDropdownMenu1 = new DXApplication1.RJControls.RJDropdownMenu(this.components);
 
-            this.CheckInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ViewmyProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AccoutDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SignOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WhatabRongplantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
             this.rjDropdownMenu1.SuspendLayout();
 
             this.rjDropdownMenu1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.rjDropdownMenu1.IsMainMenu = false;
             this.rjDropdownMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CheckInfoToolStripMenuItem,
-                this.SignOutToolStripMenuItem });
+            this.ViewmyProfileToolStripMenuItem,
+            this.AccoutDetailsToolStripMenuItem,
+            this.SignOutToolStripMenuItem,
+            this.WhatabRongplantToolStripMenuItem,
+            });
+
             this.rjDropdownMenu1.MenuItemHeight = 25;
             this.rjDropdownMenu1.MenuItemTextColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu1.Name = "rjDropdownMenu1";
             this.rjDropdownMenu1.PrimaryColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu1.Size = new System.Drawing.Size(87, 28);
 
-            this.CheckInfoToolStripMenuItem.Name = "aToolStripMenuItem";
-            this.CheckInfoToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.CheckInfoToolStripMenuItem.Text = "a";
+            this.ViewmyProfileToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.ViewmyProfileToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.ViewmyProfileToolStripMenuItem.Text = "View my profile";
+
+            this.AccoutDetailsToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.AccoutDetailsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.AccoutDetailsToolStripMenuItem.Text = "Account details";
 
             this.SignOutToolStripMenuItem.Name = "aToolStripMenuItem";
             this.SignOutToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.SignOutToolStripMenuItem.Text = "b";
+            this.SignOutToolStripMenuItem.Text = "Sign out";
+
+            this.WhatabRongplantToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.WhatabRongplantToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.WhatabRongplantToolStripMenuItem.Text = "What about Rongplant?";
 
             this.rjDropdownMenu1.ResumeLayout(false);
 
@@ -68,7 +86,7 @@ namespace DXApplication1
 
 
             ClinkChangeColor.leftBorderBtn = new Panel();
-            ClinkChangeColor.leftBorderBtn.Size = new Size(10,50);
+            ClinkChangeColor.leftBorderBtn.Size = new Size(10,62);
             panelMenu.Controls.Add(ClinkChangeColor.leftBorderBtn);
             //Form
 
@@ -91,16 +109,11 @@ namespace DXApplication1
           public static Color ColorEnter = Color.FromArgb(0, 128, 255);
           public static Color ColorLeave = Color.FromArgb(0, 0, 51);
         }
-        
-
 
         private void XtraForm1_Load(object sender, EventArgs e)
         {
-
             //Loadropdownmenu is true;
             rjDropdownMenu1.IsMainMenu = true;
-
-
         }
         //the constructors change color and backcolor
         private void ibtHome_Click(object sender, EventArgs e)
@@ -260,25 +273,7 @@ namespace DXApplication1
         }
         //Close
 
-
-
-        private void testTSMI_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hello world");
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            rjDropdownMenu1.Show(btnAcount, 0, btnAcount.Height);
-
-
-        }
-
+        //the use the windows is closed
         private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -302,6 +297,11 @@ namespace DXApplication1
         private void rjDropdownMenu2_Opening_1(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void buttonAcount_Click(object sender, EventArgs e)
+        {
+            rjDropdownMenu1.Show(btnAcount, btnAcount.Width - rjDropdownMenu1.Width, btnAcount.Height+3);
         }
     }
 }

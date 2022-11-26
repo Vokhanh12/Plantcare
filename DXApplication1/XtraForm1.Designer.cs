@@ -36,10 +36,6 @@ namespace DXApplication1
             this.ibtGumshoe = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ibtReport = new FontAwesome.Sharp.IconButton();
-            this.ibtSell = new FontAwesome.Sharp.IconButton();
-            this.ibtWarehouse = new FontAwesome.Sharp.IconButton();
-            this.ibtUser = new FontAwesome.Sharp.IconButton();
-            this.ibtItem = new FontAwesome.Sharp.IconButton();
             this.ibtHome = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +52,6 @@ namespace DXApplication1
             this.btnAcount = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelDashbroad = new System.Windows.Forms.Panel();
-            this.CheckInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,10 +72,6 @@ namespace DXApplication1
             this.panelMenu.Controls.Add(this.ibtGumshoe);
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.ibtReport);
-            this.panelMenu.Controls.Add(this.ibtSell);
-            this.panelMenu.Controls.Add(this.ibtWarehouse);
-            this.panelMenu.Controls.Add(this.ibtUser);
-            this.panelMenu.Controls.Add(this.ibtItem);
             this.panelMenu.Controls.Add(this.ibtHome);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -114,7 +105,7 @@ namespace DXApplication1
             this.ibtHelp.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtHelp.IconSize = 35;
             this.ibtHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtHelp.Location = new System.Drawing.Point(12, 595);
+            this.ibtHelp.Location = new System.Drawing.Point(12, 347);
             this.ibtHelp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtHelp.Name = "ibtHelp";
             this.ibtHelp.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
@@ -141,7 +132,7 @@ namespace DXApplication1
             this.ibtGumshoe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtGumshoe.IconSize = 35;
             this.ibtGumshoe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtGumshoe.Location = new System.Drawing.Point(12, 533);
+            this.ibtGumshoe.Location = new System.Drawing.Point(12, 285);
             this.ibtGumshoe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtGumshoe.Name = "ibtGumshoe";
             this.ibtGumshoe.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
@@ -176,7 +167,7 @@ namespace DXApplication1
             this.ibtReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibtReport.IconSize = 35;
             this.ibtReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtReport.Location = new System.Drawing.Point(12, 471);
+            this.ibtReport.Location = new System.Drawing.Point(12, 223);
             this.ibtReport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ibtReport.Name = "ibtReport";
             this.ibtReport.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
@@ -189,114 +180,6 @@ namespace DXApplication1
             this.ibtReport.Click += new System.EventHandler(this.iconButton6_Click);
             this.ibtReport.MouseEnter += new System.EventHandler(this.iconButton6_MouseEnter);
             this.ibtReport.MouseLeave += new System.EventHandler(this.iconButton6_MouseLeave);
-            // 
-            // ibtSell
-            // 
-            this.ibtSell.BackColor = System.Drawing.Color.Transparent;
-            this.ibtSell.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtSell.FlatAppearance.BorderSize = 0;
-            this.ibtSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtSell.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtSell.ForeColor = System.Drawing.Color.White;
-            this.ibtSell.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            this.ibtSell.IconColor = System.Drawing.Color.White;
-            this.ibtSell.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtSell.IconSize = 35;
-            this.ibtSell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtSell.Location = new System.Drawing.Point(12, 409);
-            this.ibtSell.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ibtSell.Name = "ibtSell";
-            this.ibtSell.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
-            this.ibtSell.Size = new System.Drawing.Size(264, 62);
-            this.ibtSell.TabIndex = 6;
-            this.ibtSell.Text = "Bán hàng";
-            this.ibtSell.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtSell.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtSell.UseVisualStyleBackColor = false;
-            this.ibtSell.Click += new System.EventHandler(this.iconGumshoe_Click);
-            this.ibtSell.MouseEnter += new System.EventHandler(this.iconGumshoe_MouseEnter);
-            this.ibtSell.MouseLeave += new System.EventHandler(this.iconGumshoe_MouseLeave);
-            // 
-            // ibtWarehouse
-            // 
-            this.ibtWarehouse.BackColor = System.Drawing.Color.Transparent;
-            this.ibtWarehouse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtWarehouse.FlatAppearance.BorderSize = 0;
-            this.ibtWarehouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtWarehouse.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtWarehouse.ForeColor = System.Drawing.Color.White;
-            this.ibtWarehouse.IconChar = FontAwesome.Sharp.IconChar.ShopLock;
-            this.ibtWarehouse.IconColor = System.Drawing.Color.White;
-            this.ibtWarehouse.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtWarehouse.IconSize = 35;
-            this.ibtWarehouse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtWarehouse.Location = new System.Drawing.Point(12, 347);
-            this.ibtWarehouse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ibtWarehouse.Name = "ibtWarehouse";
-            this.ibtWarehouse.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
-            this.ibtWarehouse.Size = new System.Drawing.Size(264, 62);
-            this.ibtWarehouse.TabIndex = 5;
-            this.ibtWarehouse.Text = "Kho hàng";
-            this.ibtWarehouse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtWarehouse.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtWarehouse.UseVisualStyleBackColor = false;
-            this.ibtWarehouse.Click += new System.EventHandler(this.ibtWarehouse_Click);
-            this.ibtWarehouse.MouseEnter += new System.EventHandler(this.ibtWarehouse_MouseEnter);
-            this.ibtWarehouse.MouseLeave += new System.EventHandler(this.ibtWarehouse_MouseLeave);
-            // 
-            // ibtUser
-            // 
-            this.ibtUser.BackColor = System.Drawing.Color.Transparent;
-            this.ibtUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtUser.FlatAppearance.BorderSize = 0;
-            this.ibtUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtUser.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtUser.ForeColor = System.Drawing.Color.White;
-            this.ibtUser.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.ibtUser.IconColor = System.Drawing.Color.White;
-            this.ibtUser.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtUser.IconSize = 35;
-            this.ibtUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtUser.Location = new System.Drawing.Point(12, 285);
-            this.ibtUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ibtUser.Name = "ibtUser";
-            this.ibtUser.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
-            this.ibtUser.Size = new System.Drawing.Size(264, 62);
-            this.ibtUser.TabIndex = 4;
-            this.ibtUser.Text = "Khách hàng";
-            this.ibtUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtUser.UseVisualStyleBackColor = false;
-            this.ibtUser.Click += new System.EventHandler(this.ibtUser_Click);
-            this.ibtUser.MouseEnter += new System.EventHandler(this.ibtUser_MouseEnter);
-            this.ibtUser.MouseLeave += new System.EventHandler(this.ibtUser_MouseLeave);
-            // 
-            // ibtItem
-            // 
-            this.ibtItem.BackColor = System.Drawing.Color.Transparent;
-            this.ibtItem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ibtItem.FlatAppearance.BorderSize = 0;
-            this.ibtItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibtItem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibtItem.ForeColor = System.Drawing.Color.White;
-            this.ibtItem.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.ibtItem.IconColor = System.Drawing.Color.White;
-            this.ibtItem.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibtItem.IconSize = 35;
-            this.ibtItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtItem.Location = new System.Drawing.Point(12, 223);
-            this.ibtItem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ibtItem.Name = "ibtItem";
-            this.ibtItem.Padding = new System.Windows.Forms.Padding(12, 1, 23, 1);
-            this.ibtItem.Size = new System.Drawing.Size(264, 62);
-            this.ibtItem.TabIndex = 3;
-            this.ibtItem.Text = "Sản phẩm";
-            this.ibtItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibtItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibtItem.UseVisualStyleBackColor = false;
-            this.ibtItem.Click += new System.EventHandler(this.ibtItem_Click);
-            this.ibtItem.MouseEnter += new System.EventHandler(this.ibtItem_MouseEnter);
-            this.ibtItem.MouseLeave += new System.EventHandler(this.ibtItem_MouseLeave);
             // 
             // ibtHome
             // 
@@ -472,19 +355,19 @@ namespace DXApplication1
             this.btnAcount.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.btnAcount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnAcount.Location = new System.Drawing.Point(77, 22);
+            this.btnAcount.Location = new System.Drawing.Point(66, 23);
             this.btnAcount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAcount.Name = "btnAcount";
-            this.btnAcount.Size = new System.Drawing.Size(138, 28);
+            this.btnAcount.Size = new System.Drawing.Size(153, 28);
             this.btnAcount.TabIndex = 26;
             this.btnAcount.Text = "Nguyễn Võ Khánh ▼";
             this.btnAcount.UseVisualStyleBackColor = false;
-            this.btnAcount.Click += new System.EventHandler(this.button1_Click);
+            this.btnAcount.Click += new System.EventHandler(this.buttonAcount_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::DXApplication1.Properties.Resources.userlogo;
-            this.pictureBox2.Location = new System.Drawing.Point(30, 17);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 17);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 39);
@@ -502,12 +385,6 @@ namespace DXApplication1
             this.panelDashbroad.Size = new System.Drawing.Size(1218, 596);
             this.panelDashbroad.TabIndex = 4;
             this.panelDashbroad.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashbroad_Paint);
-            // 
-            // CheckInfoToolStripMenuItem
-            // 
-            this.CheckInfoToolStripMenuItem.Name = "CheckInfoToolStripMenuItem";
-            this.CheckInfoToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.CheckInfoToolStripMenuItem.Text = "a";
             // 
             // XtraForm1
             // 
@@ -552,10 +429,6 @@ namespace DXApplication1
         private FontAwesome.Sharp.IconButton ibtHome;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton ibtReport;
-        private FontAwesome.Sharp.IconButton ibtSell;
-        private FontAwesome.Sharp.IconButton ibtWarehouse;
-        private FontAwesome.Sharp.IconButton ibtUser;
-        private FontAwesome.Sharp.IconButton ibtItem;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
