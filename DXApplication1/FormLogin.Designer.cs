@@ -79,7 +79,7 @@
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.ForeColor = System.Drawing.Color.White;
-            this.btLogin.Location = new System.Drawing.Point(69, 351);
+            this.btLogin.Location = new System.Drawing.Point(69, 321);
             this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(176, 32);
@@ -94,7 +94,7 @@
             this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegister.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegister.ForeColor = System.Drawing.Color.White;
-            this.btRegister.Location = new System.Drawing.Point(267, 351);
+            this.btRegister.Location = new System.Drawing.Point(267, 321);
             this.btRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRegister.Name = "btRegister";
             this.btRegister.Size = new System.Drawing.Size(102, 32);

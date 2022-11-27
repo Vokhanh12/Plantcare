@@ -201,7 +201,7 @@ namespace DXApplication1
             // pn4_Register
             // 
             this.pn4_Register.BackColor = System.Drawing.Color.White;
-            this.pn4_Register.Location = new System.Drawing.Point(69, 351);
+            this.pn4_Register.Location = new System.Drawing.Point(69, 321);
             this.pn4_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn4_Register.Name = "pn4_Register";
             this.pn4_Register.Size = new System.Drawing.Size(300, 1);
@@ -216,7 +216,7 @@ namespace DXApplication1
             this.chlb_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chlb_Register.Name = "chlb_Register";
             this.chlb_Register.Size = new System.Drawing.Size(103, 17);
-            this.chlb_Register.TabIndex = 35;
+            this.chlb_Register.TabIndex = 32;
             this.chlb_Register.Text = "I agree with the";
             this.chlb_Register.UseVisualStyleBackColor = true;
             // 

@@ -28,6 +28,34 @@ namespace DXApplication1
         private System.Windows.Forms.ToolStripMenuItem SignOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem WhatabRongplantToolStripMenuItem;
 
+        private RJDropdownMenu rjDropdownMenu_Work;
+        private System.Windows.Forms.ToolStripMenuItem Item_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem User_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Supplier_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ImportDocuments_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExportDocuments_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CollectDocuments_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SpendDocuments_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Warehouse_ToolStripMenuItem;
+
+
+        private RJDropdownMenu rjDropdownMenu_Report;
+        private System.Windows.Forms.ToolStripMenuItem GeneralView_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PriceList_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OrderDetails_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem StatisticsAll_DocumentsToolStripMenuItem;
+
+        private System.Windows.Forms.ToolStripMenuItem Statistics_Commodity_DocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Statistics_Expense_DocumentsToolStripMenuItem;
+
+        private System.Windows.Forms.ToolStripMenuItem Import_DocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Export_DocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Inventory_DocumentsToolStripMenuItem;
+
+        private System.Windows.Forms.ToolStripMenuItem Spend_DocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Collect_DocumentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Own_DocumentsToolStripMenuItem;
+
 
 
         //Constructor 
@@ -36,7 +64,8 @@ namespace DXApplication1
 
             InitializeComponent();
             //add Compoinent because Error delete code.maybe i shound do this it
-            //Open
+            
+            //Open rjDropdownMenu1
             this.components = new System.ComponentModel.Container();
 
             this.rjDropdownMenu1 = new DXApplication1.RJControls.RJDropdownMenu(this.components);
@@ -84,6 +113,215 @@ namespace DXApplication1
             this.ResumeLayout(false);
             //Close
 
+            //Open rjDropdownMenu_Work
+            this.rjDropdownMenu_Work = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+            this.Item_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.User_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Supplier_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ImportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CollectDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpendDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Warehouse_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+
+
+            this.rjDropdownMenu_Work.SuspendLayout();
+
+            // rjDropdownMenu_Work
+            // 
+            this.rjDropdownMenu_Work.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropdownMenu_Work.IsMainMenu = false;
+            this.rjDropdownMenu_Work.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Item_ToolStripMenuItem,
+            this.User_ToolStripMenuItem,
+            this.ImportDocuments_ToolStripMenuItem,
+            this.ExportDocuments_ToolStripMenuItem,
+            this.Supplier_ToolStripMenuItem,
+            this.Warehouse_ToolStripMenuItem,
+            this.CollectDocuments_ToolStripMenuItem,
+            this.SpendDocuments_ToolStripMenuItem});;
+            this.rjDropdownMenu_Work.MenuItemHeight = 45;
+            this.rjDropdownMenu_Work.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Work.Name = "rjDropdownMenu2";
+            this.rjDropdownMenu_Work.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Work.Size = new System.Drawing.Size(250, 368);
+
+ // 
+            // Item_ToolStripMenuItem
+            // 
+            this.Item_ToolStripMenuItem.Name = "Item_ToolStripMenuItem";
+            this.Item_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.Item_ToolStripMenuItem.Text = "Sản phẩm";
+            
+            // 
+            // User_ToolStripMenuItem
+            // 
+            this.User_ToolStripMenuItem.Name = "User_ToolStripMenuItem";
+            this.User_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.User_ToolStripMenuItem.Text = "Khách hàng";
+    
+            // 
+            // Supplier_ToolStripMenuItem
+            // 
+            this.Supplier_ToolStripMenuItem.Name = "Supplier_ToolStripMenuItem";
+            this.Supplier_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.Supplier_ToolStripMenuItem.Text = "Nhà cung cấp";
+    
+            // 
+            // ImportDocuments_ToolStripMenuItem
+            // 
+            this.ImportDocuments_ToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
+            this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.ImportDocuments_ToolStripMenuItem.Text = "Chứng từ nhập hàng";
+    
+            // 
+            // ExportDocuments_ToolStripMenuItem
+            // 
+            this.ExportDocuments_ToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
+            this.ExportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.ExportDocuments_ToolStripMenuItem.Text = "Chứng từ xuất hàng";
+
+            // 
+            // CollectDocuments_ToolStripMenuItem
+            // 
+            this.CollectDocuments_ToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
+            this.CollectDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.CollectDocuments_ToolStripMenuItem.Text = "Chứng từ thu";
+ 
+            // 
+            // SpendDocuments_ToolStripMenuItem
+            // 
+            this.SpendDocuments_ToolStripMenuItem.Name = "SpendDocuments_ToolStripMenuItem";
+            this.SpendDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.SpendDocuments_ToolStripMenuItem.Text = "Chứng từ chi";
+
+            // 
+            // Warehouse_ToolStripMenuItem
+            // 
+            this.Warehouse_ToolStripMenuItem.Name = "Warehouse_ToolStripMenuItem";
+            this.Warehouse_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.Warehouse_ToolStripMenuItem.Text = "Kho hàng";
+        
+
+            this.rjDropdownMenu_Work.ResumeLayout(false);
+            //Close
+
+
+            //Open rjDropdownMenu_Report
+            this.components = new System.ComponentModel.Container();
+            this.rjDropdownMenu_Report = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+
+            this.GeneralView_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PriceList_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OrderDetails_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            this.StatisticsAll_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            this.Statistics_Commodity_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Statistics_Expense_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            this.ImportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Inventory_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            this.CollectDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpendDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Own_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+            
+
+            this.rjDropdownMenu_Report.SuspendLayout();
+                
+
+            //Setting ItemRjDropdownMenu
+            this.rjDropdownMenu_Report.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropdownMenu_Report.IsMainMenu = false;
+            this.rjDropdownMenu_Report.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.GeneralView_ToolStripMenuItem,
+            this.PriceList_ToolStripMenuItem,
+            this.OrderDetails_ToolStripMenuItem,
+            this.StatisticsAll_DocumentsToolStripMenuItem,
+            });
+
+            this.StatisticsAll_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { 
+                this.Statistics_Commodity_DocumentsToolStripMenuItem,
+                this.Statistics_Expense_DocumentsToolStripMenuItem,
+            });
+
+            this.Statistics_Commodity_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]
+            {
+                this.ImportDocuments_ToolStripMenuItem,
+                this.ExportDocuments_ToolStripMenuItem,
+                this.Inventory_DocumentsToolStripMenuItem,
+            });
+
+            this.Statistics_Expense_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{
+                this.CollectDocuments_ToolStripMenuItem,
+                this.ExportDocuments_ToolStripMenuItem,
+                this.Own_DocumentsToolStripMenuItem,
+            });
+
+
+            this.rjDropdownMenu_Report.MenuItemHeight = 25;
+            this.rjDropdownMenu_Report.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Report.Name = "rjDropdownMenu_Report";
+            this.rjDropdownMenu_Report.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Report.Size = new System.Drawing.Size(250, 368);
+
+            this.GeneralView_ToolStripMenuItem.Name = "GeneralView_ToolStripMenuItem";
+            this.GeneralView_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.GeneralView_ToolStripMenuItem.Text = "Tổng quát";
+
+            this.PriceList_ToolStripMenuItem.Name = "PriceList_ToolStripMenuItem";
+            this.PriceList_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.PriceList_ToolStripMenuItem.Text = "Danh sách giá cả";
+
+            this.OrderDetails_ToolStripMenuItem.Name = "OrderDetails_ToolStripMenuItem";
+            this.OrderDetails_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.OrderDetails_ToolStripMenuItem.Text = "Chi tiết đơn hàng";
+
+            this.StatisticsAll_DocumentsToolStripMenuItem.Name = "StatisticsAll_DocumentsToolStripMenuItem.";
+            this.StatisticsAll_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.StatisticsAll_DocumentsToolStripMenuItem.Text = "Thống kê";
+
+            this.Statistics_Commodity_DocumentsToolStripMenuItem.Name = "Statistics_Commodity_DocumentsToolStripMenuItem";
+            this.Statistics_Commodity_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Statistics_Commodity_DocumentsToolStripMenuItem.Text = "Hàng hóa";
+
+            this.Statistics_Expense_DocumentsToolStripMenuItem.Name = "Statistics_Expense_DocumentsToolStripMenuItem";
+            this.Statistics_Expense_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Statistics_Expense_DocumentsToolStripMenuItem.Text = "Thu nhập";
+
+            this.ImportDocuments_ToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
+            this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.ImportDocuments_ToolStripMenuItem.Text = "Nhập hàng";
+
+            this.ExportDocuments_ToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
+            this.ExportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.ExportDocuments_ToolStripMenuItem.Text = "Xuất hàng";
+
+            this.Inventory_DocumentsToolStripMenuItem.Name = "Inventory_DocumentsToolStripMenuItem";
+            this.Inventory_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Inventory_DocumentsToolStripMenuItem.Text = "Tồn kho";
+
+            this.CollectDocuments_ToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
+            this.CollectDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.CollectDocuments_ToolStripMenuItem.Text = "Thu vào";
+
+            this.SpendDocuments_ToolStripMenuItem.Name = "SpendDocuments_ToolStripMenuItem";
+            this.SpendDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.SpendDocuments_ToolStripMenuItem.Text = "Chi ra";
+
+            this.Own_DocumentsToolStripMenuItem.Name = "Own_DocumentsToolStripMenuItem";
+            this.Own_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Own_DocumentsToolStripMenuItem.Text = "Khoản nợ";
+
+            this.rjDropdownMenu_Report.ResumeLayout(false);
+
+            this.ResumeLayout(false);
+            //close
+
 
             ClinkChangeColor.leftBorderBtn = new Panel();
             ClinkChangeColor.leftBorderBtn.Size = new Size(10,62);
@@ -114,6 +352,10 @@ namespace DXApplication1
         {
             //Loadropdownmenu is true;
             rjDropdownMenu1.IsMainMenu = true;
+
+            rjDropdownMenu_Work.IsMainMenu = true;
+
+            rjDropdownMenu_Report.IsMainMenu = true;
         }
         //the constructors change color and backcolor
         private void ibtHome_Click(object sender, EventArgs e)
@@ -122,44 +364,29 @@ namespace DXApplication1
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
            
         }
+        private void ibt_Work_Click(object sender, EventArgs e)
+        {
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
 
-        private void ibtItem_Click(object sender, EventArgs e)
+            rjDropdownMenu_Work.Show(ibt_Work, ibt_Work.Width , 0);
+        }
+        private void ibt_Follow_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void ibtUser_Click(object sender, EventArgs e)
+        private void ibt_Report_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
+
+            rjDropdownMenu_Report.Show(ibt_Report, ibt_Work.Width, 0);
         }
 
-        private void ibtWarehouse_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-        }
 
-        private void iconGumshoe_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-        }
-
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-        }
-
-        private void ibtGumshoe_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-        }
-
-        private void ibtHelp_Click(object sender, EventArgs e)
+        private void ibt_Help_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
@@ -201,76 +428,47 @@ namespace DXApplication1
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
-
-        private void ibtItem_MouseEnter(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
-
-        }
-
-        private void ibtItem_MouseLeave(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
-        }
-
-        private void ibtUser_MouseEnter(object sender, EventArgs e)
+        private void ibt_Help_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
-        private void ibtUser_MouseLeave(object sender, EventArgs e)
+        private void ibt_Help_MouseLeave(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
-        private void ibtWarehouse_MouseEnter(object sender, EventArgs e)
-        {
-           ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
-        }
 
-        private void ibtWarehouse_MouseLeave(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
-        }
-
-        private void iconGumshoe_MouseEnter(object sender, EventArgs e)
+        private void ibt_Report_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
-        private void iconGumshoe_MouseLeave(object sender, EventArgs e)
+        private void ibt_Report_MouseLeave(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
 
-        private void iconButton6_MouseEnter(object sender, EventArgs e)
+        private void ibt_Follow_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
-        private void iconButton6_MouseLeave(object sender, EventArgs e)
+        private void ibt_Follow_MouseLeave(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
-        private void ibtGumshoe_MouseEnter(object sender, EventArgs e)
+
+        private void ibt_Work_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+
+        private void ibt_Work_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
-        private void ibtGumshoe_MouseLeave(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
-        }
-
-        private void ibtHelp_MouseEnter(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
-        }
-
-        private void ibtHelp_MouseLeave(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
-        }
         //Close
 
         //the use the windows is closed
@@ -289,12 +487,12 @@ namespace DXApplication1
 
         }
 
-        private void rjDropdownMenu2_Opening(object sender, CancelEventArgs e)
+        private void RjDropdownMenu_Work_Opening(object sender, CancelEventArgs e)
         {
 
         }
 
-        private void rjDropdownMenu2_Opening_1(object sender, CancelEventArgs e)
+        private void RjDropdownMenu_Work_Opening_1(object sender, CancelEventArgs e)
         {
 
         }
@@ -303,5 +501,11 @@ namespace DXApplication1
         {
             rjDropdownMenu1.Show(btnAcount, btnAcount.Width - rjDropdownMenu1.Width, btnAcount.Height+3);
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
