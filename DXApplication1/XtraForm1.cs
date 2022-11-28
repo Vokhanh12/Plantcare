@@ -31,6 +31,7 @@ namespace DXApplication1
         private RJDropdownMenu rjDropdownMenu_Work;
         private System.Windows.Forms.ToolStripMenuItem Item_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem User_ToolStripMenuItem;
+
         private System.Windows.Forms.ToolStripMenuItem Supplier_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ImportDocuments_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExportDocuments_ToolStripMenuItem;
@@ -221,12 +222,12 @@ namespace DXApplication1
             this.Statistics_Commodity_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Statistics_Expense_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
-            this.ImportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Import_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Export_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Inventory_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
-            this.CollectDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SpendDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Collect_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Spend_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Own_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
             
@@ -251,14 +252,14 @@ namespace DXApplication1
 
             this.Statistics_Commodity_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]
             {
-                this.ImportDocuments_ToolStripMenuItem,
-                this.ExportDocuments_ToolStripMenuItem,
+                this.Import_DocumentsToolStripMenuItem,
+                this.Export_DocumentsToolStripMenuItem,
                 this.Inventory_DocumentsToolStripMenuItem,
             });
 
             this.Statistics_Expense_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{
-                this.CollectDocuments_ToolStripMenuItem,
-                this.ExportDocuments_ToolStripMenuItem,
+                this.Collect_DocumentsToolStripMenuItem,
+                this.Export_DocumentsToolStripMenuItem,
                 this.Own_DocumentsToolStripMenuItem,
             });
 
@@ -293,25 +294,25 @@ namespace DXApplication1
             this.Statistics_Expense_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.Statistics_Expense_DocumentsToolStripMenuItem.Text = "Thu nhập";
 
-            this.ImportDocuments_ToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
-            this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.ImportDocuments_ToolStripMenuItem.Text = "Nhập hàng";
+            this.Import_DocumentsToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
+            this.Import_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Import_DocumentsToolStripMenuItem.Text = "Nhập hàng";
 
-            this.ExportDocuments_ToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
-            this.ExportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.ExportDocuments_ToolStripMenuItem.Text = "Xuất hàng";
+            this.Export_DocumentsToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
+            this.Export_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Export_DocumentsToolStripMenuItem.Text = "Xuất hàng";
 
             this.Inventory_DocumentsToolStripMenuItem.Name = "Inventory_DocumentsToolStripMenuItem";
             this.Inventory_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.Inventory_DocumentsToolStripMenuItem.Text = "Tồn kho";
 
-            this.CollectDocuments_ToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
-            this.CollectDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.CollectDocuments_ToolStripMenuItem.Text = "Thu vào";
+            this.Collect_DocumentsToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
+            this.Collect_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Collect_DocumentsToolStripMenuItem.Text = "Thu vào";
 
-            this.SpendDocuments_ToolStripMenuItem.Name = "SpendDocuments_ToolStripMenuItem";
-            this.SpendDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
-            this.SpendDocuments_ToolStripMenuItem.Text = "Chi ra";
+            this.Spend_DocumentsToolStripMenuItem.Name = "SpendDocuments_ToolStripMenuItem";
+            this.Spend_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.Spend_DocumentsToolStripMenuItem.Text = "Chi ra";
 
             this.Own_DocumentsToolStripMenuItem.Name = "Own_DocumentsToolStripMenuItem";
             this.Own_DocumentsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
