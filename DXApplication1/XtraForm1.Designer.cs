@@ -30,6 +30,7 @@ namespace DXApplication1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.ibt_Help = new FontAwesome.Sharp.IconButton();
             this.lbVersion = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@ namespace DXApplication1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lbDashbroad = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelMenuMind = new System.Windows.Forms.Panel();
             this.panelMenuLeft = new System.Windows.Forms.Panel();
@@ -52,7 +52,6 @@ namespace DXApplication1
             this.plMenuRight = new System.Windows.Forms.Panel();
             this.btnAcount = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelDashbroad = new System.Windows.Forms.Panel();
             this.Item_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.User_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Supplier_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,16 +60,19 @@ namespace DXApplication1
             this.CollectDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SpendDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Warehouse_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
+            this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panelMenuLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).BeginInit();
             this.plMenuRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -85,11 +87,11 @@ namespace DXApplication1
             this.panelMenu.Controls.Add(this.ibtHome);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 9);
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Padding = new System.Windows.Forms.Padding(12, 0, 23, 0);
-            this.panelMenu.Size = new System.Drawing.Size(299, 719);
+            this.panelMenu.Size = new System.Drawing.Size(299, 737);
             this.panelMenu.TabIndex = 2;
             // 
             // ibt_Help
@@ -123,7 +125,7 @@ namespace DXApplication1
             // 
             this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(215, 703);
+            this.lbVersion.Location = new System.Drawing.Point(215, 712);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(89, 17);
             this.lbVersion.TabIndex = 10;
@@ -273,7 +275,7 @@ namespace DXApplication1
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(299, 9);
+            this.panel2.Location = new System.Drawing.Point(299, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1218, 123);
@@ -282,27 +284,13 @@ namespace DXApplication1
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(63)))));
-            this.panel6.Controls.Add(this.lbDashbroad);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 76);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1218, 47);
             this.panel6.TabIndex = 1;
-            // 
-            // lbDashbroad
-            // 
-            this.lbDashbroad.AutoSize = true;
-            this.lbDashbroad.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lbDashbroad.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDashbroad.ForeColor = System.Drawing.Color.White;
-            this.lbDashbroad.Location = new System.Drawing.Point(0, 12);
-            this.lbDashbroad.Name = "lbDashbroad";
-            this.lbDashbroad.Padding = new System.Windows.Forms.Padding(6, 0, 0, 9);
-            this.lbDashbroad.Size = new System.Drawing.Size(112, 35);
-            this.lbDashbroad.TabIndex = 0;
-            this.lbDashbroad.Text = "Dashbroad";
-            this.lbDashbroad.Click += new System.EventHandler(this.lbDashbroad_Click);
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel5
             // 
@@ -412,17 +400,6 @@ namespace DXApplication1
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
-            // panelDashbroad
-            // 
-            this.panelDashbroad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(67)))));
-            this.panelDashbroad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDashbroad.Location = new System.Drawing.Point(299, 132);
-            this.panelDashbroad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelDashbroad.Name = "panelDashbroad";
-            this.panelDashbroad.Size = new System.Drawing.Size(1218, 596);
-            this.panelDashbroad.TabIndex = 4;
-            this.panelDashbroad.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashbroad_Paint);
-            // 
             // Item_ToolStripMenuItem
             // 
             this.Item_ToolStripMenuItem.Name = "Item_ToolStripMenuItem";
@@ -471,6 +448,13 @@ namespace DXApplication1
             this.Warehouse_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
             this.Warehouse_ToolStripMenuItem.Text = "Kho hàng";
             // 
+            // documentManager1
+            // 
+            this.documentManager1.MdiParent = this;
+            this.documentManager1.View = this.tabbedView1;
+            this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
+            this.tabbedView1});
+            // 
             // XtraForm1
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
@@ -480,15 +464,14 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1517, 737);
-            this.Controls.Add(this.panelDashbroad);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "XtraForm1";
-            this.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XtraForm1";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             this.panelMenu.ResumeLayout(false);
@@ -496,14 +479,14 @@ namespace DXApplication1
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panelMenuLeft.ResumeLayout(false);
             this.panelMenuLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUsername)).EndInit();
             this.plMenuRight.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,8 +501,6 @@ namespace DXApplication1
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panelDashbroad;
-        private System.Windows.Forms.Label lbDashbroad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel plMenuRight;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -533,5 +514,7 @@ namespace DXApplication1
         private FontAwesome.Sharp.IconButton ibt_Report;
         private System.Windows.Forms.Label lbVersion;
         private FontAwesome.Sharp.IconButton ibt_Help;
+        private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
+        private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
     }
 }

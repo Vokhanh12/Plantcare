@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using DXApplication1.RJControls;
 using DXApplication1.ChangeColorButton;
+using DXApplication1.FolderNV;
+using DXApplication1.FolderMajor;
 
 namespace DXApplication1
 {
@@ -32,6 +34,7 @@ namespace DXApplication1
         private System.Windows.Forms.ToolStripMenuItem Item_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem User_ToolStripMenuItem;
 
+        private System.Windows.Forms.ToolStripMenuItem Employee_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Supplier_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ImportDocuments_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ExportDocuments_ToolStripMenuItem;
@@ -101,9 +104,10 @@ namespace DXApplication1
             this.AccoutDetailsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.AccoutDetailsToolStripMenuItem.Text = "Account details";
 
-            this.SignOutToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.SignOutToolStripMenuItem.Name = "SignOutToolStripMenuItem";
             this.SignOutToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.SignOutToolStripMenuItem.Text = "Sign out";
+            this.SignOutToolStripMenuItem.Click += new System.EventHandler(this.SignOutToolStripMenuItem_Click);
 
             this.WhatabRongplantToolStripMenuItem.Name = "aToolStripMenuItem";
             this.WhatabRongplantToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
@@ -116,6 +120,7 @@ namespace DXApplication1
 
             //Open rjDropdownMenu_Work
             this.rjDropdownMenu_Work = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+            this.Employee_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Item_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.User_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Supplier_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,6 +139,7 @@ namespace DXApplication1
             this.rjDropdownMenu_Work.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.rjDropdownMenu_Work.IsMainMenu = false;
             this.rjDropdownMenu_Work.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Employee_ToolStripMenuItem,
             this.Item_ToolStripMenuItem,
             this.User_ToolStripMenuItem,
             this.ImportDocuments_ToolStripMenuItem,
@@ -148,19 +154,29 @@ namespace DXApplication1
             this.rjDropdownMenu_Work.PrimaryColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu_Work.Size = new System.Drawing.Size(250, 368);
 
- // 
+
+            //
+            // Employee_ToolStripMenuItem
+            //
+            this.Employee_ToolStripMenuItem.Name = "Employee_ToolStripMenuItem";
+            this.Employee_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
+            this.Employee_ToolStripMenuItem.Text = "Nhân vien";
+            this.Employee_ToolStripMenuItem.Click += new System.EventHandler(this.Employee_ToolStripMenuItem_Click);
+            // 
             // Item_ToolStripMenuItem
             // 
             this.Item_ToolStripMenuItem.Name = "Item_ToolStripMenuItem";
             this.Item_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.Item_ToolStripMenuItem.Text = "Sản phẩm";
-            
+            this.Item_ToolStripMenuItem.Click += new System.EventHandler(this.Item_ToolStripMenuItem_Click);
+
             // 
             // User_ToolStripMenuItem
             // 
             this.User_ToolStripMenuItem.Name = "User_ToolStripMenuItem";
             this.User_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.User_ToolStripMenuItem.Text = "Khách hàng";
+            this.User_ToolStripMenuItem.Click += new System.EventHandler(this.User_ToolStripMenuItem_Click);
     
             // 
             // Supplier_ToolStripMenuItem
@@ -506,6 +522,39 @@ namespace DXApplication1
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        // Button click DropdownMenu
+        private void Employee_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmNhanVien formNhanVien = new frmNhanVien();
+      
+            formNhanVien.MdiParent = this;
+            formNhanVien.Show();
+        }
+
+        private void User_ToolStripMenuItem_Click(object sender , EventArgs e)
+        {
+            frmCustomer formCustomer = new frmCustomer();
+     
+            formCustomer.MdiParent = this;
+            formCustomer.Show();
+
+        }
+
+        private void Item_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

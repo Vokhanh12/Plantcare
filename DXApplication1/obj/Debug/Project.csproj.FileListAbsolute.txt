@@ -658,3 +658,5 @@ C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\Project
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\Project.csproj.CopyComplete
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.exe
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.pdb
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FolderNV.frmNhanVien.resources
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FolderMajor.frmCustomer.resources
