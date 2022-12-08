@@ -660,3 +660,12 @@ C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXAppli
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.pdb
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FolderNV.frmNhanVien.resources
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FolderMajor.frmCustomer.resources
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DevExpress.Dashboard.v19.2.Win.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DevExpress.XtraCharts.v19.2.UI.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DevExpress.Dashboard.v19.2.Win.xml
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DevExpress.XtraCharts.v19.2.UI.xml
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\de\DevExpress.Dashboard.v19.2.Win.resources.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\es\DevExpress.Dashboard.v19.2.Win.resources.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\ja\DevExpress.Dashboard.v19.2.Win.resources.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\ru\DevExpress.Dashboard.v19.2.Win.resources.dll
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\MaterialSkin.dll
