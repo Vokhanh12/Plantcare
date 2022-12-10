@@ -671,3 +671,4 @@ C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\ru\DevE
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\MaterialSkin.dll
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\Dapper.dll
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\Dapper.xml
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FolderMajor.New_FormSave.resources

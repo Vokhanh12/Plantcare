@@ -122,7 +122,13 @@
     <Compile Include="FolderMajor\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="NhanvienDTO.cs" />
+    <Compile Include="FolderMajor\New_FormSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderMajor\New_FormSave.Designer.cs">
+      <DependentUpon>New_FormSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderMajor\NhanvienDTO.cs" />
     <Compile Include="RJControls\CallRJDropmenu.cs" />
     <Compile Include="RJControls\MenuColorTable.cs" />
     <Compile Include="RJControls\MenuRenderer.cs" />
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FolderMajor\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderMajor\New_FormSave.resx">
+      <DependentUpon>New_FormSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
