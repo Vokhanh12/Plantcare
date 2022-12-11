@@ -58,7 +58,7 @@ namespace DXApplication1.FolderNV
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -66,6 +66,7 @@ namespace DXApplication1.FolderNV
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.SuspendLayout();
             // 
             // sqlDataSource1
@@ -170,7 +171,6 @@ namespace DXApplication1.FolderNV
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.iconButton3);
             this.panel4.Controls.Add(this.iconButton2);
@@ -366,15 +366,9 @@ namespace DXApplication1.FolderNV
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button1
+            // dateTimeChartRangeControlClient1
             // 
-            this.button1.Location = new System.Drawing.Point(509, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dateTimeChartRangeControlClient1.CustomizeSeries += new System.EventHandler<DevExpress.XtraEditors.ClientDataSourceProviderCustomizeSeriesEventArgs>(this.dateTimeChartRangeControlClient1_CustomizeSeries);
             // 
             // frmNhanVien
             // 
@@ -394,6 +388,7 @@ namespace DXApplication1.FolderNV
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -428,6 +423,6 @@ namespace DXApplication1.FolderNV
         private FontAwesome.Sharp.IconButton iconButton4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.DateTimeChartRangeControlClient dateTimeChartRangeControlClient1;
     }
 }

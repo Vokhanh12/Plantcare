@@ -47,14 +47,16 @@ namespace DXApplication1.FolderMajor
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txt_DIACHI = new System.Windows.Forms.TextBox();
+            this.txt_SOTHICH = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.TXT_SDT = new System.Windows.Forms.TextBox();
+            this.txt_SDT = new System.Windows.Forms.TextBox();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.dateEdit_NGAYSINH = new DevExpress.XtraEditors.DateEdit();
-            this.button1 = new System.Windows.Forms.Button();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.txt_DIACHI = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NGAYSINH.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NGAYSINH.Properties)).BeginInit();
@@ -157,7 +159,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(16, 272);
+            this.iconButton3.Location = new System.Drawing.Point(16, 248);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton3.Size = new System.Drawing.Size(48, 39);
@@ -171,7 +173,7 @@ namespace DXApplication1.FolderMajor
             this.txt_LUONG.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_LUONG.ForeColor = System.Drawing.Color.White;
             this.txt_LUONG.HideSelection = false;
-            this.txt_LUONG.Location = new System.Drawing.Point(64, 288);
+            this.txt_LUONG.Location = new System.Drawing.Point(64, 264);
             this.txt_LUONG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_LUONG.Name = "txt_LUONG";
             this.txt_LUONG.Size = new System.Drawing.Size(197, 21);
@@ -182,7 +184,7 @@ namespace DXApplication1.FolderMajor
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(16, 316);
+            this.panel3.Location = new System.Drawing.Point(16, 292);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(245, 1);
@@ -197,7 +199,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton4.IconColor = System.Drawing.Color.White;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(276, 272);
+            this.iconButton4.Location = new System.Drawing.Point(276, 248);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton4.Size = new System.Drawing.Size(48, 39);
@@ -211,7 +213,7 @@ namespace DXApplication1.FolderMajor
             this.txt_THUONG.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_THUONG.ForeColor = System.Drawing.Color.White;
             this.txt_THUONG.HideSelection = false;
-            this.txt_THUONG.Location = new System.Drawing.Point(324, 288);
+            this.txt_THUONG.Location = new System.Drawing.Point(324, 264);
             this.txt_THUONG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_THUONG.Name = "txt_THUONG";
             this.txt_THUONG.Size = new System.Drawing.Size(197, 21);
@@ -222,7 +224,7 @@ namespace DXApplication1.FolderMajor
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(276, 316);
+            this.panel4.Location = new System.Drawing.Point(276, 292);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(245, 1);
@@ -237,7 +239,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(16, 371);
+            this.iconButton5.Location = new System.Drawing.Point(16, 346);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton5.Size = new System.Drawing.Size(48, 39);
@@ -251,7 +253,7 @@ namespace DXApplication1.FolderMajor
             this.txt_GIOITINH.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GIOITINH.ForeColor = System.Drawing.Color.White;
             this.txt_GIOITINH.HideSelection = false;
-            this.txt_GIOITINH.Location = new System.Drawing.Point(64, 387);
+            this.txt_GIOITINH.Location = new System.Drawing.Point(64, 362);
             this.txt_GIOITINH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_GIOITINH.Name = "txt_GIOITINH";
             this.txt_GIOITINH.Size = new System.Drawing.Size(197, 21);
@@ -262,7 +264,7 @@ namespace DXApplication1.FolderMajor
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(16, 415);
+            this.panel5.Location = new System.Drawing.Point(16, 390);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(245, 1);
@@ -277,7 +279,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(276, 373);
+            this.iconButton6.Location = new System.Drawing.Point(276, 348);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton6.Size = new System.Drawing.Size(48, 39);
@@ -287,31 +289,31 @@ namespace DXApplication1.FolderMajor
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(276, 417);
+            this.panel6.Location = new System.Drawing.Point(276, 392);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(245, 1);
             this.panel6.TabIndex = 41;
             // 
-            // txt_DIACHI
+            // txt_SOTHICH
             // 
-            this.txt_DIACHI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
-            this.txt_DIACHI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_DIACHI.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DIACHI.ForeColor = System.Drawing.Color.White;
-            this.txt_DIACHI.HideSelection = false;
-            this.txt_DIACHI.Location = new System.Drawing.Point(324, 492);
-            this.txt_DIACHI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_DIACHI.Name = "txt_DIACHI";
-            this.txt_DIACHI.Size = new System.Drawing.Size(197, 21);
-            this.txt_DIACHI.TabIndex = 48;
-            this.txt_DIACHI.TabStop = false;
-            this.txt_DIACHI.Text = "ĐỊA CHỈ";
+            this.txt_SOTHICH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.txt_SOTHICH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_SOTHICH.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SOTHICH.ForeColor = System.Drawing.Color.White;
+            this.txt_SOTHICH.HideSelection = false;
+            this.txt_SOTHICH.Location = new System.Drawing.Point(326, 456);
+            this.txt_SOTHICH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_SOTHICH.Name = "txt_SOTHICH";
+            this.txt_SOTHICH.Size = new System.Drawing.Size(197, 21);
+            this.txt_SOTHICH.TabIndex = 48;
+            this.txt_SOTHICH.TabStop = false;
+            this.txt_SOTHICH.Text = "SỞ THÍCH";
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(276, 520);
+            this.panel8.Location = new System.Drawing.Point(278, 484);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(245, 1);
@@ -320,26 +322,26 @@ namespace DXApplication1.FolderMajor
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(16, 520);
+            this.panel7.Location = new System.Drawing.Point(18, 484);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(245, 1);
             this.panel7.TabIndex = 44;
             // 
-            // TXT_SDT
+            // txt_SDT
             // 
-            this.TXT_SDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
-            this.TXT_SDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TXT_SDT.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXT_SDT.ForeColor = System.Drawing.Color.White;
-            this.TXT_SDT.HideSelection = false;
-            this.TXT_SDT.Location = new System.Drawing.Point(64, 492);
-            this.TXT_SDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.TXT_SDT.Name = "TXT_SDT";
-            this.TXT_SDT.Size = new System.Drawing.Size(197, 21);
-            this.TXT_SDT.TabIndex = 45;
-            this.TXT_SDT.TabStop = false;
-            this.TXT_SDT.Text = "SDT";
+            this.txt_SDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.txt_SDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_SDT.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SDT.ForeColor = System.Drawing.Color.White;
+            this.txt_SDT.HideSelection = false;
+            this.txt_SDT.Location = new System.Drawing.Point(66, 456);
+            this.txt_SDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_SDT.Name = "txt_SDT";
+            this.txt_SDT.Size = new System.Drawing.Size(197, 21);
+            this.txt_SDT.TabIndex = 45;
+            this.txt_SDT.TabStop = false;
+            this.txt_SDT.Text = "SDT";
             // 
             // iconButton7
             // 
@@ -350,7 +352,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton7.IconColor = System.Drawing.Color.White;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.Location = new System.Drawing.Point(16, 476);
+            this.iconButton7.Location = new System.Drawing.Point(18, 440);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton7.Size = new System.Drawing.Size(48, 39);
@@ -366,7 +368,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton8.IconColor = System.Drawing.Color.White;
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.Location = new System.Drawing.Point(276, 476);
+            this.iconButton8.Location = new System.Drawing.Point(278, 440);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton8.Size = new System.Drawing.Size(48, 39);
@@ -376,8 +378,8 @@ namespace DXApplication1.FolderMajor
             // dateEdit_NGAYSINH
             // 
             this.dateEdit_NGAYSINH.EditValue = null;
-            this.dateEdit_NGAYSINH.Location = new System.Drawing.Point(324, 389);
-            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateEdit_NGAYSINH.Location = new System.Drawing.Point(324, 364);
+            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4);
             this.dateEdit_NGAYSINH.Name = "dateEdit_NGAYSINH";
             this.dateEdit_NGAYSINH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -386,15 +388,45 @@ namespace DXApplication1.FolderMajor
             this.dateEdit_NGAYSINH.Size = new System.Drawing.Size(197, 22);
             this.dateEdit_NGAYSINH.TabIndex = 50;
             // 
-            // button1
+            // iconButton9
             // 
-            this.button1.Location = new System.Drawing.Point(231, 233);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.iconButton9.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton9.IconColor = System.Drawing.Color.White;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.Location = new System.Drawing.Point(139, 510);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.iconButton9.Size = new System.Drawing.Size(48, 39);
+            this.iconButton9.TabIndex = 53;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            // 
+            // txt_DIACHI
+            // 
+            this.txt_DIACHI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.txt_DIACHI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_DIACHI.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DIACHI.ForeColor = System.Drawing.Color.White;
+            this.txt_DIACHI.HideSelection = false;
+            this.txt_DIACHI.Location = new System.Drawing.Point(187, 526);
+            this.txt_DIACHI.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_DIACHI.Name = "txt_DIACHI";
+            this.txt_DIACHI.Size = new System.Drawing.Size(197, 21);
+            this.txt_DIACHI.TabIndex = 52;
+            this.txt_DIACHI.TabStop = false;
+            this.txt_DIACHI.Text = "ĐỊA CHỈ";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Location = new System.Drawing.Point(139, 554);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(245, 1);
+            this.panel9.TabIndex = 51;
             // 
             // New_FormSave
             // 
@@ -405,13 +437,15 @@ namespace DXApplication1.FolderMajor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 579);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.iconButton9);
+            this.Controls.Add(this.txt_DIACHI);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.dateEdit_NGAYSINH);
             this.Controls.Add(this.iconButton8);
-            this.Controls.Add(this.txt_DIACHI);
+            this.Controls.Add(this.txt_SOTHICH);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.iconButton7);
-            this.Controls.Add(this.TXT_SDT);
+            this.Controls.Add(this.txt_SDT);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.iconButton6);
             this.Controls.Add(this.panel6);
@@ -461,13 +495,15 @@ namespace DXApplication1.FolderMajor
         private System.Windows.Forms.Panel panel5;
         private FontAwesome.Sharp.IconButton iconButton6;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txt_DIACHI;
+        private System.Windows.Forms.TextBox txt_SOTHICH;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox TXT_SDT;
+        private System.Windows.Forms.TextBox txt_SDT;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton8;
         private DevExpress.XtraEditors.DateEdit dateEdit_NGAYSINH;
-        private System.Windows.Forms.Button button1;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private System.Windows.Forms.TextBox txt_DIACHI;
+        private System.Windows.Forms.Panel panel9;
     }
 }

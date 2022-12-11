@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dapper;
 using DXApplication1.FolderMajor;
+using MaterialSkin.Controls;
 
 namespace DXApplication1.FolderNV
 {
@@ -20,9 +21,13 @@ namespace DXApplication1.FolderNV
     {
         MaterialSkinManager skinManager;
         fsEdit Edit = new fsEdit();
+
+        public MaterialListView mLV;
+
+        public static frmNhanVien instance;
         
 
-      
+
         public virtual void OpenSql()
         {
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
@@ -37,10 +42,10 @@ namespace DXApplication1.FolderNV
 
                     ListViewItem item = new ListViewItem(p.MANV.ToString());
                     item.SubItems.Add(p.TENNV);
-                    item.SubItems.Add(p.MONEY.ToString());
+                    item.SubItems.Add(p.LUONG.ToString());
                     item.SubItems.Add(p.THUONG.ToString());
                     item.SubItems.Add(p.GIOITINH.ToString());
-                    item.SubItems.Add(p.NGAYSINH);
+                    item.SubItems.Add(p.NGAYSINH.ToString());
                     item.SubItems.Add(p.SDT_EMPLOYEE);
                     item.SubItems.Add(p.SOTHICH);
                     item.SubItems.Add(p.DIACHI);
@@ -64,20 +69,43 @@ namespace DXApplication1.FolderNV
 
         }
 
-        public void RemoveEmplyeeSql()
+        public void RemoveEmployeeSql()
         {
-            var MANV = Edit.deleteCharacter(materialListView1.SelectedItems[0].ToString());
+          
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
-                var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV='{MANV.Replace(" ","")}'",commandType: CommandType.Text);
+                var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV=''",commandType: CommandType.Text);
                 materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
                 MessageBox.Show($"Xoa thanh cong");
             }
          
           
+        }
+        public void editEmployee()
+        {
+            var MANV = New_FormSave.instance.txt0.Text;
+
+            var TENNV = New_FormSave.instance.txt1.Text;
+            var LUONG = Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫","")).Replace(".","")).Replace(",",""));
+            var THUONG = Convert.ToDecimal((New_FormSave.instance.txt3.Text).Replace(" %",""))/100;      
+            var GIOITINH = New_FormSave.instance.txt4.Text;
+            var NGAYSINH = New_FormSave.instance.dtNgaysinh.Text;
+            var SDT = New_FormSave.instance.txt6.Text;
+            var SOTHICH = New_FormSave.instance.txt7.Text;
+            var DIACHI =New_FormSave.instance.txt8.Text;
+
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                // var Count = db.ExecuteAsync($"UPDATE NHANVIEN SET MANV = '{MANV}',TENNV='{TENNV}',LUONG={LUONG},THUONG={THUONG},GIOITINH='{GIOITINH}',NGAYSINH='{NGAYSINH}',SDT_EMPLOYEE='{SDT}',SOTHICH='{SOTHICH}',DIACHI='{DIACHI}' WHERE MANV='{MANV}'");
+                var Count = db.ExecuteAsync($"UPDATE NHANVIEN SET MANV = '{MANV}',TENNV='{TENNV}',LUONG={LUONG},THUONG={THUONG},GIOITINH='{GIOITINH}',NGAYSINH='{NGAYSINH}',SDT_EMPLOYEE='{SDT}',SOTHICH='{SOTHICH}',DIACHI='{DIACHI}' WHERE MANV='{MANV}'");
+                MessageBox.Show($"Edit succes {Count} rows.");
+            }
         }
 
       
@@ -97,12 +125,15 @@ namespace DXApplication1.FolderNV
         public frmNhanVien()
         {
             InitializeComponent();
+
+            instance = this;
+
             //Design MarterialListview
             skinManager = MaterialSkinManager.Instance;
             skinManager.AddFormToManage(this);
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             skinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.Blue900, Primary.Blue900, Accent.Blue200, TextShade.BLACK);
-           
+
 
             materialListView1.Columns[0].Width = 140;
             materialListView1.Columns[1].Width = 140;
@@ -114,19 +145,15 @@ namespace DXApplication1.FolderNV
             materialListView1.Columns[7].Width = 120;
             materialListView1.Columns[8].Width = 150;
 
+            mLV = materialListView1;
+
             OpenSql();
 
-            
-            
-        }
-        public frmNhanVien(New_FormSave frm)
-        {
-            InitializeComponent();
-            frmSave = frm;
+
 
         }
 
-        New_FormSave frmSave = new New_FormSave();
+       
 
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
@@ -136,7 +163,7 @@ namespace DXApplication1.FolderNV
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-            RemoveEmplyeeSql();
+            editEmployee();
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -148,6 +175,8 @@ namespace DXApplication1.FolderNV
         {
             New_FormSave frmSave = new New_FormSave();
             frmSave.Show();
+            
+            
             
 
             
@@ -163,12 +192,17 @@ namespace DXApplication1.FolderNV
 
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void dateTimeChartRangeControlClient1_CustomizeSeries(object sender, ClientDataSourceProviderCustomizeSeriesEventArgs e)
+        {
+
         }
     }
 }

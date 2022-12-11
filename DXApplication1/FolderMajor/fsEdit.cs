@@ -12,8 +12,8 @@ namespace DXApplication1.FolderMajor
         {
             //ListViewItem:{need}
 
-            string ItemLength = delete.Substring(13);
-            string character = "ABCDFGHJKLQWERTYUIOPZXCVBNM0123456789 ";
+            string ItemLength = delete.Substring(17);
+            string character = "AB CDFGHJKLQWERTYUIOPZXCVBNM0123456789";
 
 
             string ItemChanged = "";
