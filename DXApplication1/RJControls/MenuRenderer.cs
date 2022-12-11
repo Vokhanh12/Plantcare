@@ -47,7 +47,7 @@ namespace DXApplication1.RJControls
         {
             //Fields
             var graph = e.Graphics;
-            var arrowSize = new Size(5, 12);
+            var arrowSize = new Size(6, 12);
             var arrowColor = e.Item.Selected ? Color.White : primaryColor;
             var rect = new Rectangle(e.ArrowRectangle.Location.X, (e.ArrowRectangle.Height - arrowSize.Height) / 2,
                 arrowSize.Width, arrowSize.Height);

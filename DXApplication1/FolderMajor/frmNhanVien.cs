@@ -12,36 +12,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dapper;
+using DXApplication1.FolderMajor;
 
 namespace DXApplication1.FolderNV
 {
     public partial class frmNhanVien : MaterialSkin.Controls.MaterialForm
     {
         MaterialSkinManager skinManager;
-        public string deleteCharacter(string delete)
-        {
-            //ListViewItem:{need}
-            
-            string ItemLength = delete.Substring(13);
-            string character = "ABCDFGHJKLQWERTYUIOPZXCVBNM0123456789 ";
+        fsEdit Edit = new fsEdit();
+        
 
-
-            string ItemChanged = "";
-            for(int i = 0; i < ItemLength.Length; i++)
-            {
-                for(int j = 0; j < character.Length; j++)
-                {
-                    if(character[j] == ItemLength[i])
-                    {
-                        ItemChanged += character[j];
-                        break;
-                    }
-                }
-            }
-            return ItemChanged;
-          
-        }
-        public void OpenSql()
+      
+        public virtual void OpenSql()
         {
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
@@ -84,7 +66,7 @@ namespace DXApplication1.FolderNV
 
         public void RemoveEmplyeeSql()
         {
-            var MANV = deleteCharacter(materialListView1.SelectedItems[0].ToString());
+            var MANV = Edit.deleteCharacter(materialListView1.SelectedItems[0].ToString());
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
                 if (db.State == ConnectionState.Closed)
@@ -132,11 +114,20 @@ namespace DXApplication1.FolderNV
             materialListView1.Columns[7].Width = 120;
             materialListView1.Columns[8].Width = 150;
 
-     
-
             OpenSql();
+
+            
             
         }
+        public frmNhanVien(New_FormSave frm)
+        {
+            InitializeComponent();
+            frmSave = frm;
+
+        }
+
+        New_FormSave frmSave = new New_FormSave();
+
         private void materialRaisedButton1_Click_1(object sender, EventArgs e)
         {
 
@@ -155,18 +146,28 @@ namespace DXApplication1.FolderNV
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (materialListView1.Items.Count > 0)
-                {
-                    materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
-                }
-                else MessageBox.Show("The Items haven't been activited in the table ");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Phease choose click in the table");
-            }
+            New_FormSave frmSave = new New_FormSave();
+            frmSave.Show();
+            
+
+            
+            
+
+
+
+
+
+
+
+        }
+
+        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
            
         }
     }

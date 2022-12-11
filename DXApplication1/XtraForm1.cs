@@ -160,7 +160,7 @@ namespace DXApplication1
             //
             this.Employee_ToolStripMenuItem.Name = "Employee_ToolStripMenuItem";
             this.Employee_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
-            this.Employee_ToolStripMenuItem.Text = "Nhân vien";
+            this.Employee_ToolStripMenuItem.Text = "Nhân viên";
             this.Employee_ToolStripMenuItem.Click += new System.EventHandler(this.Employee_ToolStripMenuItem_Click);
             // 
             // Item_ToolStripMenuItem
