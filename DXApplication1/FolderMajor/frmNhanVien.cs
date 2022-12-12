@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using Dapper;
 using DXApplication1.FolderMajor;
 using MaterialSkin.Controls;
+using System.Globalization;
 
 namespace DXApplication1.FolderNV
 {
@@ -24,9 +25,11 @@ namespace DXApplication1.FolderNV
 
         public MaterialListView mLV;
 
-        public static frmNhanVien instance;
-        
+        public string casechange;
 
+        public static frmNhanVien instance;
+
+       
 
         public virtual void OpenSql()
         {
@@ -58,53 +61,98 @@ namespace DXApplication1.FolderNV
 
         public void AddEmployeSql()
         {
-            using(IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
-            {
-                if (db.State == ConnectionState.Closed)
-                    db.Open();
+            int count = 0;
 
-                var Count = db.ExecuteAsync("Insert into NHANVIEN(MANV,TENNV,LUONG,THUONG,GIOITINH,NGAYSINH,SDT_EMPLOYEE,SOTHICH,DIACHI) values ('NV22','TRAN VAN SANG',7200000,0.03,'NAM','5/31/1998','01246469289','NGHE NHAC','TIEN GIANG');",commandType:CommandType.Text);
-                MessageBox.Show($"Them thanh cong {Count} rows.");
+            try
+            {
+                var MANV = New_FormSave.instance.txt0.Text;
+                var TENNV = New_FormSave.instance.txt1.Text;
+                var LUONG = (Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫", "")).Replace(".", "")).Replace(",", ""))).ToString();
+                var THUONG = (Convert.ToDecimal((New_FormSave.instance.txt3.Text).Replace(" %", "")) / 100).ToString();
+                var GIOITINH = New_FormSave.instance.txt4.Text;
+                var NGAYSINH = New_FormSave.instance.dtNgaysinh.Text;
+                var SDT = New_FormSave.instance.txt6.Text;
+                var SOTHICH = New_FormSave.instance.txt7.Text;
+                var DIACHI = New_FormSave.instance.txt8.Text;
+                using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+                {
+                    if (db.State == ConnectionState.Closed)
+                        db.Open();
+
+                    
+
+                  /*  if (count == materialListView1.Items.Count)
+                    {
+                        db.ExecuteAsync($"Insert into NHANVIEN(MANV,TENNV,LUONG,THUONG,GIOITINH,NGAYSINH,SDT_EMPLOYEE,SOTHICH,DIACHI) values ('{MANV}','{TENNV}',{LUONG},{THUONG},'{GIOITINH}','{NGAYSINH}','{SDT}','{SOTHICH}','{DIACHI}');", commandType: CommandType.Text);
+                        MessageBox.Show($"Add success{MANV.Replace(" ","")}A");
+                    }
+                  */
+
+
+
+                    // MessageBox.Show($"add success");
+                }
+
+                /*for (var i = 0; i <= materialListView1.Items.Count - 1; i++)
+                {
+
+                    if (MANV == materialListView1.Items[i].SubItems[0].Text)
+                    {
+                        MessageBox.Show($"Da co {materialListView1.Items[i].SubItems[0].Text} vui long nhap 'MANV' khac");
+                        break;
+                    }
+                    else count++;
+
+                }
+                */
+
+
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Erro:{ex} ");
+            }
+
 
         }
 
         public void RemoveEmployeeSql()
         {
-          
-            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
-            {
-                if (db.State == ConnectionState.Closed)
-                    db.Open();
+             var MANV = materialListView1.SelectedItems[0].SubItems[0].Text;
 
-                var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV=''",commandType: CommandType.Text);
-                materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
-                MessageBox.Show($"Xoa thanh cong");
-            }
+             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+             {
+                 if (db.State == ConnectionState.Closed)
+                     db.Open();
+
+                 var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV='{MANV}'",commandType: CommandType.Text);
+                 materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
+                 MessageBox.Show($"Xoa thanh cong");
+             }
+
          
           
         }
         public void editEmployee()
         {
+            
             var MANV = New_FormSave.instance.txt0.Text;
-
             var TENNV = New_FormSave.instance.txt1.Text;
-            var LUONG = Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫","")).Replace(".","")).Replace(",",""));
-            var THUONG = Convert.ToDecimal((New_FormSave.instance.txt3.Text).Replace(" %",""))/100;      
+            var LUONG = (Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫", "")).Replace(".", "")).Replace(",", ""))/100).ToString();
+            var THUONG = (Convert.ToDecimal((New_FormSave.instance.txt3.Text).Replace(" %", "")) / 100).ToString();
             var GIOITINH = New_FormSave.instance.txt4.Text;
             var NGAYSINH = New_FormSave.instance.dtNgaysinh.Text;
             var SDT = New_FormSave.instance.txt6.Text;
             var SOTHICH = New_FormSave.instance.txt7.Text;
-            var DIACHI =New_FormSave.instance.txt8.Text;
+            var DIACHI = New_FormSave.instance.txt8.Text;
 
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
-                // var Count = db.ExecuteAsync($"UPDATE NHANVIEN SET MANV = '{MANV}',TENNV='{TENNV}',LUONG={LUONG},THUONG={THUONG},GIOITINH='{GIOITINH}',NGAYSINH='{NGAYSINH}',SDT_EMPLOYEE='{SDT}',SOTHICH='{SOTHICH}',DIACHI='{DIACHI}' WHERE MANV='{MANV}'");
                 var Count = db.ExecuteAsync($"UPDATE NHANVIEN SET MANV = '{MANV}',TENNV='{TENNV}',LUONG={LUONG},THUONG={THUONG},GIOITINH='{GIOITINH}',NGAYSINH='{NGAYSINH}',SDT_EMPLOYEE='{SDT}',SOTHICH='{SOTHICH}',DIACHI='{DIACHI}' WHERE MANV='{MANV}'");
-                MessageBox.Show($"Edit succes {Count} rows.");
+                MessageBox.Show($"Edit succes");
             }
         }
 
@@ -163,7 +211,17 @@ namespace DXApplication1.FolderNV
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-            editEmployee();
+            switch (casechange)
+            {
+                case "Edit": editEmployee();
+                    break;
+                case "Add": AddEmployeSql();
+                    break;
+
+                default:
+                    MessageBox.Show("Erro");
+                    break;
+            }
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -173,20 +231,16 @@ namespace DXApplication1.FolderNV
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
+            string specifier;
+            CultureInfo culture;
             New_FormSave frmSave = new New_FormSave();
+            casechange = "Add";
+
+            var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+
             frmSave.Show();
-            
-            
-            
 
-            
-            
-
-
-
-
-
-
+          
 
         }
 
@@ -203,6 +257,61 @@ namespace DXApplication1.FolderNV
         private void dateTimeChartRangeControlClient1_CustomizeSeries(object sender, ClientDataSourceProviderCustomizeSeriesEventArgs e)
         {
 
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            New_FormSave frmSave = new New_FormSave();
+            frmSave.Show();
+            casechange = "Edit";
+             string specifier;
+           CultureInfo culture;
+
+           var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+           try{
+                New_FormSave.instance.txt0.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
+                New_FormSave.instance.txt1.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
+
+                //Lương
+                New_FormSave.instance.txt2.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
+
+               //Thưởng = %
+               specifier = "P";
+               culture = CultureInfo.InvariantCulture;
+                New_FormSave.instance.txt3.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
+                // Displays:    #.00 %
+
+                New_FormSave.instance.txt4.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ", ""));
+                New_FormSave.instance.dtNgaysinh.DateTime = Convert.ToDateTime(((((frmNhanVien.instance.mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{", "")).Replace("}", "")));
+
+                //txt5.Text = Edit.deleteCharacter(frmNhanVien.instance.materialListView1.SelectedItems[0].SubItems[5].ToString());
+                New_FormSave.instance.txt6.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[6].ToString());
+                New_FormSave.instance.txt7.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
+                New_FormSave.instance.txt8.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
+
+           }
+           catch(Exception ex)
+           {
+               MessageBox.Show("Nhap click vao ban de chinh sua");
+               this.Close();
+           }
+          
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            RemoveEmployeeSql();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            OpenSql();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("" + materialListView1.Items.Count);
         }
     }
 }

@@ -20,6 +20,7 @@ namespace DXApplication1.FolderMajor
         public TextBox txt0, txt1, txt2, txt3, txt4, txt5, txt6,txt7,txt8;
         public  DateEdit dtNgaysinh;
         public static New_FormSave instance;
+        public int caseChange;
         public New_FormSave()
         {
             
@@ -43,33 +44,41 @@ namespace DXApplication1.FolderMajor
 
         private void New_FormSave_Load(object sender, EventArgs e)
         {
-            string specifier;
-            CultureInfo culture;
-            
-            var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+            /* string specifier;
+             CultureInfo culture;
 
-            txt_MANV.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ",""));
-            txt_TENNV.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
+             var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+             try{
+                 txt_MANV.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
+                 txt_TENNV.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
 
-            //Lương
-            txt_LUONG.Text =String.Format(info, "{0:c}",Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString()))/10000);
-            
-            //Thưởng = %
-            specifier = "P";
-            culture = CultureInfo.InvariantCulture;
-            txt_THUONG.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString()))/100).ToString(specifier, culture);
-            // Displays:    #.00 %
+                 //Lương
+                 txt_LUONG.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
 
-            txt_GIOITINH.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ",""));
-            dateEdit_NGAYSINH.DateTime = Convert.ToDateTime(((((frmNhanVien.instance.mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{","")).Replace("}","")));
+                 //Thưởng = %
+                 specifier = "P";
+                 culture = CultureInfo.InvariantCulture;
+                 txt_THUONG.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
+                 // Displays:    #.00 %
 
-            //txt5.Text = Edit.deleteCharacter(frmNhanVien.instance.materialListView1.SelectedItems[0].SubItems[5].ToString());
-            txt_SDT.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[6].ToString());
-            txt_SOTHICH.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
-            txt_DIACHI.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
+                 txt_GIOITINH.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ", ""));
+                 dateEdit_NGAYSINH.DateTime = Convert.ToDateTime(((((frmNhanVien.instance.mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{", "")).Replace("}", "")));
+
+                 //txt5.Text = Edit.deleteCharacter(frmNhanVien.instance.materialListView1.SelectedItems[0].SubItems[5].ToString());
+                 txt_SDT.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[6].ToString());
+                 txt_SOTHICH.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
+                 txt_DIACHI.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
+
+             }
+             catch(Exception ex)
+             {
+                 MessageBox.Show("Nhap click vao ban de chinh sua");
+                 this.Close();
+             }
+            */
 
 
-            
+
 
 
         }

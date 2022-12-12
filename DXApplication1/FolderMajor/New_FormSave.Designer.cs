@@ -64,9 +64,11 @@ namespace DXApplication1.FolderMajor
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::DXApplication1.Properties.Resources.userlogo_before;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 211);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,7 +158,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.Location = new System.Drawing.Point(16, 248);
@@ -196,7 +198,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton4.FlatAppearance.BorderSize = 0;
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.MoneyCheckDollar;
             this.iconButton4.IconColor = System.Drawing.Color.White;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.Location = new System.Drawing.Point(276, 248);
@@ -236,7 +238,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PeopleCarry;
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.Location = new System.Drawing.Point(16, 346);
@@ -276,7 +278,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton6.FlatAppearance.BorderSize = 0;
             this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Neos;
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.Location = new System.Drawing.Point(276, 348);
@@ -349,7 +351,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton7.FlatAppearance.BorderSize = 0;
             this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Phone;
             this.iconButton7.IconColor = System.Drawing.Color.White;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.Location = new System.Drawing.Point(18, 440);
@@ -365,7 +367,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton8.FlatAppearance.BorderSize = 0;
             this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Kiss;
             this.iconButton8.IconColor = System.Drawing.Color.White;
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.Location = new System.Drawing.Point(278, 440);
@@ -394,7 +396,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton9.FlatAppearance.BorderSize = 0;
             this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.User;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.HouseChimney;
             this.iconButton9.IconColor = System.Drawing.Color.White;
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.Location = new System.Drawing.Point(139, 510);

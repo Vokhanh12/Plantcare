@@ -252,6 +252,7 @@ namespace DXApplication1.FolderNV
             this.iconButton3.Size = new System.Drawing.Size(48, 39);
             this.iconButton3.TabIndex = 9;
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // iconButton2
             // 
@@ -268,6 +269,7 @@ namespace DXApplication1.FolderNV
             this.iconButton2.Size = new System.Drawing.Size(48, 39);
             this.iconButton2.TabIndex = 8;
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton5
             // 
@@ -284,6 +286,7 @@ namespace DXApplication1.FolderNV
             this.iconButton5.Size = new System.Drawing.Size(48, 39);
             this.iconButton5.TabIndex = 7;
             this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // materialLabel1
             // 
@@ -313,6 +316,7 @@ namespace DXApplication1.FolderNV
             this.iconButton1.Size = new System.Drawing.Size(48, 39);
             this.iconButton1.TabIndex = 2;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // materialRaisedButton2
             // 
