@@ -110,31 +110,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
-    <Compile Include="FolderMajor\frmCustomer.cs">
+    <Compile Include="Subject\Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FolderMajor\frmCustomer.Designer.cs">
+    <Compile Include="Subject\Customer\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FolderMajor\frmNhanVien.cs">
+    <Compile Include="Subject\Customer\KhachhangDTO.cs" />
+    <Compile Include="Subject\Employee\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FolderMajor\frmNhanVien.Designer.cs">
+    <Compile Include="Subject\Employee\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FolderMajor\fsEdit.cs" />
-    <Compile Include="FolderMajor\New_FormSave.cs">
+    <Compile Include="Subject\Employee\fsEdit.cs" />
+    <Compile Include="Subject\Employee\New_FormSave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FolderMajor\New_FormSave.Designer.cs">
+    <Compile Include="Subject\Employee\New_FormSave.Designer.cs">
       <DependentUpon>New_FormSave.cs</DependentUpon>
     </Compile>
-    <Compile Include="FolderMajor\NhanvienDTO.cs" />
+    <Compile Include="Subject\Employee\NhanvienDTO.cs" />
     <Compile Include="RJControls\CallRJDropmenu.cs" />
     <Compile Include="RJControls\MenuColorTable.cs" />
     <Compile Include="RJControls\MenuRenderer.cs" />
     <Compile Include="RJControls\RJDropdownMenu.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Subject\Items\MathangDTO.cs" />
+    <Compile Include="Subject\Items\frmMathang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\Items\frmMathang.Designer.cs">
+      <DependentUpon>frmMathang.cs</DependentUpon>
     </Compile>
     <Compile Include="test.cs">
       <SubType>Form</SubType>
@@ -166,13 +174,13 @@
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="_Funtion.cs" />
-    <EmbeddedResource Include="FolderMajor\frmCustomer.resx">
+    <EmbeddedResource Include="Subject\Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FolderMajor\frmNhanVien.resx">
+    <EmbeddedResource Include="Subject\Employee\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FolderMajor\New_FormSave.resx">
+    <EmbeddedResource Include="Subject\Employee\New_FormSave.resx">
       <DependentUpon>New_FormSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
@@ -193,6 +201,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RJControls\RJDropdownMenu.resx" />
+    <EmbeddedResource Include="Subject\Items\frmMathang.resx">
+      <DependentUpon>frmMathang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>

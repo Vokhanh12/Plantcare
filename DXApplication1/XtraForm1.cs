@@ -13,6 +13,7 @@ using DXApplication1.RJControls;
 using DXApplication1.ChangeColorButton;
 using DXApplication1.FolderNV;
 using DXApplication1.FolderMajor;
+using DXApplication1.Subject.Items;
 
 namespace DXApplication1
 {
@@ -533,7 +534,6 @@ namespace DXApplication1
         private void Employee_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNhanVien formNhanVien = new frmNhanVien();
-      
             formNhanVien.MdiParent = this;
             formNhanVien.Show();
         }
@@ -541,7 +541,6 @@ namespace DXApplication1
         private void User_ToolStripMenuItem_Click(object sender , EventArgs e)
         {
             frmCustomer formCustomer = new frmCustomer();
-     
             formCustomer.MdiParent = this;
             formCustomer.Show();
 
@@ -549,7 +548,9 @@ namespace DXApplication1
 
         private void Item_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmMathang formMathhang = new frmMathang();
+            formMathhang.MdiParent = this;
+            formMathhang.Show();
         }
 
         private void SignOutToolStripMenuItem_Click(object sender, EventArgs e)
