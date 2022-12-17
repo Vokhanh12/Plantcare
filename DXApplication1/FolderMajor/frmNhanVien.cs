@@ -30,6 +30,33 @@ namespace DXApplication1.FolderNV
         public static frmNhanVien instance;
 
        
+        public virtual void OpenListview(string str)
+        {
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                var data = db.Query<NhanvienDTO>($"SELECT * FROM NHANVIEN WHERE {str}='{txtFind.Text}'", commandType: CommandType.Text);
+                materialListView1.Items.Clear();
+                foreach (NhanvienDTO p in data)
+                {
+
+                    ListViewItem item = new ListViewItem(p.MANV.ToString());
+                    item.SubItems.Add(p.TENNV);
+                    item.SubItems.Add(p.LUONG.ToString());
+                    item.SubItems.Add(p.THUONG.ToString());
+                    item.SubItems.Add(p.GIOITINH.ToString());
+                    item.SubItems.Add(p.NGAYSINH.ToString());
+                    item.SubItems.Add(p.SDT_EMPLOYEE);
+                    item.SubItems.Add(p.SOTHICH);
+                    item.SubItems.Add(p.DIACHI);
+                    materialListView1.Items.Add(item);
+
+                }
+                db.Close();
+            }
+        }
 
         public virtual void OpenSql()
         {
@@ -79,33 +106,33 @@ namespace DXApplication1.FolderNV
                     if (db.State == ConnectionState.Closed)
                         db.Open();
 
-                    
 
-                  /*  if (count == materialListView1.Items.Count)
+                    for (var i = 0; i <= materialListView1.Items.Count - 1; i++)
                     {
-                        db.ExecuteAsync($"Insert into NHANVIEN(MANV,TENNV,LUONG,THUONG,GIOITINH,NGAYSINH,SDT_EMPLOYEE,SOTHICH,DIACHI) values ('{MANV}','{TENNV}',{LUONG},{THUONG},'{GIOITINH}','{NGAYSINH}','{SDT}','{SOTHICH}','{DIACHI}');", commandType: CommandType.Text);
-                        MessageBox.Show($"Add success{MANV.Replace(" ","")}A");
+
+                        if (MANV.ToString() == (Edit.deleteCharacter(materialListView1.Items[0].SubItems[0].ToString())).Replace(" ", ""))
+                        {
+                            MessageBox.Show($"Da co { (Edit.deleteCharacter(materialListView1.Items[0].SubItems[0].ToString())).Replace(" ", "")} vui long nhap 'MANV' khac");
+                            break;
+                        }
+                        else
+                        {
+
+                            count++;
+
+                            if (count == materialListView1.Items.Count)
+                            {
+                                db.ExecuteAsync($"Insert into NHANVIEN(MANV,TENNV,LUONG,THUONG,GIOITINH,NGAYSINH,SDT_EMPLOYEE,SOTHICH,DIACHI) values ('{MANV}','{TENNV}',{LUONG},{THUONG},'{GIOITINH}','{NGAYSINH}','{SDT}','{SOTHICH}','{DIACHI}');", commandType: CommandType.Text);
+                                MessageBox.Show($"Add success");
+                            }
+
+                        };
+
                     }
-                  */
 
-
-
-                    // MessageBox.Show($"add success");
-                }
-
-                /*for (var i = 0; i <= materialListView1.Items.Count - 1; i++)
-                {
-
-                    if (MANV == materialListView1.Items[i].SubItems[0].Text)
-                    {
-                        MessageBox.Show($"Da co {materialListView1.Items[i].SubItems[0].Text} vui long nhap 'MANV' khac");
-                        break;
-                    }
-                    else count++;
 
                 }
-                */
-
+           
 
             }
             catch(Exception ex)
@@ -201,33 +228,12 @@ namespace DXApplication1.FolderNV
 
         }
 
-       
-
-        private void materialRaisedButton1_Click_1(object sender, EventArgs e)
-        {
-
-            
-        }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-            switch (casechange)
-            {
-                case "Edit": editEmployee();
-                    break;
-                case "Add": AddEmployeSql();
-                    break;
-
-                default:
-                    MessageBox.Show("Erro");
-                    break;
-            }
+         
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
@@ -244,20 +250,6 @@ namespace DXApplication1.FolderNV
 
         }
 
-        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void dateTimeChartRangeControlClient1_CustomizeSeries(object sender, ClientDataSourceProviderCustomizeSeriesEventArgs e)
-        {
-
-        }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
@@ -298,20 +290,109 @@ namespace DXApplication1.FolderNV
           
 
         }
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("" + materialListView1.Items.Count);
+        }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void mRB_New_Click(object sender, EventArgs e)
+        {
+            string specifier;
+            CultureInfo culture;
+            New_FormSave frmSave = new New_FormSave();
+            casechange = "Add";
+
+            var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+
+            frmSave.Show();
+        }
+
+        private void mRB_Save_Click(object sender, EventArgs e)
+        {
+            switch (casechange)
+            {
+                case "Edit":
+                    editEmployee();
+                    break;
+                case "Add":
+                    AddEmployeSql();
+                    break;
+
+                default:
+                    MessageBox.Show("Erro");
+                    break;
+            }
+        }
+
+        private void ibtDelete_Click(object sender, EventArgs e)
         {
             RemoveEmployeeSql();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void ibtEdit_Click(object sender, EventArgs e)
         {
-            OpenSql();
+            New_FormSave frmSave = new New_FormSave();
+            frmSave.Show();
+            casechange = "Edit";
+            string specifier;
+            CultureInfo culture;
+
+            var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+            try
+            {
+                New_FormSave.instance.txt0.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
+                New_FormSave.instance.txt1.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
+
+                //Lương
+                New_FormSave.instance.txt2.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
+
+                //Thưởng = %
+                specifier = "P";
+                culture = CultureInfo.InvariantCulture;
+                New_FormSave.instance.txt3.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
+                // Displays:    #.00 %
+
+                New_FormSave.instance.txt4.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ", ""));
+                New_FormSave.instance.dtNgaysinh.DateTime = Convert.ToDateTime(((((frmNhanVien.instance.mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{", "")).Replace("}", "")));
+
+                //txt5.Text = Edit.deleteCharacter(frmNhanVien.instance.materialListView1.SelectedItems[0].SubItems[5].ToString());
+                New_FormSave.instance.txt6.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[6].ToString());
+                New_FormSave.instance.txt7.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
+                New_FormSave.instance.txt8.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nhap click vao ban de chinh sua");
+                this.Close();
+            }
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("" + materialListView1.Items.Count);
+
+        }
+
+        private void frmNhanVien_Load(object sender, EventArgs e)
+        {
+            cbE_Select.Properties.Items.Add("MANV");
+            cbE_Select.Properties.Items.Add("TENNV");
+            cbE_Select.Properties.Items.Add("LUONG");
+            cbE_Select.Properties.Items.Add("THUONG");
+            cbE_Select.Properties.Items.Add("GIOITINH");
+            cbE_Select.Properties.Items.Add("NGAYSINH");
+            cbE_Select.Properties.Items.Add("SDT");
+            cbE_Select.Properties.Items.Add("SOTHICH");
+            cbE_Select.Properties.Items.Add("DIACHI");
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+           
+                        OpenListview("MANV");
+                   
+
+            
         }
     }
 }

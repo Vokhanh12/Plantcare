@@ -44,27 +44,33 @@ namespace DXApplication1.FolderNV
             this.cH_SOTHICH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cH_DIACHI = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.ibtRefesh = new FontAwesome.Sharp.IconButton();
+            this.iconButton6 = new FontAwesome.Sharp.IconButton();
+            this.ibtEdit = new FontAwesome.Sharp.IconButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.ibtDelete = new FontAwesome.Sharp.IconButton();
+            this.mRB_Save = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.mRB_New = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cbE_Select = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txtFind = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +128,6 @@ namespace DXApplication1.FolderNV
             this.materialListView1.TabIndex = 1;
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
-            this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
             // 
             // cH_MaNV
             // 
@@ -171,35 +176,166 @@ namespace DXApplication1.FolderNV
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.panel9);
             this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.iconButton3);
-            this.panel4.Controls.Add(this.iconButton2);
-            this.panel4.Controls.Add(this.iconButton5);
-            this.panel4.Controls.Add(this.materialLabel1);
-            this.panel4.Controls.Add(this.iconButton1);
-            this.panel4.Controls.Add(this.materialRaisedButton2);
-            this.panel4.Controls.Add(this.materialRaisedButton1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 65);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1000, 71);
             this.panel4.TabIndex = 1;
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.ibtEdit);
+            this.panel9.Controls.Add(this.materialLabel1);
+            this.panel9.Controls.Add(this.ibtDelete);
+            this.panel9.Controls.Add(this.mRB_Save);
+            this.panel9.Controls.Add(this.mRB_New);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(644, 71);
+            this.panel9.TabIndex = 11;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.ibtRefesh);
+            this.panel10.Controls.Add(this.iconButton6);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(505, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(139, 71);
+            this.panel10.TabIndex = 15;
+            // 
+            // ibtRefesh
+            // 
+            this.ibtRefesh.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ibtRefesh.FlatAppearance.BorderSize = 0;
+            this.ibtRefesh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtRefesh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtRefesh.IconChar = FontAwesome.Sharp.IconChar.ArrowRotateForward;
+            this.ibtRefesh.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.ibtRefesh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtRefesh.Location = new System.Drawing.Point(22, 16);
+            this.ibtRefesh.Name = "ibtRefesh";
+            this.ibtRefesh.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.ibtRefesh.Size = new System.Drawing.Size(48, 39);
+            this.ibtRefesh.TabIndex = 20;
+            this.ibtRefesh.UseVisualStyleBackColor = true;
+            // 
+            // iconButton6
+            // 
+            this.iconButton6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.iconButton6.FlatAppearance.BorderSize = 0;
+            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.EllipsisH;
+            this.iconButton6.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton6.Location = new System.Drawing.Point(85, 17);
+            this.iconButton6.Name = "iconButton6";
+            this.iconButton6.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.iconButton6.Size = new System.Drawing.Size(48, 39);
+            this.iconButton6.TabIndex = 19;
+            this.iconButton6.UseVisualStyleBackColor = true;
+            // 
+            // ibtEdit
+            // 
+            this.ibtEdit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ibtEdit.FlatAppearance.BorderSize = 0;
+            this.ibtEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtEdit.IconChar = FontAwesome.Sharp.IconChar.FileCircleMinus;
+            this.ibtEdit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.ibtEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtEdit.Location = new System.Drawing.Point(428, 14);
+            this.ibtEdit.Name = "ibtEdit";
+            this.ibtEdit.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.ibtEdit.Size = new System.Drawing.Size(48, 39);
+            this.ibtEdit.TabIndex = 14;
+            this.ibtEdit.UseVisualStyleBackColor = true;
+            this.ibtEdit.Click += new System.EventHandler(this.ibtEdit_Click);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(12, 23);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(106, 24);
+            this.materialLabel1.TabIndex = 13;
+            this.materialLabel1.Text = "EMPLOYEE";
+            // 
+            // ibtDelete
+            // 
+            this.ibtDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ibtDelete.FlatAppearance.BorderSize = 0;
+            this.ibtDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibtDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibtDelete.IconChar = FontAwesome.Sharp.IconChar.FileCircleXmark;
+            this.ibtDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.ibtDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibtDelete.Location = new System.Drawing.Point(363, 16);
+            this.ibtDelete.Name = "ibtDelete";
+            this.ibtDelete.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
+            this.ibtDelete.Size = new System.Drawing.Size(48, 39);
+            this.ibtDelete.TabIndex = 12;
+            this.ibtDelete.UseVisualStyleBackColor = true;
+            this.ibtDelete.Click += new System.EventHandler(this.ibtDelete_Click);
+            // 
+            // mRB_Save
+            // 
+            this.mRB_Save.AutoSize = true;
+            this.mRB_Save.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.mRB_Save.Depth = 0;
+            this.mRB_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mRB_Save.Icon = null;
+            this.mRB_Save.Location = new System.Drawing.Point(263, 17);
+            this.mRB_Save.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mRB_Save.Name = "mRB_Save";
+            this.mRB_Save.Primary = true;
+            this.mRB_Save.Size = new System.Drawing.Size(65, 36);
+            this.mRB_Save.TabIndex = 11;
+            this.mRB_Save.Text = "SAVE";
+            this.mRB_Save.UseVisualStyleBackColor = true;
+            this.mRB_Save.Click += new System.EventHandler(this.mRB_Save_Click);
+            // 
+            // mRB_New
+            // 
+            this.mRB_New.AutoSize = true;
+            this.mRB_New.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.mRB_New.Depth = 0;
+            this.mRB_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mRB_New.Icon = null;
+            this.mRB_New.Location = new System.Drawing.Point(173, 17);
+            this.mRB_New.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mRB_New.Name = "mRB_New";
+            this.mRB_New.Primary = true;
+            this.mRB_New.Size = new System.Drawing.Size(59, 36);
+            this.mRB_New.TabIndex = 10;
+            this.mRB_New.Text = "NEW";
+            this.mRB_New.UseVisualStyleBackColor = true;
+            this.mRB_New.Click += new System.EventHandler(this.mRB_New_Click);
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(708, 0);
+            this.panel6.Location = new System.Drawing.Point(644, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(292, 71);
+            this.panel6.Size = new System.Drawing.Size(356, 71);
             this.panel6.TabIndex = 10;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.iconButton4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(226, 0);
+            this.panel8.Location = new System.Drawing.Point(290, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(66, 71);
             this.panel8.TabIndex = 15;
@@ -219,138 +355,39 @@ namespace DXApplication1.FolderNV
             this.iconButton4.Size = new System.Drawing.Size(48, 39);
             this.iconButton4.TabIndex = 10;
             this.iconButton4.UseVisualStyleBackColor = true;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.cbE_Select);
+            this.panel7.Controls.Add(this.txtFind);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(226, 71);
+            this.panel7.Size = new System.Drawing.Size(290, 71);
             this.panel7.TabIndex = 14;
             // 
-            // textBox1
+            // cbE_Select
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(15, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 30);
-            this.textBox1.TabIndex = 13;
+            this.cbE_Select.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.cbE_Select.Location = new System.Drawing.Point(6, 23);
+            this.cbE_Select.Name = "cbE_Select";
+            this.cbE_Select.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbE_Select.Properties.Appearance.Options.UseFont = true;
+            this.cbE_Select.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.cbE_Select.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbE_Select.Size = new System.Drawing.Size(136, 28);
+            this.cbE_Select.TabIndex = 14;
+            this.cbE_Select.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
             // 
-            // iconButton3
+            // txtFind
             // 
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.EllipsisH;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(654, 15);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(48, 39);
-            this.iconButton3.TabIndex = 9;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ArrowRotateForward;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(580, 15);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(48, 39);
-            this.iconButton2.TabIndex = 8;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FileCircleMinus;
-            this.iconButton5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(455, 15);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(48, 39);
-            this.iconButton5.TabIndex = 7;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(22, 23);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(106, 24);
-            this.materialLabel1.TabIndex = 6;
-            this.materialLabel1.Text = "EMPLOYEE";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileCircleXmark;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(388, 17);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(48, 39);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.AutoSize = true;
-            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRaisedButton2.Icon = null;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(273, 17);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(65, 36);
-            this.materialRaisedButton2.TabIndex = 1;
-            this.materialRaisedButton2.Text = "SAVE";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.AutoSize = true;
-            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(183, 17);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(59, 36);
-            this.materialRaisedButton1.TabIndex = 0;
-            this.materialRaisedButton1.Text = "NEW";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.txtFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFind.Location = new System.Drawing.Point(148, 23);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(136, 30);
+            this.txtFind.TabIndex = 13;
             // 
             // panel2
             // 
@@ -368,11 +405,6 @@ namespace DXApplication1.FolderNV
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1000, 65);
             this.panel3.TabIndex = 1;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // dateTimeChartRangeControlClient1
-            // 
-            this.dateTimeChartRangeControlClient1.CustomizeSeries += new System.EventHandler<DevExpress.XtraEditors.ClientDataSourceProviderCustomizeSeriesEventArgs>(this.dateTimeChartRangeControlClient1_CustomizeSeries);
             // 
             // frmNhanVien
             // 
@@ -383,14 +415,18 @@ namespace DXApplication1.FolderNV
             this.Name = "frmNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Danh sách nhân viên";
+            this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).EndInit();
             this.ResumeLayout(false);
@@ -415,18 +451,21 @@ namespace DXApplication1.FolderNV
         private System.Windows.Forms.ColumnHeader cH_SDT;
         private System.Windows.Forms.ColumnHeader cH_SOTHICH;
         private System.Windows.Forms.ColumnHeader cH_DIACHI;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private FontAwesome.Sharp.IconButton iconButton4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFind;
         private DevExpress.XtraEditors.DateTimeChartRangeControlClient dateTimeChartRangeControlClient1;
+        private DevExpress.XtraEditors.ComboBoxEdit cbE_Select;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton ibtEdit;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private FontAwesome.Sharp.IconButton ibtDelete;
+        private MaterialSkin.Controls.MaterialRaisedButton mRB_Save;
+        private MaterialSkin.Controls.MaterialRaisedButton mRB_New;
+        private FontAwesome.Sharp.IconButton ibtRefesh;
     }
 }
