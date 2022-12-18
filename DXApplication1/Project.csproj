@@ -97,6 +97,7 @@
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -110,6 +111,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
+    <Compile Include="PLANTCARE6DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PLANTCARE6DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\KH_MH_DTO.cs" />
+    <Compile Include="Reports\ReportALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportALL.Designer.cs">
+      <DependentUpon>ReportALL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Subject\Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +150,20 @@
     <Compile Include="RJControls\RJDropdownMenu.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Subject\ExportDocuments\ExportDocumentsDTO.cs" />
+    <Compile Include="Subject\ExportDocuments\frmCTXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\ExportDocuments\frmCTXH.Designer.cs">
+      <DependentUpon>frmCTXH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\ImportDocuments\frmCTNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\ImportDocuments\frmCTNH.Designer.cs">
+      <DependentUpon>frmCTNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\ImportDocuments\ImportDocumentsDTO.cs" />
     <Compile Include="Subject\Items\MathangDTO.cs" />
     <Compile Include="Subject\Items\frmMathang.cs">
       <SubType>Form</SubType>
@@ -144,6 +171,20 @@
     <Compile Include="Subject\Items\frmMathang.Designer.cs">
       <DependentUpon>frmMathang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subject\Suplier\frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\Suplier\frmNCC.Designer.cs">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\Suplier\NhacungcapDTO.cs" />
+    <Compile Include="Subject\Warehouse\frmKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject\Warehouse\frmKho.Designer.cs">
+      <DependentUpon>frmKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject\Warehouse\KhohangDTO.cs" />
     <Compile Include="test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +215,9 @@
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="_Funtion.cs" />
+    <EmbeddedResource Include="Reports\ReportALL.resx">
+      <DependentUpon>ReportALL.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subject\Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,14 +245,37 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RJControls\RJDropdownMenu.resx" />
+    <EmbeddedResource Include="Subject\ExportDocuments\frmCTXH.resx">
+      <DependentUpon>frmCTXH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\ImportDocuments\frmCTNH.resx">
+      <DependentUpon>frmCTNH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subject\Items\frmMathang.resx">
       <DependentUpon>frmMathang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\Suplier\frmNCC.resx">
+      <DependentUpon>frmNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject\Warehouse\frmKho.resx">
+      <DependentUpon>frmKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="PLANTCARE6DataSet.xsc">
+      <DependentUpon>PLANTCARE6DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PLANTCARE6DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PLANTCARE6DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PLANTCARE6DataSet.xss">
+      <DependentUpon>PLANTCARE6DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -14,6 +14,11 @@ using DXApplication1.ChangeColorButton;
 using DXApplication1.FolderNV;
 using DXApplication1.FolderMajor;
 using DXApplication1.Subject.Items;
+using DXApplication1.Subject.ImportDocuments;
+using DXApplication1.Subject.ExportDocuments;
+using DXApplication1.Subject.Warehouse;
+using DXApplication1.Subject.Suplier;
+using DXApplication1.Reports;
 
 namespace DXApplication1
 {
@@ -185,13 +190,15 @@ namespace DXApplication1
             this.Supplier_ToolStripMenuItem.Name = "Supplier_ToolStripMenuItem";
             this.Supplier_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.Supplier_ToolStripMenuItem.Text = "Nhà cung cấp";
-    
+            this.Supplier_ToolStripMenuItem.Click += new System.EventHandler(this.Supplier_ToolStripMenuItem_Click);
+
             // 
             // ImportDocuments_ToolStripMenuItem
             // 
             this.ImportDocuments_ToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
             this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.ImportDocuments_ToolStripMenuItem.Text = "Chứng từ nhập hàng";
+            this.ImportDocuments_ToolStripMenuItem.Click += new System.EventHandler(this.ImportDocuments_ToolStripMenuItem_Click);
     
             // 
             // ExportDocuments_ToolStripMenuItem
@@ -199,6 +206,7 @@ namespace DXApplication1
             this.ExportDocuments_ToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
             this.ExportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.ExportDocuments_ToolStripMenuItem.Text = "Chứng từ xuất hàng";
+            this.ExportDocuments_ToolStripMenuItem.Click += new System.EventHandler(this.ExportDocuments_ToolStripMenuItem_Click);
 
             // 
             // CollectDocuments_ToolStripMenuItem
@@ -220,7 +228,7 @@ namespace DXApplication1
             this.Warehouse_ToolStripMenuItem.Name = "Warehouse_ToolStripMenuItem";
             this.Warehouse_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.Warehouse_ToolStripMenuItem.Text = "Kho hàng";
-        
+            this.Warehouse_ToolStripMenuItem.Click += new System.EventHandler(this.Warehouse_ToolStripMenuItem_Click);
 
             this.rjDropdownMenu_Work.ResumeLayout(false);
             //Close
@@ -290,6 +298,7 @@ namespace DXApplication1
             this.GeneralView_ToolStripMenuItem.Name = "GeneralView_ToolStripMenuItem";
             this.GeneralView_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.GeneralView_ToolStripMenuItem.Text = "Tổng quát";
+            this.GeneralView_ToolStripMenuItem.Click += new System.EventHandler(this.GeneralView_ToolStripMenuItem_Click);
 
             this.PriceList_ToolStripMenuItem.Name = "PriceList_ToolStripMenuItem";
             this.PriceList_ToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
@@ -553,6 +562,43 @@ namespace DXApplication1
             formMathhang.Show();
         }
 
+        private void ImportDocuments_ToolStripMenuItem_Click(object sender ,EventArgs e)
+        {
+            frmCTNH formCTNH = new frmCTNH();
+            formCTNH.MdiParent = this;
+            formCTNH.Show();
+
+        
+        }
+
+        private void ExportDocuments_ToolStripMenuItem_Click(object sender,EventArgs e)
+        {
+            frmCTXH formCTXH = new frmCTXH();
+            formCTXH.MdiParent = this;
+            formCTXH.Show();
+        }
+
+        private void Supplier_ToolStripMenuItem_Click(Object sender,EventArgs e)
+        {
+            frmNCC formNhacungcap = new frmNCC();
+            formNhacungcap.MdiParent = this;
+            formNhacungcap.Show();
+
+        }
+
+        private void Warehouse_ToolStripMenuItem_Click(object sender,EventArgs e)
+        {
+            frmKho formKho = new frmKho();
+            formKho.MdiParent = this;
+            formKho.Show();
+        }
+
+        private void GeneralView_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportALL rp = new ReportALL();
+            rp.MdiParent = this;
+            rp.Show();
+        }
         private void SignOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
