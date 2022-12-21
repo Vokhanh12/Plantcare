@@ -12,13 +12,21 @@ namespace DXApplication1
     public partial class FormLogin : DevExpress.XtraEditors.XtraForm
     {
         FormRegister frmRegister = new FormRegister();
-        XtraForm1 Dashbroad = new XtraForm1();
+    
         public FormLogin()
         {
             InitializeComponent();
 
         }
 
+        public void checkSytem(string Check)
+        {
+            XtraForm1 dashbroad = new XtraForm1();
+
+            if (Check == "Login Successfully")
+                dashbroad.Show();
+            else MessageBox.Show($"{Check}");
+        }
         public virtual void OpenSql()
         {
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
@@ -26,23 +34,12 @@ namespace DXApplication1
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
-                var data = db.Query<LoginDTO>("SELECT * FROM APLLICATION_USER", commandType: CommandType.Text);
-                var resultReturn = db.Query<LoginDTO>("SELECT * FROM APLLICATION_USER ", commandType: CommandType.Text);
+                var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
+        
                 foreach (LoginDTO p in data)
                 {
 
-                    if (txtUsername_Login.Text == p.Username)
-                    {
-                        if (txtPassword_Login.Text == p.UserPassword)
-                        {
-                            Dashbroad.Show();
-                        }
-                        else MessageBox.Show("Mat khau khong dong vui long nhap lai");
-                    }
-                    else MessageBox.Show("Ten tai khoang khong dung vui long nhap lai");
-                   
-                    
-
+                    checkSytem(p.SYSTEM);
                 }
                 db.Close();
             }
@@ -170,9 +167,5 @@ namespace DXApplication1
            
         }
         //END
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

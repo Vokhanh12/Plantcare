@@ -12,5 +12,7 @@ namespace DXApplication1.Subject.Login
         public string Username { get; set; }
         public string UserPassword { get; set; }
 
+        public string SYSTEM { get; set; }
+        public string TAI_KHOANG { get; set; }
     }
 }
