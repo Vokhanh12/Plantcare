@@ -62,19 +62,19 @@ namespace DXApplication1
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Image = global::DXApplication1.Properties.Resources.Màu_chàm_và_Xanh_dương_Hiện_đại_Màu_chuyển_tiếp_Bác_sĩ_Biểu_trưng_Y_tế__1_;
-            this.label1.Location = new System.Drawing.Point(180, 193);
+            this.label1.Location = new System.Drawing.Point(210, 238);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 23);
+            this.label1.Size = new System.Drawing.Size(100, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Register";
             // 
             // pn3_Register
             // 
             this.pn3_Register.BackColor = System.Drawing.Color.White;
-            this.pn3_Register.Location = new System.Drawing.Point(69, 306);
+            this.pn3_Register.Location = new System.Drawing.Point(80, 377);
             this.pn3_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn3_Register.Name = "pn3_Register";
-            this.pn3_Register.Size = new System.Drawing.Size(300, 1);
+            this.pn3_Register.Size = new System.Drawing.Size(350, 1);
             this.pn3_Register.TabIndex = 13;
             // 
             // txtFristname_Register
@@ -84,10 +84,10 @@ namespace DXApplication1
             this.txtFristname_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFristname_Register.ForeColor = System.Drawing.Color.White;
             this.txtFristname_Register.HideSelection = false;
-            this.txtFristname_Register.Location = new System.Drawing.Point(69, 243);
+            this.txtFristname_Register.Location = new System.Drawing.Point(80, 299);
             this.txtFristname_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFristname_Register.Name = "txtFristname_Register";
-            this.txtFristname_Register.Size = new System.Drawing.Size(145, 17);
+            this.txtFristname_Register.Size = new System.Drawing.Size(169, 21);
             this.txtFristname_Register.TabIndex = 19;
             this.txtFristname_Register.TabStop = false;
             this.txtFristname_Register.Text = "Fristname";
@@ -96,19 +96,19 @@ namespace DXApplication1
             // pn1_Register
             // 
             this.pn1_Register.BackColor = System.Drawing.Color.White;
-            this.pn1_Register.Location = new System.Drawing.Point(69, 265);
+            this.pn1_Register.Location = new System.Drawing.Point(80, 326);
             this.pn1_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn1_Register.Name = "pn1_Register";
-            this.pn1_Register.Size = new System.Drawing.Size(145, 1);
+            this.pn1_Register.Size = new System.Drawing.Size(169, 1);
             this.pn1_Register.TabIndex = 11;
             // 
             // pn2_Register
             // 
             this.pn2_Register.BackColor = System.Drawing.Color.White;
-            this.pn2_Register.Location = new System.Drawing.Point(257, 265);
+            this.pn2_Register.Location = new System.Drawing.Point(300, 326);
             this.pn2_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn2_Register.Name = "pn2_Register";
-            this.pn2_Register.Size = new System.Drawing.Size(111, 1);
+            this.pn2_Register.Size = new System.Drawing.Size(129, 1);
             this.pn2_Register.TabIndex = 27;
             // 
             // txtLastname_Register
@@ -118,10 +118,10 @@ namespace DXApplication1
             this.txtLastname_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname_Register.ForeColor = System.Drawing.Color.White;
             this.txtLastname_Register.HideSelection = false;
-            this.txtLastname_Register.Location = new System.Drawing.Point(257, 243);
+            this.txtLastname_Register.Location = new System.Drawing.Point(300, 299);
             this.txtLastname_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastname_Register.Name = "txtLastname_Register";
-            this.txtLastname_Register.Size = new System.Drawing.Size(111, 17);
+            this.txtLastname_Register.Size = new System.Drawing.Size(129, 21);
             this.txtLastname_Register.TabIndex = 28;
             this.txtLastname_Register.TabStop = false;
             this.txtLastname_Register.Text = "Lastname";
@@ -134,10 +134,10 @@ namespace DXApplication1
             this.txtUsername_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername_Register.ForeColor = System.Drawing.Color.White;
             this.txtUsername_Register.HideSelection = false;
-            this.txtUsername_Register.Location = new System.Drawing.Point(69, 284);
+            this.txtUsername_Register.Location = new System.Drawing.Point(80, 350);
             this.txtUsername_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername_Register.Name = "txtUsername_Register";
-            this.txtUsername_Register.Size = new System.Drawing.Size(300, 17);
+            this.txtUsername_Register.Size = new System.Drawing.Size(350, 21);
             this.txtUsername_Register.TabIndex = 29;
             this.txtUsername_Register.TabStop = false;
             this.txtUsername_Register.Text = "Username";
@@ -150,10 +150,10 @@ namespace DXApplication1
             this.txtEmail_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail_Register.ForeColor = System.Drawing.Color.White;
             this.txtEmail_Register.HideSelection = false;
-            this.txtEmail_Register.Location = new System.Drawing.Point(69, 372);
+            this.txtEmail_Register.Location = new System.Drawing.Point(80, 458);
             this.txtEmail_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail_Register.Name = "txtEmail_Register";
-            this.txtEmail_Register.Size = new System.Drawing.Size(300, 17);
+            this.txtEmail_Register.Size = new System.Drawing.Size(350, 21);
             this.txtEmail_Register.TabIndex = 31;
             this.txtEmail_Register.TabStop = false;
             this.txtEmail_Register.Text = "Email";
@@ -162,10 +162,10 @@ namespace DXApplication1
             // pn5_Register
             // 
             this.pn5_Register.BackColor = System.Drawing.Color.White;
-            this.pn5_Register.Location = new System.Drawing.Point(69, 394);
+            this.pn5_Register.Location = new System.Drawing.Point(80, 485);
             this.pn5_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn5_Register.Name = "pn5_Register";
-            this.pn5_Register.Size = new System.Drawing.Size(300, 1);
+            this.pn5_Register.Size = new System.Drawing.Size(350, 1);
             this.pn5_Register.TabIndex = 30;
             // 
             // btRegister
@@ -174,10 +174,10 @@ namespace DXApplication1
             this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegister.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegister.ForeColor = System.Drawing.Color.White;
-            this.btRegister.Location = new System.Drawing.Point(69, 449);
+            this.btRegister.Location = new System.Drawing.Point(80, 553);
             this.btRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRegister.Name = "btRegister";
-            this.btRegister.Size = new System.Drawing.Size(300, 32);
+            this.btRegister.Size = new System.Drawing.Size(350, 39);
             this.btRegister.TabIndex = 32;
             this.btRegister.Text = "Create Account";
             this.btRegister.UseVisualStyleBackColor = false;
@@ -189,10 +189,10 @@ namespace DXApplication1
             this.txtPassword_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword_Register.ForeColor = System.Drawing.Color.White;
             this.txtPassword_Register.HideSelection = false;
-            this.txtPassword_Register.Location = new System.Drawing.Point(69, 329);
+            this.txtPassword_Register.Location = new System.Drawing.Point(79, 403);
             this.txtPassword_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword_Register.Name = "txtPassword_Register";
-            this.txtPassword_Register.Size = new System.Drawing.Size(300, 17);
+            this.txtPassword_Register.Size = new System.Drawing.Size(350, 21);
             this.txtPassword_Register.TabIndex = 34;
             this.txtPassword_Register.TabStop = false;
             this.txtPassword_Register.Text = "Password";
@@ -201,10 +201,10 @@ namespace DXApplication1
             // pn4_Register
             // 
             this.pn4_Register.BackColor = System.Drawing.Color.White;
-            this.pn4_Register.Location = new System.Drawing.Point(69, 321);
+            this.pn4_Register.Location = new System.Drawing.Point(80, 428);
             this.pn4_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn4_Register.Name = "pn4_Register";
-            this.pn4_Register.Size = new System.Drawing.Size(300, 1);
+            this.pn4_Register.Size = new System.Drawing.Size(350, 1);
             this.pn4_Register.TabIndex = 33;
             // 
             // chlb_Register
@@ -212,10 +212,10 @@ namespace DXApplication1
             this.chlb_Register.AutoSize = true;
             this.chlb_Register.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chlb_Register.ForeColor = System.Drawing.Color.White;
-            this.chlb_Register.Location = new System.Drawing.Point(69, 410);
+            this.chlb_Register.Location = new System.Drawing.Point(80, 505);
             this.chlb_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chlb_Register.Name = "chlb_Register";
-            this.chlb_Register.Size = new System.Drawing.Size(103, 17);
+            this.chlb_Register.Size = new System.Drawing.Size(125, 21);
             this.chlb_Register.TabIndex = 32;
             this.chlb_Register.Text = "I agree with the";
             this.chlb_Register.UseVisualStyleBackColor = true;
@@ -226,10 +226,10 @@ namespace DXApplication1
             this.hyperlinkLabelControl1.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl1.Appearance.Options.UseFont = true;
             this.hyperlinkLabelControl1.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(173, 412);
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(202, 507);
             this.hyperlinkLabelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
-            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(98, 12);
+            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(125, 16);
             this.hyperlinkLabelControl1.TabIndex = 36;
             this.hyperlinkLabelControl1.Text = "Terms and Conditions";
             // 
@@ -239,10 +239,10 @@ namespace DXApplication1
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(285, 412);
+            this.labelControl1.Location = new System.Drawing.Point(332, 507);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(34, 12);
+            this.labelControl1.Size = new System.Drawing.Size(43, 16);
             this.labelControl1.TabIndex = 37;
             this.labelControl1.Text = "and the";
             // 
@@ -252,10 +252,10 @@ namespace DXApplication1
             this.hyperlinkLabelControl2.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl2.Appearance.Options.UseFont = true;
             this.hyperlinkLabelControl2.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl2.Location = new System.Drawing.Point(327, 412);
+            this.hyperlinkLabelControl2.Location = new System.Drawing.Point(381, 507);
             this.hyperlinkLabelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl2.Name = "hyperlinkLabelControl2";
-            this.hyperlinkLabelControl2.Size = new System.Drawing.Size(64, 12);
+            this.hyperlinkLabelControl2.Size = new System.Drawing.Size(76, 16);
             this.hyperlinkLabelControl2.TabIndex = 38;
             this.hyperlinkLabelControl2.Text = "Privacy Policy";
             // 
@@ -263,10 +263,10 @@ namespace DXApplication1
             // 
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(129, 498);
+            this.labelControl3.Location = new System.Drawing.Point(150, 613);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(123, 13);
+            this.labelControl3.Size = new System.Drawing.Size(144, 16);
             this.labelControl3.TabIndex = 41;
             this.labelControl3.Text = " Have arleady an account";
             // 
@@ -274,10 +274,10 @@ namespace DXApplication1
             // 
             this.hyperlinkLabelControl3.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl3.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl3.Location = new System.Drawing.Point(257, 500);
+            this.hyperlinkLabelControl3.Location = new System.Drawing.Point(300, 615);
             this.hyperlinkLabelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl3.Name = "hyperlinkLabelControl3";
-            this.hyperlinkLabelControl3.Size = new System.Drawing.Size(50, 13);
+            this.hyperlinkLabelControl3.Size = new System.Drawing.Size(60, 16);
             this.hyperlinkLabelControl3.TabIndex = 42;
             this.hyperlinkLabelControl3.Text = "Login here";
             this.hyperlinkLabelControl3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hyperlinkLabelControl3_MouseClick);
@@ -285,10 +285,10 @@ namespace DXApplication1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.onpic;
-            this.pictureBox1.Location = new System.Drawing.Point(-37, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(1, -5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 196);
+            this.pictureBox1.Size = new System.Drawing.Size(546, 241);
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
@@ -298,9 +298,9 @@ namespace DXApplication1
             this.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 521);
+            this.ClientSize = new System.Drawing.Size(500, 641);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.hyperlinkLabelControl3);
             this.Controls.Add(this.labelControl3);
@@ -321,6 +321,7 @@ namespace DXApplication1
             this.Controls.Add(this.pn3_Register);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

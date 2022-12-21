@@ -3,16 +3,49 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
+using Dapper;
+using DXApplication1.Subject.Login;
 
 namespace DXApplication1
 {
     public partial class FormLogin : DevExpress.XtraEditors.XtraForm
     {
         FormRegister frmRegister = new FormRegister();
+        XtraForm1 Dashbroad = new XtraForm1();
         public FormLogin()
         {
             InitializeComponent();
 
+        }
+
+        public virtual void OpenSql()
+        {
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                var data = db.Query<LoginDTO>("SELECT * FROM APLLICATION_USER", commandType: CommandType.Text);
+                var resultReturn = db.Query<LoginDTO>("SELECT * FROM APLLICATION_USER ", commandType: CommandType.Text);
+                foreach (LoginDTO p in data)
+                {
+
+                    if (txtUsername_Login.Text == p.Username)
+                    {
+                        if (txtPassword_Login.Text == p.UserPassword)
+                        {
+                            Dashbroad.Show();
+                        }
+                        else MessageBox.Show("Mat khau khong dong vui long nhap lai");
+                    }
+                    else MessageBox.Show("Ten tai khoang khong dung vui long nhap lai");
+                   
+                    
+
+                }
+                db.Close();
+            }
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -74,38 +107,12 @@ namespace DXApplication1
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            //Check Username Password 
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-3EEP3M4;Initial Catalog=Database_Plantcare;Integrated Security=True");
-            string query = "Select * From LoginDB Where Username_Login = '"+txtUsername_Login.Text.Trim()+"' and Password_Login = '"+txtPassword_Login.Text.Trim()+"'";
-            SqlDataAdapter sqlDA = new SqlDataAdapter(query, sqlcon);
-            DataTable dtb_LoginDB = new DataTable();
-            sqlDA.Fill(dtb_LoginDB);
-            if (dtb_LoginDB.Rows.Count == 1)
-            {
-                //Close Form_Login and Form_Register
-                this.Hide();
-                frmRegister.Hide();
-
-                //Show dashbroad
-                //dbSystem.Show();
-
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại. Xin vui lòng thử lại.");
-
-                txtPassword_Login.ForeColor = Color.WhiteSmoke;
-                txtUsername_Login.ForeColor = Color.WhiteSmoke;
-
-                txtPassword_Login.Text = "Password";
-                txtUsername_Login.Text = "Username";
-              
-                picUsername.Image = Properties.Resources.userlogo;
-                picPassword.Image = Properties.Resources.private_icon1;
-                
-            }
+            OpenSql();
         }
 
+
+        //DESIGN FORM LOGIN
+        //START
         private void btRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -162,7 +169,7 @@ namespace DXApplication1
 
            
         }
-
+        //END
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 

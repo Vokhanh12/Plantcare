@@ -171,6 +171,8 @@
     <Compile Include="Subject\Items\frmMathang.Designer.cs">
       <DependentUpon>frmMathang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Subject\Login\LoginDTO.cs" />
+    <Compile Include="Subject\Register\RegisterDTO.cs" />
     <Compile Include="Subject\Suplier\frmNCC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,16 +194,16 @@
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="winAPI.cs" />
-    <Compile Include="FormRegister.cs">
+    <Compile Include="Subject\Register\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRegister.Designer.cs">
+    <Compile Include="Subject\Register\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Subject\Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Subject\Login\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiFormContext.cs" />
@@ -227,10 +229,10 @@
     <EmbeddedResource Include="Subject\Employee\New_FormSave.resx">
       <DependentUpon>New_FormSave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRegister.resx">
+    <EmbeddedResource Include="Subject\Register\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Subject\Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />

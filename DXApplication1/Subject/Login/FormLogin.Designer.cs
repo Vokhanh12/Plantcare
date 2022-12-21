@@ -57,19 +57,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(69, 266);
+            this.panel1.Location = new System.Drawing.Point(80, 327);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 1);
+            this.panel1.Size = new System.Drawing.Size(350, 1);
             this.panel1.TabIndex = 10;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(69, 320);
+            this.panel2.Location = new System.Drawing.Point(80, 394);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 1);
+            this.panel2.Size = new System.Drawing.Size(350, 1);
             this.panel2.TabIndex = 13;
             // 
             // btLogin
@@ -79,10 +79,10 @@
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogin.ForeColor = System.Drawing.Color.White;
-            this.btLogin.Location = new System.Drawing.Point(69, 321);
+            this.btLogin.Location = new System.Drawing.Point(80, 430);
             this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(176, 32);
+            this.btLogin.Size = new System.Drawing.Size(205, 39);
             this.btLogin.TabIndex = 16;
             this.btLogin.Text = "Login in";
             this.btLogin.UseVisualStyleBackColor = false;
@@ -94,10 +94,10 @@
             this.btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRegister.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRegister.ForeColor = System.Drawing.Color.White;
-            this.btRegister.Location = new System.Drawing.Point(267, 321);
+            this.btRegister.Location = new System.Drawing.Point(311, 430);
             this.btRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btRegister.Name = "btRegister";
-            this.btRegister.Size = new System.Drawing.Size(102, 32);
+            this.btRegister.Size = new System.Drawing.Size(119, 39);
             this.btRegister.TabIndex = 17;
             this.btRegister.Text = "Register";
             this.btRegister.UseVisualStyleBackColor = false;
@@ -108,9 +108,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(181, 408);
+            this.label2.Location = new System.Drawing.Point(211, 502);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 17);
+            this.label2.Size = new System.Drawing.Size(86, 21);
             this.label2.TabIndex = 18;
             this.label2.Text = "Login with";
             // 
@@ -121,10 +121,10 @@
             this.txtUsername_Login.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername_Login.ForeColor = System.Drawing.Color.White;
             this.txtUsername_Login.HideSelection = false;
-            this.txtUsername_Login.Location = new System.Drawing.Point(110, 243);
+            this.txtUsername_Login.Location = new System.Drawing.Point(128, 299);
             this.txtUsername_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername_Login.Name = "txtUsername_Login";
-            this.txtUsername_Login.Size = new System.Drawing.Size(259, 17);
+            this.txtUsername_Login.Size = new System.Drawing.Size(302, 21);
             this.txtUsername_Login.TabIndex = 19;
             this.txtUsername_Login.TabStop = false;
             this.txtUsername_Login.Text = "Username";
@@ -137,10 +137,10 @@
             this.txtPassword_Login.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword_Login.ForeColor = System.Drawing.Color.White;
             this.txtPassword_Login.HideSelection = false;
-            this.txtPassword_Login.Location = new System.Drawing.Point(110, 297);
+            this.txtPassword_Login.Location = new System.Drawing.Point(128, 366);
             this.txtPassword_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword_Login.Name = "txtPassword_Login";
-            this.txtPassword_Login.Size = new System.Drawing.Size(259, 17);
+            this.txtPassword_Login.Size = new System.Drawing.Size(302, 21);
             this.txtPassword_Login.TabIndex = 20;
             this.txtPassword_Login.TabStop = false;
             this.txtPassword_Login.Text = "Password";
@@ -167,10 +167,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::DXApplication1.Properties.Resources.facebook_icon_2_;
-            this.pictureBox5.Location = new System.Drawing.Point(238, 440);
+            this.pictureBox5.Location = new System.Drawing.Point(278, 542);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(69, 60);
+            this.pictureBox5.Size = new System.Drawing.Size(80, 74);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
@@ -178,10 +178,10 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::DXApplication1.Properties.Resources.google_logo;
-            this.pictureBox4.Location = new System.Drawing.Point(123, 440);
+            this.pictureBox4.Location = new System.Drawing.Point(143, 542);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 60);
+            this.pictureBox4.Size = new System.Drawing.Size(80, 74);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
@@ -189,10 +189,10 @@
             // picPassword
             // 
             this.picPassword.Image = global::DXApplication1.Properties.Resources.private_icon1;
-            this.picPassword.Location = new System.Drawing.Point(69, 284);
+            this.picPassword.Location = new System.Drawing.Point(80, 350);
             this.picPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPassword.Name = "picPassword";
-            this.picPassword.Size = new System.Drawing.Size(40, 37);
+            this.picPassword.Size = new System.Drawing.Size(47, 46);
             this.picPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPassword.TabIndex = 12;
             this.picPassword.TabStop = false;
@@ -200,10 +200,10 @@
             // picUsername
             // 
             this.picUsername.Image = global::DXApplication1.Properties.Resources.userlogo;
-            this.picUsername.Location = new System.Drawing.Point(69, 229);
+            this.picUsername.Location = new System.Drawing.Point(80, 282);
             this.picUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picUsername.Name = "picUsername";
-            this.picUsername.Size = new System.Drawing.Size(40, 37);
+            this.picUsername.Size = new System.Drawing.Size(47, 46);
             this.picUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUsername.TabIndex = 9;
             this.picUsername.TabStop = false;
@@ -211,10 +211,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.onpic;
-            this.pictureBox1.Location = new System.Drawing.Point(-38, -14);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -17);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 196);
+            this.pictureBox1.Size = new System.Drawing.Size(546, 241);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -225,9 +225,9 @@
             this.label1.Font = new System.Drawing.Font("Tahoma", 18F);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Image = global::DXApplication1.Properties.Resources.Màu_chàm_và_Xanh_dương_Hiện_đại_Màu_chuyển_tiếp_Bác_sĩ_Biểu_trưng_Y_tế__1_;
-            this.label1.Location = new System.Drawing.Point(180, 184);
+            this.label1.Location = new System.Drawing.Point(210, 226);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 29);
+            this.label1.Size = new System.Drawing.Size(87, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Login";
             // 
@@ -237,9 +237,9 @@
             this.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseForeColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 521);
+            this.ClientSize = new System.Drawing.Size(500, 641);
             this.Controls.Add(this.txtPassword_Login);
             this.Controls.Add(this.txtUsername_Login);
             this.Controls.Add(this.label2);
@@ -254,6 +254,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
