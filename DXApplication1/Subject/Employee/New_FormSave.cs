@@ -16,11 +16,11 @@ namespace DXApplication1.FolderMajor
 {
     public partial class New_FormSave : DevExpress.XtraEditors.XtraForm
     {
-        fsEdit Edit = new fsEdit();
+       // fsEdit Edit = new fsEdit();
         public TextBox txt0, txt1, txt2, txt3, txt4, txt5, txt6,txt7,txt8;
         public  DateEdit dtNgaysinh;
         public static New_FormSave instance;
-        public int caseChange;
+       // public int caseChange;
         public New_FormSave()
         {
             

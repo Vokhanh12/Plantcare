@@ -84,7 +84,7 @@
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(205, 39);
             this.btLogin.TabIndex = 16;
-            this.btLogin.Text = "Login in";
+            this.btLogin.Text = "Login";
             this.btLogin.UseVisualStyleBackColor = false;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
@@ -217,6 +217,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(546, 241);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 

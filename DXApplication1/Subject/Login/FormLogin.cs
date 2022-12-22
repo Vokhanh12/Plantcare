@@ -6,6 +6,7 @@ using System.Data;
 using System.Configuration;
 using Dapper;
 using DXApplication1.Subject.Login;
+using DXApplication1.Subject.Dashboard;
 
 namespace DXApplication1
 {
@@ -13,17 +14,19 @@ namespace DXApplication1
     {
         public FormRegister frmRegister = new FormRegister();
 
-        public TextBox txtUsername, txtUserpassword,Chucvu;
+        public TextBox txt0;
 
         public static FormLogin instance;
+
+        public string ChucVu;
 
         public FormLogin()
         {
             InitializeComponent();
+
             instance = this;
 
-            txtUsername.Text = txtUsername_Login.Text;
-            txtUserpassword.Text = txtUsername_Login.Text;
+            
 
             //SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='khanh1803' and ncc.Username='khanh1803'
 
@@ -31,26 +34,41 @@ namespace DXApplication1
 
         public void checkSytem(string Check)
         {
-            XtraForm1 dashbroad = new XtraForm1();
-
+            XtraForm1 dashboard = new XtraForm1();
             if (Check == "Login Successfully")
-                dashbroad.Show();
-            else MessageBox.Show($"{Check}");
+                dashboard.Show();
+           else MessageBox.Show("Incorrect login attempt.");
+
+
+
+           
+
         }
         public virtual void OpenSql()
         {
+            txt0 = txtUsername_Login;
+            XtraForm1 dashboard =new XtraForm1();
+
+
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
-                var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
-        
+                var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG,UserName FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
+                
+
                 foreach (LoginDTO p in data)
                 {
-
                     checkSytem(p.SYSTEM);
+                    break;
+                    
                 }
+
+                
+
+                
+
                 db.Close();
             }
         }
@@ -175,6 +193,11 @@ namespace DXApplication1
 
 
            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
         //END
     }
