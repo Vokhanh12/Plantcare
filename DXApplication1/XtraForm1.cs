@@ -19,16 +19,16 @@ using DXApplication1.Subject.ExportDocuments;
 using DXApplication1.Subject.Warehouse;
 using DXApplication1.Subject.Suplier;
 using DXApplication1.Reports;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace DXApplication1
 {
 
     public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
     {
-        //Fiel
         
-
-
+        //Fiel
         private RJDropdownMenu rjDropdownMenu1;
 
         private System.Windows.Forms.ToolStripMenuItem ViewmyProfileToolStripMenuItem;
@@ -73,6 +73,9 @@ namespace DXApplication1
         {
 
             InitializeComponent();
+
+           
+
             //add Compoinent because Error delete code.maybe i shound do this it
             
             //Open rjDropdownMenu1
@@ -375,6 +378,9 @@ namespace DXApplication1
           public static Color ColorLeave = Color.FromArgb(0, 0, 51);
         }
 
+
+   
+
         private void XtraForm1_Load(object sender, EventArgs e)
         {
             //Loadropdownmenu is true;
@@ -383,6 +389,11 @@ namespace DXApplication1
             rjDropdownMenu_Work.IsMainMenu = true;
 
             rjDropdownMenu_Report.IsMainMenu = true;
+
+            FormLogin.instance.txtUsername
+
+
+            
         }
         //the constructors change color and backcolor
         private void ibtHome_Click(object sender, EventArgs e)

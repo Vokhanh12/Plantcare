@@ -25,7 +25,9 @@ namespace DXApplication1.FolderMajor
         {
             
             InitializeComponent();
+
             instance = this;
+
             txt0 = txt_MANV;
             txt1 = txt_TENNV;
             txt2 = txt_LUONG;

@@ -11,11 +11,21 @@ namespace DXApplication1
 {
     public partial class FormLogin : DevExpress.XtraEditors.XtraForm
     {
-        FormRegister frmRegister = new FormRegister();
-    
+        public FormRegister frmRegister = new FormRegister();
+
+        public TextBox txtUsername, txtUserpassword,Chucvu;
+
+        public static FormLogin instance;
+
         public FormLogin()
         {
             InitializeComponent();
+            instance = this;
+
+            txtUsername.Text = txtUsername_Login.Text;
+            txtUserpassword.Text = txtUsername_Login.Text;
+
+            //SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='khanh1803' and ncc.Username='khanh1803'
 
         }
 

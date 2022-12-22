@@ -1,11 +1,9 @@
-SELECT * FROM dbo.DATA_APPLICATION_FOR_ADMIN
+
 IF EXISTS(
-SELECT 1 FROM dbo.DATA_APPLICATION_FOR_ADMIN
-WHERE UserName ='Admin'
-AND PWDCOMPARE('Admin@123',UserPassword)=1)
-BEGIN
-SELECT 'Login Successfully' as 'Login Successfully Using PWDCOMPARE'
+SELECT 1 FROM dbo.APPLICATION_USER
+WHERE UserName = 'khanh1803' AND PWDCOMPARE('Khanh1803@2002',UserPassword)=1)
+BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG FROM dbo.APPLICATION_USER WHERE UserName = 'khanh1803'
 END
 ELSE
-BEGIN SELECT 'Incorrect login attempt.' as 'While passing PWDCOMPARE function'
+BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM'
 END
