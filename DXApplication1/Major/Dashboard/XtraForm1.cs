@@ -21,6 +21,8 @@ using DXApplication1.Subject.Suplier;
 using DXApplication1.Reports;
 using System.Data.SqlClient;
 using System.Configuration;
+using DXApplication1.Statup.Information_user;
+using Dapper;
 
 namespace DXApplication1
 {
@@ -120,6 +122,7 @@ namespace DXApplication1
             this.ViewmyProfileToolStripMenuItem.Name = "aToolStripMenuItem";
             this.ViewmyProfileToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.ViewmyProfileToolStripMenuItem.Text = "View my profile";
+            this.ViewmyProfileToolStripMenuItem.Click += new System.EventHandler(this.ViewmyProfileToolStripMenuItem_Click);
 
             this.AccoutDetailsToolStripMenuItem.Name = "aToolStripMenuItem";
             this.AccoutDetailsToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
@@ -638,6 +641,30 @@ namespace DXApplication1
         private void SignOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ViewmyProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            watchInformation wIF = new watchInformation();
+            wIF.MdiParent=this;
+            wIF.Show();
+
+        }
+
+        public void openSQLtoWIF()
+        {
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                var dataAD = db.Query<infomationDTO>($"SELECT * FROM {btnAcount.Text}", commandType: CommandType.Text);
+                var dataQL = db.Query<infomationDTO>($"SELECT * FROM {btnAcount.Text}", commandType: CommandType.Text);
+                var dataNV = db.Query<infomationDTO>($"SELECT * FROM {btnAcount.Text}", commandType: CommandType.Text);
+
+                
+                db.Close();
+            }
         }
 
     }

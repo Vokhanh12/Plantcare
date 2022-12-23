@@ -3,6 +3,7 @@ using DevExpress.Skins;
 using DevExpress.UserSkins;
 using DXApplication1;
 using DXApplication1.RJControls;
+using DXApplication1.Statup.Information_user;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace DXApplication1
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new XtraForm1());
+            Application.Run(new FormLogin());
 
 
 

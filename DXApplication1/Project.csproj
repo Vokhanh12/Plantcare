@@ -146,72 +146,79 @@
     <Compile Include="Reports\ReportALL.Designer.cs">
       <DependentUpon>ReportALL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Customer\frmCustomer.cs">
+    <Compile Include="Major\Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Customer\frmCustomer.Designer.cs">
+    <Compile Include="Major\Customer\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Customer\KhachhangDTO.cs" />
-    <Compile Include="Subject\Dashboard\dashboardDTO.cs" />
-    <Compile Include="Subject\Dashboard\selectSQL.cs" />
-    <Compile Include="Subject\Employee\frmNhanVien.cs">
+    <Compile Include="Major\Customer\KhachhangDTO.cs" />
+    <Compile Include="Major\Dashboard\dashboardDTO.cs" />
+    <Compile Include="Major\Dashboard\selectSQL.cs" />
+    <Compile Include="Major\Employee\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Employee\frmNhanVien.Designer.cs">
+    <Compile Include="Major\Employee\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Employee\fsEdit.cs" />
-    <Compile Include="Subject\Employee\New_FormSave.cs">
+    <Compile Include="Major\Employee\fsEdit.cs" />
+    <Compile Include="Major\Employee\New_FormSave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Employee\New_FormSave.Designer.cs">
+    <Compile Include="Major\Employee\New_FormSave.Designer.cs">
       <DependentUpon>New_FormSave.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Employee\NhanvienDTO.cs" />
+    <Compile Include="Major\Employee\NhanvienDTO.cs" />
     <Compile Include="RJControls\CallRJDropmenu.cs" />
     <Compile Include="RJControls\MenuColorTable.cs" />
     <Compile Include="RJControls\MenuRenderer.cs" />
     <Compile Include="RJControls\RJDropdownMenu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Subject\ExportDocuments\ExportDocumentsDTO.cs" />
-    <Compile Include="Subject\ExportDocuments\frmCTXH.cs">
+    <Compile Include="Major\ExportDocuments\ExportDocumentsDTO.cs" />
+    <Compile Include="Major\ExportDocuments\frmCTXH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\ExportDocuments\frmCTXH.Designer.cs">
+    <Compile Include="Major\ExportDocuments\frmCTXH.Designer.cs">
       <DependentUpon>frmCTXH.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\ImportDocuments\frmCTNH.cs">
+    <Compile Include="Major\ImportDocuments\frmCTNH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\ImportDocuments\frmCTNH.Designer.cs">
+    <Compile Include="Major\ImportDocuments\frmCTNH.Designer.cs">
       <DependentUpon>frmCTNH.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\ImportDocuments\ImportDocumentsDTO.cs" />
-    <Compile Include="Subject\Items\MathangDTO.cs" />
-    <Compile Include="Subject\Items\frmMathang.cs">
+    <Compile Include="Major\ImportDocuments\ImportDocumentsDTO.cs" />
+    <Compile Include="Major\Items\MathangDTO.cs" />
+    <Compile Include="Major\Items\frmMathang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Items\frmMathang.Designer.cs">
+    <Compile Include="Major\Items\frmMathang.Designer.cs">
       <DependentUpon>frmMathang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Login\LoginDTO.cs" />
-    <Compile Include="Subject\Register\RegisterDTO.cs" />
-    <Compile Include="Subject\Suplier\frmNCC.cs">
+    <Compile Include="Statup\Information user\infomationDTO.cs" />
+    <Compile Include="Statup\Information user\watchInformation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Suplier\frmNCC.Designer.cs">
+    <Compile Include="Statup\Information user\watchInformation.Designer.cs">
+      <DependentUpon>watchInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statup\Login\LoginDTO.cs" />
+    <Compile Include="Statup\Register\RegisterDTO.cs" />
+    <Compile Include="Major\Suplier\frmNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Major\Suplier\frmNCC.Designer.cs">
       <DependentUpon>frmNCC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Suplier\NhacungcapDTO.cs" />
-    <Compile Include="Subject\Warehouse\frmKho.cs">
+    <Compile Include="Major\Suplier\NhacungcapDTO.cs" />
+    <Compile Include="Major\Warehouse\frmKho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Warehouse\frmKho.Designer.cs">
+    <Compile Include="Major\Warehouse\frmKho.Designer.cs">
       <DependentUpon>frmKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Warehouse\KhohangDTO.cs" />
+    <Compile Include="Major\Warehouse\KhohangDTO.cs" />
     <Compile Include="test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,45 +226,48 @@
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="winAPI.cs" />
-    <Compile Include="Subject\Register\FormRegister.cs">
+    <Compile Include="Statup\Register\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Register\FormRegister.Designer.cs">
+    <Compile Include="Statup\Register\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Subject\Login\FormLogin.cs">
+    <Compile Include="Statup\Login\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Login\FormLogin.Designer.cs">
+    <Compile Include="Statup\Login\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiFormContext.cs" />
     <Compile Include="MultiFormContextBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Subject\Dashboard\XtraForm1.cs">
+    <Compile Include="Major\Dashboard\XtraForm1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Subject\Dashboard\XtraForm1.Designer.cs">
+    <Compile Include="Major\Dashboard\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="_Funtion.cs" />
     <EmbeddedResource Include="Reports\ReportALL.resx">
       <DependentUpon>ReportALL.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Customer\frmCustomer.resx">
+    <EmbeddedResource Include="Major\Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Employee\frmNhanVien.resx">
+    <EmbeddedResource Include="Major\Employee\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Employee\New_FormSave.resx">
+    <EmbeddedResource Include="Major\Employee\New_FormSave.resx">
       <DependentUpon>New_FormSave.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Register\FormRegister.resx">
+    <EmbeddedResource Include="Statup\Information user\watchInformation.resx">
+      <DependentUpon>watchInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statup\Register\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Login\FormLogin.resx">
+    <EmbeddedResource Include="Statup\Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -272,22 +282,22 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RJControls\RJDropdownMenu.resx" />
-    <EmbeddedResource Include="Subject\ExportDocuments\frmCTXH.resx">
+    <EmbeddedResource Include="Major\ExportDocuments\frmCTXH.resx">
       <DependentUpon>frmCTXH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\ImportDocuments\frmCTNH.resx">
+    <EmbeddedResource Include="Major\ImportDocuments\frmCTNH.resx">
       <DependentUpon>frmCTNH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Items\frmMathang.resx">
+    <EmbeddedResource Include="Major\Items\frmMathang.resx">
       <DependentUpon>frmMathang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Suplier\frmNCC.resx">
+    <EmbeddedResource Include="Major\Suplier\frmNCC.resx">
       <DependentUpon>frmNCC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Warehouse\frmKho.resx">
+    <EmbeddedResource Include="Major\Warehouse\frmKho.resx">
       <DependentUpon>frmKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Subject\Dashboard\XtraForm1.resx">
+    <EmbeddedResource Include="Major\Dashboard\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />

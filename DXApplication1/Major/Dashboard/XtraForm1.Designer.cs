@@ -42,7 +42,6 @@ namespace DXApplication1
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelMenuMind = new System.Windows.Forms.Panel();
             this.panelMenuLeft = new System.Windows.Forms.Panel();
@@ -126,7 +125,7 @@ namespace DXApplication1
             // 
             this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(215, 712);
+            this.lbVersion.Location = new System.Drawing.Point(198, 711);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(89, 17);
             this.lbVersion.TabIndex = 10;
@@ -261,7 +260,7 @@ namespace DXApplication1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.Plant_Happy_and_healthy__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(-44, -101);
+            this.pictureBox1.Location = new System.Drawing.Point(-27, -104);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 361);
@@ -273,25 +272,13 @@ namespace DXApplication1
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(299, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1218, 123);
+            this.panel2.Size = new System.Drawing.Size(1218, 76);
             this.panel2.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(63)))));
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 76);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1218, 47);
-            this.panel6.TabIndex = 1;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel5
             // 
@@ -456,6 +443,36 @@ namespace DXApplication1
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
             // 
+            // tabbedView1
+            // 
+            this.tabbedView1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.Appearance.ForeColor = System.Drawing.Color.Transparent;
+            this.tabbedView1.Appearance.Options.UseBackColor = true;
+            this.tabbedView1.Appearance.Options.UseForeColor = true;
+            this.tabbedView1.AppearancePage.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.Header.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.Header.Options.UseBackColor = true;
+            this.tabbedView1.AppearancePage.HeaderActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderActive.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderActive.Options.UseBackColor = true;
+            this.tabbedView1.AppearancePage.HeaderDisabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderDisabled.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderDisabled.Options.UseBackColor = true;
+            this.tabbedView1.AppearancePage.HeaderHotTracked.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderHotTracked.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderHotTracked.Options.UseBackColor = true;
+            this.tabbedView1.AppearancePage.HeaderSelected.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderSelected.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.HeaderSelected.Options.UseBackColor = true;
+            this.tabbedView1.AppearancePage.PageClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.PageClient.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.tabbedView1.AppearancePage.PageClient.Options.UseBackColor = true;
+            this.tabbedView1.LoadingIndicatorProperties.AppearanceCaption.BackColor = System.Drawing.Color.Transparent;
+            this.tabbedView1.LoadingIndicatorProperties.AppearanceCaption.Options.UseBackColor = true;
+            this.tabbedView1.LoadingIndicatorProperties.AppearanceDescription.ForeColor = System.Drawing.Color.Transparent;
+            this.tabbedView1.LoadingIndicatorProperties.AppearanceDescription.Options.UseForeColor = true;
+            // 
             // panel4
             // 
             this.panel4.Location = new System.Drawing.Point(299, 117);
@@ -508,7 +525,6 @@ namespace DXApplication1
         private FontAwesome.Sharp.IconButton ibt_Work;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel plMenuRight;

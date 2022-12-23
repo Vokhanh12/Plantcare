@@ -8,6 +8,7 @@ using Dapper;
 using DXApplication1.Subject.Login;
 using DXApplication1.Subject.Dashboard;
 using System.Linq;
+using DXApplication1.Statup.Information_user;
 
 namespace DXApplication1
 {
@@ -37,9 +38,9 @@ namespace DXApplication1
                     if (db.State == ConnectionState.Closed)
                         db.Open();
 
-                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_ADMIN ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_MANAGER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_EMPLOYEE ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_ADMIN ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_MANAGER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_EMPLOYEE ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
 
                     switch (ChucVu)
                     {
@@ -47,18 +48,45 @@ namespace DXApplication1
                             foreach (LoginDTO p in dataAD)
                             {
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenAD;
-                             }
+
+                               /* watchInformation.instance.mlbTK_AT.Text = p.UserName;
+                                watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
+                                watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
+                                watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
+                                watchInformation.instance.mlbDC_AT.Text = "ADMIN";
+                                watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
+                               */
+                            }
                             break;
                         case "MANAGER":
                             foreach (LoginDTO p in dataQL)
                             {
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenQL;
+                                /*
+                               watchInformation.instance.mlbTK_AT.Text = p.UserName;
+                               watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                               watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
+                               watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
+                               watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
+                               watchInformation.instance.mlbDC_AT.Text = "ADMIN";
+                               watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
+                                */
                             }
                             break;
                         case"EMPLOYEE":
                             foreach (LoginDTO p in dataNV)
                             {
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenNV;
+                                /*
+                                watchInformation.instance.mlbTK_AT.Text = p.UserName;
+                                watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
+                                watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
+                                watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
+                                watchInformation.instance.mlbDC_AT.Text = "ADMIN";
+                                watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
+                                 */
                             }
                             break;
 

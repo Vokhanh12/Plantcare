@@ -140,6 +140,7 @@
             this.txtPassword_Login.Location = new System.Drawing.Point(128, 366);
             this.txtPassword_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword_Login.Name = "txtPassword_Login";
+            this.txtPassword_Login.PasswordChar = '*';
             this.txtPassword_Login.Size = new System.Drawing.Size(302, 21);
             this.txtPassword_Login.TabIndex = 20;
             this.txtPassword_Login.TabStop = false;

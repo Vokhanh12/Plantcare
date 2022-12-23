@@ -21,9 +21,9 @@ namespace DXApplication1.RJControls
         {
             if (isMainMenu)
             {
-                backColor = Color.FromArgb(37, 39, 60);
-                leftColumnColor = Color.FromArgb(32, 33, 51);
-                borderColor = Color.FromArgb(32, 33, 51);
+                backColor = Color.FromArgb(51, 0, 102);
+                leftColumnColor = Color.FromArgb(25, 0, 51);
+                borderColor = Color.FromArgb(25, 0, 51);
                 menuItemBorderColor = primaryColor;
                 menuItemSelectedColor = primaryColor;
             }
