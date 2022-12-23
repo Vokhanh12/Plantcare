@@ -7,6 +7,7 @@ using System.Configuration;
 using Dapper;
 using DXApplication1.Subject.Login;
 using DXApplication1.Subject.Dashboard;
+using System.Linq;
 
 namespace DXApplication1
 {
@@ -14,63 +15,87 @@ namespace DXApplication1
     {
         public FormRegister frmRegister = new FormRegister();
 
-        public TextBox txt0;
-
-        public static FormLogin instance;
-
-        public string ChucVu;
 
         public FormLogin()
         {
             InitializeComponent();
 
-            instance = this;
-
-            
-
             //SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='khanh1803' and ncc.Username='khanh1803'
 
         }
 
-        public void checkSytem(string Check)
+        public void checkSytem_sendInfomation(string Check,string ChucVu,string Username)
         {
             XtraForm1 dashboard = new XtraForm1();
             if (Check == "Login Successfully")
+            {
+
+                using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+                {
+
+
+                    if (db.State == ConnectionState.Closed)
+                        db.Open();
+
+                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_ADMIN ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_MANAGER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG FROM DATA_APPLICATION_FOR_EMPLOYEE ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+
+                    switch (ChucVu)
+                    {
+                        case "ADMIN":
+                            foreach (LoginDTO p in dataAD)
+                            {
+                                XtraForm1.instance.btnAccount_DB.Text = p.TenAD;
+                             }
+                            break;
+                        case "MANAGER":
+                            foreach (LoginDTO p in dataQL)
+                            {
+                                XtraForm1.instance.btnAccount_DB.Text = p.TenQL;
+                            }
+                            break;
+                        case"EMPLOYEE":
+                            foreach (LoginDTO p in dataNV)
+                            {
+                                XtraForm1.instance.btnAccount_DB.Text = p.TenNV;
+                            }
+                            break;
+
+                        default:MessageBox.Show("Khong co ten nhan vien nay erro:01");
+                            break;
+                            
+                    }
+
+                    db.Close();
+                }
+
                 dashboard.Show();
-           else MessageBox.Show("Incorrect login attempt.");
-
-
-
-           
+            }
+            else MessageBox.Show("Incorrect login attempt.");
 
         }
-        public virtual void OpenSql()
+        public virtual void OpenSql(object sender, EventArgs e)
         {
-            txt0 = txtUsername_Login;
-            XtraForm1 dashboard =new XtraForm1();
-
-
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
                 var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG,UserName FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
-                
+
+                LoginDTO loginDTO = new LoginDTO();
 
                 foreach (LoginDTO p in data)
                 {
-                    checkSytem(p.SYSTEM);
-                    break;
-                    
+                    checkSytem_sendInfomation(p.SYSTEM, p.TAI_KHOANG,p.UserName);
                 }
-
-                
-
-                
 
                 db.Close();
             }
+
+            
+
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -132,7 +157,7 @@ namespace DXApplication1
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            OpenSql();
+            OpenSql(sender,e);
         }
 
 

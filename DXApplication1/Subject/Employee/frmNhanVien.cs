@@ -29,7 +29,9 @@ namespace DXApplication1.FolderNV
 
         public static frmNhanVien instance;
 
-       
+        public Button btn;
+
+
         public virtual void OpenListview(string str)
         {
             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
@@ -109,7 +111,7 @@ namespace DXApplication1.FolderNV
 
                     for (var i = 0; i <= materialListView1.Items.Count - 1; i++)
                     {
-
+                        //Check Listview had items in listView
                         if (MANV.ToString() == (Edit.deleteCharacter(materialListView1.Items[0].SubItems[0].ToString())).Replace(" ", ""))
                         {
                             MessageBox.Show($"Da co { (Edit.deleteCharacter(materialListView1.Items[0].SubItems[0].ToString())).Replace(" ", "")} vui long nhap 'MANV' khac");
@@ -132,10 +134,10 @@ namespace DXApplication1.FolderNV
 
 
                 }
-           
+
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show($"Erro:{ex} ");
             }
@@ -145,27 +147,27 @@ namespace DXApplication1.FolderNV
 
         public void RemoveEmployeeSql()
         {
-             var MANV = materialListView1.SelectedItems[0].SubItems[0].Text;
+            var MANV = materialListView1.SelectedItems[0].SubItems[0].Text;
 
-             using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
-             {
-                 if (db.State == ConnectionState.Closed)
-                     db.Open();
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
 
-                 var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV='{MANV}'",commandType: CommandType.Text);
-                 materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
-                 MessageBox.Show($"Xoa thanh cong");
-             }
+                var Count = db.ExecuteAsync($"DELETE FROM NHANVIEN WHERE MANV='{MANV}'", commandType: CommandType.Text);
+                materialListView1.Items.Remove(materialListView1.SelectedItems[0]);
+                MessageBox.Show($"Xoa thanh cong");
+            }
 
-         
-          
+
+
         }
         public void editEmployee()
         {
-            
+
             var MANV = New_FormSave.instance.txt0.Text;
             var TENNV = New_FormSave.instance.txt1.Text;
-            var LUONG = (Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫", "")).Replace(".", "")).Replace(",", ""))/100).ToString();
+            var LUONG = (Convert.ToDecimal((((New_FormSave.instance.txt2.Text).Replace(" ₫", "")).Replace(".", "")).Replace(",", "")) / 100).ToString();
             var THUONG = (Convert.ToDecimal((New_FormSave.instance.txt3.Text).Replace(" %", "")) / 100).ToString();
             var GIOITINH = New_FormSave.instance.txt4.Text;
             var NGAYSINH = New_FormSave.instance.dtNgaysinh.Text;
@@ -183,9 +185,9 @@ namespace DXApplication1.FolderNV
             }
         }
 
-      
 
-        public void  Design_frmNV()
+        //Design Form
+        public void Design_frmNV()
         {
             materialListView1.Columns[0].Width = 140;
             materialListView1.Columns[1].Width = 140;
@@ -201,7 +203,8 @@ namespace DXApplication1.FolderNV
         {
             InitializeComponent();
 
-            instance = this;
+
+
 
             //Design MarterialListview
             skinManager = MaterialSkinManager.Instance;
@@ -209,29 +212,19 @@ namespace DXApplication1.FolderNV
             skinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             skinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.Blue900, Primary.Blue900, Accent.Blue200, TextShade.BLACK);
 
-
-            materialListView1.Columns[0].Width = 140;
-            materialListView1.Columns[1].Width = 140;
-            materialListView1.Columns[2].Width = 110;
-            materialListView1.Columns[3].Width = 90;
-            materialListView1.Columns[4].Width = 100;
-            materialListView1.Columns[5].Width = 130;
-            materialListView1.Columns[6].Width = 130;
-            materialListView1.Columns[7].Width = 120;
-            materialListView1.Columns[8].Width = 150;
+            //Deign form size
+            Design_frmNV();
 
             mLV = materialListView1;
 
             OpenSql();
-
-
 
         }
 
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
-         
+
         }
 
 
@@ -246,7 +239,7 @@ namespace DXApplication1.FolderNV
 
             frmSave.Show();
 
-          
+
 
         }
 
@@ -256,20 +249,21 @@ namespace DXApplication1.FolderNV
             New_FormSave frmSave = new New_FormSave();
             frmSave.Show();
             casechange = "Edit";
-             string specifier;
-           CultureInfo culture;
+            string specifier;
+            CultureInfo culture;
 
-           var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
-           try{
+            var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+            try
+            {
                 New_FormSave.instance.txt0.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
                 New_FormSave.instance.txt1.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
 
                 //Lương
                 New_FormSave.instance.txt2.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
 
-               //Thưởng = %
-               specifier = "P";
-               culture = CultureInfo.InvariantCulture;
+                //Thưởng = %
+                specifier = "P";
+                culture = CultureInfo.InvariantCulture;
                 New_FormSave.instance.txt3.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
                 // Displays:    #.00 %
 
@@ -281,13 +275,13 @@ namespace DXApplication1.FolderNV
                 New_FormSave.instance.txt7.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
                 New_FormSave.instance.txt8.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
 
-           }
-           catch(Exception ex)
-           {
-               MessageBox.Show("Nhap click vao ban de chinh sua");
-               this.Close();
-           }
-          
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nhap click vao ban de chinh sua");
+                this.Close();
+            }
+
 
         }
         private void iconButton3_Click(object sender, EventArgs e)
@@ -367,14 +361,12 @@ namespace DXApplication1.FolderNV
                 this.Close();
             }
         }
-
-        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
+        //Load form
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
+
+            //Add Items for comboBox
             cbE_Select.Properties.Items.Add("MANV");
             cbE_Select.Properties.Items.Add("TENNV");
             cbE_Select.Properties.Items.Add("LUONG");
@@ -388,11 +380,7 @@ namespace DXApplication1.FolderNV
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-           
-                        OpenListview("MANV");
-                   
-
-            
+            OpenListview(cbE_Select.SelectedItem.ToString());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -405,74 +393,13 @@ namespace DXApplication1.FolderNV
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ibtRefesh_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtFind_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dateTimeChartRangeControlClient1_CustomizeSeries(object sender, ClientDataSourceProviderCustomizeSeriesEventArgs e)
-        {
-
+           // frmNhanVien newfrmNhanvien = new frmNhanVien();
+            //if (string.Equals((sender as Button).Name, @"CloseButton"))
+            
+            
+         // Then assume that X has been clicked and act accordingly.
         }
     }
 }

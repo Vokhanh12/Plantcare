@@ -29,7 +29,10 @@ namespace DXApplication1
     {
         //Send data to Form login
         public static XtraForm1 instance;
-        public static Button btnAccount_DB;
+        public Button btnAccount_DB;
+
+        public int countCheck = 1;
+
 
         //Fiel
         private RJDropdownMenu rjDropdownMenu1;
@@ -79,7 +82,10 @@ namespace DXApplication1
 
             instance = this;
 
-            btnAcount.Text = FormLogin.instance.txt0.Text;
+          
+
+            btnAccount_DB = btnAcount;
+            
         
 
             //add Compoinent because Error delete code.maybe i shound do this it
@@ -396,10 +402,8 @@ namespace DXApplication1
 
             rjDropdownMenu_Report.IsMainMenu = true;
 
-          
-
-
             
+
         }
         //the constructors change color and backcolor
         private void ibtHome_Click(object sender, EventArgs e)
@@ -559,9 +563,24 @@ namespace DXApplication1
         // Button click DropdownMenu
         private void Employee_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             frmNhanVien formNhanVien = new frmNhanVien();
-            formNhanVien.MdiParent = this;
-            formNhanVien.Show();
+
+            if (countCheck < 2)
+            {
+                formNhanVien.MdiParent = this;
+                formNhanVien.Show();
+                
+               
+            }
+            else {
+                MessageBox.Show("Danh sach nhan vien da co");
+            }
+
+           
+
+            countCheck++;
+
         }
 
         private void User_ToolStripMenuItem_Click(object sender , EventArgs e)

@@ -90,7 +90,6 @@ namespace DXApplication1.FolderNV
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 580);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel5
             // 
@@ -100,7 +99,6 @@ namespace DXApplication1.FolderNV
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1000, 444);
             this.panel5.TabIndex = 0;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // materialListView1
             // 
@@ -186,7 +184,6 @@ namespace DXApplication1.FolderNV
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1000, 71);
             this.panel4.TabIndex = 1;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel9
             // 
@@ -201,7 +198,6 @@ namespace DXApplication1.FolderNV
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(644, 71);
             this.panel9.TabIndex = 11;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // panel10
             // 
@@ -212,7 +208,6 @@ namespace DXApplication1.FolderNV
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(139, 71);
             this.panel10.TabIndex = 15;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // ibtRefesh
             // 
@@ -229,7 +224,6 @@ namespace DXApplication1.FolderNV
             this.ibtRefesh.Size = new System.Drawing.Size(48, 39);
             this.ibtRefesh.TabIndex = 20;
             this.ibtRefesh.UseVisualStyleBackColor = true;
-            this.ibtRefesh.Click += new System.EventHandler(this.ibtRefesh_Click);
             // 
             // iconButton6
             // 
@@ -246,7 +240,6 @@ namespace DXApplication1.FolderNV
             this.iconButton6.Size = new System.Drawing.Size(48, 39);
             this.iconButton6.TabIndex = 19;
             this.iconButton6.UseVisualStyleBackColor = true;
-            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // ibtEdit
             // 
@@ -277,7 +270,6 @@ namespace DXApplication1.FolderNV
             this.materialLabel1.Size = new System.Drawing.Size(106, 24);
             this.materialLabel1.TabIndex = 13;
             this.materialLabel1.Text = "EMPLOYEE";
-            this.materialLabel1.Click += new System.EventHandler(this.materialLabel1_Click);
             // 
             // ibtDelete
             // 
@@ -339,7 +331,6 @@ namespace DXApplication1.FolderNV
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(356, 71);
             this.panel6.TabIndex = 10;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel8
             // 
@@ -349,7 +340,6 @@ namespace DXApplication1.FolderNV
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(66, 71);
             this.panel8.TabIndex = 15;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // iconButton4
             // 
@@ -377,7 +367,6 @@ namespace DXApplication1.FolderNV
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(290, 71);
             this.panel7.TabIndex = 14;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // cbE_Select
             // 
@@ -391,7 +380,6 @@ namespace DXApplication1.FolderNV
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbE_Select.Size = new System.Drawing.Size(136, 28);
             this.cbE_Select.TabIndex = 14;
-            this.cbE_Select.SelectedIndexChanged += new System.EventHandler(this.comboBoxEdit1_SelectedIndexChanged);
             // 
             // txtFind
             // 
@@ -400,7 +388,6 @@ namespace DXApplication1.FolderNV
             this.txtFind.Name = "txtFind";
             this.txtFind.Size = new System.Drawing.Size(136, 30);
             this.txtFind.TabIndex = 13;
-            this.txtFind.TextChanged += new System.EventHandler(this.txtFind_TextChanged);
             // 
             // panel2
             // 
@@ -410,7 +397,6 @@ namespace DXApplication1.FolderNV
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1000, 65);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -420,10 +406,6 @@ namespace DXApplication1.FolderNV
             this.panel3.Size = new System.Drawing.Size(1000, 65);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // dateTimeChartRangeControlClient1
-            // 
-            this.dateTimeChartRangeControlClient1.CustomizeSeries += new System.EventHandler<DevExpress.XtraEditors.ClientDataSourceProviderCustomizeSeriesEventArgs>(this.dateTimeChartRangeControlClient1_CustomizeSeries);
             // 
             // frmNhanVien
             // 

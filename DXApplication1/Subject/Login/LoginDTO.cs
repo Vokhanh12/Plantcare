@@ -14,5 +14,10 @@ namespace DXApplication1.Subject.Login
 
         public string SYSTEM { get; set; }
         public string TAI_KHOANG { get; set; }
+
+        public string TenQL { get; set; }
+        public string TenNV { get; set; }
+        public string TenAD { get; set; }
+
     }
 }
