@@ -15,23 +15,31 @@ namespace DXApplication1.Statup.Information_user
 {
     public partial class watchInformation : MaterialSkin.Controls.MaterialForm
     {
+        //Declare
         MaterialSkinManager skinManager;
-        public MaterialLabel mlbTK_AT, mlbMK_AT, mlbTTK_AT, mlbMTK_AT, mlbLTK_AT, mlbDC_AT, mlbNDK_AT;
 
         public static watchInformation instance;
+
+        public MaterialLabel mlbID_AT,mlbTK_AT, mlbMK_AT, mlbTTK_AT, mlbMTK_AT, mlbLTK_AT, mlbDC_AT, mlbNDK_AT;
+
+        
 
         public string casechange;
         public watchInformation()
         {
             InitializeComponent();
+
             instance = this;
 
+            //transfer data to this form
+            mlbID_AT = mlbID;
             mlbTK_AT = mlbLTK;
             mlbMK_AT = mlbMK;
             mlbTTK_AT = mlbTTK;
             mlbMTK_AT = mlbMTK;
             mlbDC_AT = mlbDC;
             mlbNDK_AT = mlbNDK;
+            mlbLTK_AT = mlbLTK;
 
             //Design MarterialListview
             skinManager = MaterialSkinManager.Instance;

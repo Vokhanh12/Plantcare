@@ -65,7 +65,7 @@ namespace DXApplication1.FolderMajor
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.userlogo_before;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(18, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 211);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,6 +135,7 @@ namespace DXApplication1.FolderMajor
             this.iconButton1.Size = new System.Drawing.Size(48, 39);
             this.iconButton1.TabIndex = 30;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // iconButton2
             // 
@@ -381,7 +382,7 @@ namespace DXApplication1.FolderMajor
             // 
             this.dateEdit_NGAYSINH.EditValue = null;
             this.dateEdit_NGAYSINH.Location = new System.Drawing.Point(324, 364);
-            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4);
+            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateEdit_NGAYSINH.Name = "dateEdit_NGAYSINH";
             this.dateEdit_NGAYSINH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -433,9 +434,7 @@ namespace DXApplication1.FolderMajor
             // New_FormSave
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Appearance.Options.UseBackColor = true;
-            this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 579);

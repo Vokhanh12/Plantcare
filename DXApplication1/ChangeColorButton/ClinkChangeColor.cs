@@ -15,6 +15,7 @@ namespace DXApplication1.ChangeColorButton
     {
         public static IconButton currentBtn;
         public static Panel leftBorderBtn;
+        public static Panel downPnl;
 
         public static IconButton currentBtn1;
         
@@ -58,5 +59,12 @@ namespace DXApplication1.ChangeColorButton
                 currentBtn1.BackColor = color;
            
         }
+
+        public static void ActivatepnChange(object panelChange, Color color)
+        {
+            downPnl = (Panel)panelChange;
+            downPnl.BackColor = color;
+        }
+
     }
 }

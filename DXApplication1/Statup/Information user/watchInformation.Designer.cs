@@ -44,7 +44,7 @@ namespace DXApplication1.Statup.Information_user
             this.mlbLTK = new MaterialSkin.Controls.MaterialLabel();
             this.mlbDC = new MaterialSkin.Controls.MaterialLabel();
             this.mlbNDK = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.mlbID = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -244,38 +244,38 @@ namespace DXApplication1.Statup.Information_user
             this.mlbNDK.TabIndex = 14;
             this.mlbNDK.Text = "mlbTK";
             // 
-            // materialLabel8
+            // mlbID
             // 
-            this.materialLabel8.AutoSize = true;
-            this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(666, 87);
-            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(136, 24);
-            this.materialLabel8.TabIndex = 16;
-            this.materialLabel8.Text = "materialLabel8";
+            this.mlbID.AutoSize = true;
+            this.mlbID.Depth = 0;
+            this.mlbID.Font = new System.Drawing.Font("Roboto", 11F);
+            this.mlbID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.mlbID.Location = new System.Drawing.Point(666, 87);
+            this.mlbID.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mlbID.Name = "mlbID";
+            this.mlbID.Size = new System.Drawing.Size(136, 24);
+            this.mlbID.TabIndex = 16;
+            this.mlbID.Text = "materialLabel8";
             // 
             // materialLabel9
             // 
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(552, 87);
+            this.materialLabel9.Location = new System.Drawing.Point(628, 87);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(108, 24);
+            this.materialLabel9.Size = new System.Drawing.Size(32, 24);
             this.materialLabel9.TabIndex = 15;
-            this.materialLabel9.Text = "Tài khoảng:";
+            this.materialLabel9.Text = "ID:";
             // 
             // watchInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 444);
-            this.Controls.Add(this.materialLabel8);
+            this.Controls.Add(this.mlbID);
             this.Controls.Add(this.materialLabel9);
             this.Controls.Add(this.mlbNDK);
             this.Controls.Add(this.mlbDC);
@@ -318,7 +318,7 @@ namespace DXApplication1.Statup.Information_user
         private MaterialSkin.Controls.MaterialLabel mlbLTK;
         private MaterialSkin.Controls.MaterialLabel mlbDC;
         private MaterialSkin.Controls.MaterialLabel mlbNDK;
-        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private MaterialSkin.Controls.MaterialLabel mlbID;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
     }
 }

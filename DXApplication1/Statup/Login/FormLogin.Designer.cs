@@ -118,13 +118,13 @@
             // 
             this.txtUsername_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
             this.txtUsername_Login.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername_Login.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername_Login.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername_Login.ForeColor = System.Drawing.Color.White;
             this.txtUsername_Login.HideSelection = false;
             this.txtUsername_Login.Location = new System.Drawing.Point(128, 299);
             this.txtUsername_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername_Login.Name = "txtUsername_Login";
-            this.txtUsername_Login.Size = new System.Drawing.Size(302, 21);
+            this.txtUsername_Login.Size = new System.Drawing.Size(302, 22);
             this.txtUsername_Login.TabIndex = 19;
             this.txtUsername_Login.TabStop = false;
             this.txtUsername_Login.Text = "Username";
@@ -134,14 +134,14 @@
             // 
             this.txtPassword_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
             this.txtPassword_Login.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword_Login.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword_Login.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword_Login.ForeColor = System.Drawing.Color.White;
             this.txtPassword_Login.HideSelection = false;
-            this.txtPassword_Login.Location = new System.Drawing.Point(128, 366);
+            this.txtPassword_Login.Location = new System.Drawing.Point(128, 369);
             this.txtPassword_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword_Login.Name = "txtPassword_Login";
-            this.txtPassword_Login.PasswordChar = '*';
-            this.txtPassword_Login.Size = new System.Drawing.Size(302, 21);
+            this.txtPassword_Login.PasswordChar = '●';
+            this.txtPassword_Login.Size = new System.Drawing.Size(302, 22);
             this.txtPassword_Login.TabIndex = 20;
             this.txtPassword_Login.TabStop = false;
             this.txtPassword_Login.Text = "Password";

@@ -16,10 +16,15 @@ namespace DXApplication1
     {
         public FormRegister frmRegister = new FormRegister();
 
+        public watchInformation wIF = new watchInformation();
+
+        public static FormLogin instance;
 
         public FormLogin()
         {
             InitializeComponent();
+
+            instance = this;
 
             //SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='khanh1803' and ncc.Username='khanh1803'
 
@@ -28,6 +33,7 @@ namespace DXApplication1
         public void checkSytem_sendInfomation(string Check,string ChucVu,string Username)
         {
             XtraForm1 dashboard = new XtraForm1();
+            
             if (Check == "Login Successfully")
             {
 
@@ -38,55 +44,73 @@ namespace DXApplication1
                     if (db.State == ConnectionState.Closed)
                         db.Open();
 
-                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_ADMIN ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_MANAGER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM DATA_APPLICATION_FOR_EMPLOYEE ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
 
                     switch (ChucVu)
                     {
                         case "ADMIN":
                             foreach (LoginDTO p in dataAD)
                             {
+                                //Send data to XtraForm
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenAD;
 
-                               /* watchInformation.instance.mlbTK_AT.Text = p.UserName;
-                                watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                //Send data to watchInformation
+                                watchInformation.instance.mlbID_AT.Text = p.ID.ToString();
+                                watchInformation.instance.mlbTK_AT.Text = p.UserName;
+
+                                // watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                watchInformation.instance.mlbMK_AT.Text = "●●●●●●●●";
+
                                 watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
                                 watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
                                 watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                 watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                                watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
-                               */
+                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
+                               
                             }
                             break;
                         case "MANAGER":
                             foreach (LoginDTO p in dataQL)
                             {
+                                //Send data to XtraForm
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenQL;
-                                /*
-                               watchInformation.instance.mlbTK_AT.Text = p.UserName;
-                               watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
-                               watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
-                               watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
+
+                                //Send data to watchInformation
+                                watchInformation.instance.mlbID_AT.Text = p.ID.ToString();
+                                watchInformation.instance.mlbTK_AT.Text = p.UserName;
+
+                                // watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                  watchInformation.instance.mlbMK_AT.Text = "●●●●●●●●";
+                                
+                               watchInformation.instance.mlbTTK_AT.Text = p.TenQL;
+                               watchInformation.instance.mlbMTK_AT.Text = p.MaQL;
                                watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                               watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
-                                */
+                               watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
+                                
                             }
                             break;
                         case"EMPLOYEE":
                             foreach (LoginDTO p in dataNV)
                             {
+                                //Send data to XtraForm
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenNV;
-                                /*
+
+                                //Send data to watchInformation
+                                watchInformation.instance.mlbID_AT.Text = p.ID.ToString();
                                 watchInformation.instance.mlbTK_AT.Text = p.UserName;
-                                watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
-                                watchInformation.instance.mlbTTK_AT.Text = p.TenAD;
-                                watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
+
+                                // watchInformation.instance.mlbMK_AT.Text = p.UserPassword;
+                                watchInformation.instance.mlbMK_AT.Text = "●●●●●●●●";
+
+                                watchInformation.instance.mlbTTK_AT.Text = p.TenNV;
+                                watchInformation.instance.mlbMTK_AT.Text = p.MaNV;
                                 watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                 watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                                watchInformation.instance.mlbNDK_AT.Text = p.NGAY_DANG_NHAP;
-                                 */
+                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
+                                 
                             }
                             break;
 
@@ -95,10 +119,16 @@ namespace DXApplication1
                             
                     }
 
-                    db.Close();
+                  db.Close();
                 }
-
+                this.Hide();
+               
                 dashboard.Show();
+                wIF.Show();
+
+                wIF.Hide();
+
+
             }
             else MessageBox.Show("Incorrect login attempt.");
 

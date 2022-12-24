@@ -18,7 +18,13 @@ namespace DXApplication1.FolderMajor
     {
        // fsEdit Edit = new fsEdit();
         public TextBox txt0, txt1, txt2, txt3, txt4, txt5, txt6,txt7,txt8;
-        public  DateEdit dtNgaysinh;
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public DateEdit dtNgaysinh;
         public static New_FormSave instance;
        // public int caseChange;
         public New_FormSave()

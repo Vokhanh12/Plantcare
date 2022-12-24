@@ -31,6 +31,7 @@ namespace DXApplication1
     {
         //Send data to Form login
         public static XtraForm1 instance;
+
         public Button btnAccount_DB;
 
         public int countCheck = 1;
@@ -84,14 +85,17 @@ namespace DXApplication1
 
             instance = this;
 
-          
+
 
             btnAccount_DB = btnAcount;
-            
-        
+
+
+
+
+
 
             //add Compoinent because Error delete code.maybe i shound do this it
-            
+
             //Open rjDropdownMenu1
             this.components = new System.ComponentModel.Container();
 
@@ -171,7 +175,7 @@ namespace DXApplication1
             this.Supplier_ToolStripMenuItem,
             this.Warehouse_ToolStripMenuItem,
             this.CollectDocuments_ToolStripMenuItem,
-            this.SpendDocuments_ToolStripMenuItem});;
+            this.SpendDocuments_ToolStripMenuItem}); ;
             this.rjDropdownMenu_Work.MenuItemHeight = 45;
             this.rjDropdownMenu_Work.MenuItemTextColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu_Work.Name = "rjDropdownMenu2";
@@ -201,7 +205,7 @@ namespace DXApplication1
             this.User_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.User_ToolStripMenuItem.Text = "Khách hàng";
             this.User_ToolStripMenuItem.Click += new System.EventHandler(this.User_ToolStripMenuItem_Click);
-    
+
             // 
             // Supplier_ToolStripMenuItem
             // 
@@ -217,7 +221,7 @@ namespace DXApplication1
             this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.ImportDocuments_ToolStripMenuItem.Text = "Chứng từ nhập hàng";
             this.ImportDocuments_ToolStripMenuItem.Click += new System.EventHandler(this.ImportDocuments_ToolStripMenuItem_Click);
-    
+
             // 
             // ExportDocuments_ToolStripMenuItem
             // 
@@ -232,7 +236,7 @@ namespace DXApplication1
             this.CollectDocuments_ToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
             this.CollectDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(249, 45);
             this.CollectDocuments_ToolStripMenuItem.Text = "Chứng từ thu";
- 
+
             // 
             // SpendDocuments_ToolStripMenuItem
             // 
@@ -273,10 +277,10 @@ namespace DXApplication1
             this.Spend_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Own_DocumentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 
-            
+
 
             this.rjDropdownMenu_Report.SuspendLayout();
-                
+
 
             //Setting ItemRjDropdownMenu
             this.rjDropdownMenu_Report.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -288,7 +292,7 @@ namespace DXApplication1
             this.StatisticsAll_DocumentsToolStripMenuItem,
             });
 
-            this.StatisticsAll_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { 
+            this.StatisticsAll_DocumentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
                 this.Statistics_Commodity_DocumentsToolStripMenuItem,
                 this.Statistics_Expense_DocumentsToolStripMenuItem,
             });
@@ -369,11 +373,11 @@ namespace DXApplication1
 
 
             ClinkChangeColor.leftBorderBtn = new Panel();
-            ClinkChangeColor.leftBorderBtn.Size = new Size(10,62);
+            ClinkChangeColor.leftBorderBtn.Size = new Size(10, 62);
             panelMenu.Controls.Add(ClinkChangeColor.leftBorderBtn);
             //Form
 
-        
+
 
 
 
@@ -382,19 +386,19 @@ namespace DXApplication1
         //Structs Color
         private struct RGBColors
         {
-          public static Color color1 = Color.FromArgb(172,126,241);  
-          public static Color color2 = Color.FromArgb(249,118,176);  
-          public static Color color3 = Color.FromArgb(253,138,167);  
-          public static Color color4 = Color.FromArgb(95,77,221);  
-          public static Color color5 = Color.FromArgb(249,88,155);  
-          public static Color color6 = Color.FromArgb(24,161,251);
+            public static Color color1 = Color.FromArgb(172, 126, 241);
+            public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color3 = Color.FromArgb(253, 138, 167);
+            public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color5 = Color.FromArgb(249, 88, 155);
+            public static Color color6 = Color.FromArgb(24, 161, 251);
 
-          public static Color ColorEnter = Color.FromArgb(0, 128, 255);
-          public static Color ColorLeave = Color.FromArgb(0, 0, 51);
+            public static Color ColorEnter = Color.FromArgb(0, 128, 255);
+            public static Color ColorLeave = Color.FromArgb(0, 0, 51);
         }
 
 
-   
+
 
         private void XtraForm1_Load(object sender, EventArgs e)
         {
@@ -405,7 +409,9 @@ namespace DXApplication1
 
             rjDropdownMenu_Report.IsMainMenu = true;
 
-            
+
+
+
 
         }
         //the constructors change color and backcolor
@@ -413,14 +419,14 @@ namespace DXApplication1
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-           
+
         }
         private void ibt_Work_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
 
-            rjDropdownMenu_Work.Show(ibt_Work, ibt_Work.Width , 0);
+            rjDropdownMenu_Work.Show(ibt_Work, ibt_Work.Width, 0);
         }
         private void ibt_Follow_Click(object sender, EventArgs e)
         {
@@ -461,7 +467,7 @@ namespace DXApplication1
 
         private void cbList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panelDashbroad_Paint(object sender, PaintEventArgs e)
@@ -550,7 +556,7 @@ namespace DXApplication1
 
         private void buttonAcount_Click(object sender, EventArgs e)
         {
-            rjDropdownMenu1.Show(btnAcount, btnAcount.Width - rjDropdownMenu1.Width, btnAcount.Height+3);
+            rjDropdownMenu1.Show(btnAcount, btnAcount.Width - rjDropdownMenu1.Width, btnAcount.Height + 3);
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -566,27 +572,28 @@ namespace DXApplication1
         // Button click DropdownMenu
         private void Employee_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             frmNhanVien formNhanVien = new frmNhanVien();
 
             if (countCheck < 2)
             {
                 formNhanVien.MdiParent = this;
                 formNhanVien.Show();
-                
-               
+
+
             }
-            else {
+            else
+            {
                 MessageBox.Show("Danh sach nhan vien da co");
             }
 
-           
+
 
             countCheck++;
 
         }
 
-        private void User_ToolStripMenuItem_Click(object sender , EventArgs e)
+        private void User_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCustomer formCustomer = new frmCustomer();
             formCustomer.MdiParent = this;
@@ -601,23 +608,23 @@ namespace DXApplication1
             formMathhang.Show();
         }
 
-        private void ImportDocuments_ToolStripMenuItem_Click(object sender ,EventArgs e)
+        private void ImportDocuments_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCTNH formCTNH = new frmCTNH();
             formCTNH.MdiParent = this;
             formCTNH.Show();
 
-        
+
         }
 
-        private void ExportDocuments_ToolStripMenuItem_Click(object sender,EventArgs e)
+        private void ExportDocuments_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCTXH formCTXH = new frmCTXH();
             formCTXH.MdiParent = this;
             formCTXH.Show();
         }
 
-        private void Supplier_ToolStripMenuItem_Click(Object sender,EventArgs e)
+        private void Supplier_ToolStripMenuItem_Click(Object sender, EventArgs e)
         {
             frmNCC formNhacungcap = new frmNCC();
             formNhacungcap.MdiParent = this;
@@ -625,7 +632,7 @@ namespace DXApplication1
 
         }
 
-        private void Warehouse_ToolStripMenuItem_Click(object sender,EventArgs e)
+        private void Warehouse_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmKho formKho = new frmKho();
             formKho.MdiParent = this;
@@ -640,13 +647,15 @@ namespace DXApplication1
         }
         private void SignOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //CLose FormLogin when The login logged in
+            FormLogin.instance.Close();
             this.Close();
         }
 
         private void ViewmyProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            watchInformation wIF = new watchInformation();
-            wIF.MdiParent=this;
+            watchInformation wIF = watchInformation.instance;
+            wIF.MdiParent = this;
             wIF.Show();
 
         }
@@ -662,10 +671,26 @@ namespace DXApplication1
                 var dataQL = db.Query<infomationDTO>($"SELECT * FROM {btnAcount.Text}", commandType: CommandType.Text);
                 var dataNV = db.Query<infomationDTO>($"SELECT * FROM {btnAcount.Text}", commandType: CommandType.Text);
 
-                
+
                 db.Close();
             }
         }
 
+        private void txtFind_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtFind_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ActivatepnChange(pnFind, RGBColors.ColorEnter);
+        }
+
+        private void txtFind_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtFind.Text != "")
+                ClinkChangeColor.ActivatepnChange(pnFind, RGBColors.ColorEnter);
+            else ClinkChangeColor.ActivatepnChange(pnFind, Color.White);
+        }
     }
 }

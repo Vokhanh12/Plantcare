@@ -46,7 +46,7 @@ namespace DXApplication1
             this.panelMenuMind = new System.Windows.Forms.Panel();
             this.panelMenuLeft = new System.Windows.Forms.Panel();
             this.txtFind = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnFind = new System.Windows.Forms.Panel();
             this.picUsername = new System.Windows.Forms.PictureBox();
             this.plMenuRight = new System.Windows.Forms.Panel();
             this.btnAcount = new System.Windows.Forms.Button();
@@ -305,7 +305,7 @@ namespace DXApplication1
             // panelMenuLeft
             // 
             this.panelMenuLeft.Controls.Add(this.txtFind);
-            this.panelMenuLeft.Controls.Add(this.panel7);
+            this.panelMenuLeft.Controls.Add(this.pnFind);
             this.panelMenuLeft.Controls.Add(this.picUsername);
             this.panelMenuLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLeft.Location = new System.Drawing.Point(0, 0);
@@ -328,15 +328,18 @@ namespace DXApplication1
             this.txtFind.Size = new System.Drawing.Size(292, 21);
             this.txtFind.TabIndex = 25;
             this.txtFind.TabStop = false;
+            this.txtFind.Click += new System.EventHandler(this.txtFind_Click);
+            this.txtFind.MouseEnter += new System.EventHandler(this.txtFind_MouseEnter);
+            this.txtFind.MouseLeave += new System.EventHandler(this.txtFind_MouseLeave);
             // 
-            // panel7
+            // pnFind
             // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(63, 55);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(292, 1);
-            this.panel7.TabIndex = 24;
+            this.pnFind.BackColor = System.Drawing.Color.White;
+            this.pnFind.Location = new System.Drawing.Point(63, 55);
+            this.pnFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnFind.Name = "pnFind";
+            this.pnFind.Size = new System.Drawing.Size(292, 1);
+            this.pnFind.TabIndex = 24;
             // 
             // picUsername
             // 
@@ -531,7 +534,7 @@ namespace DXApplication1
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelMenuLeft;
         private System.Windows.Forms.TextBox txtFind;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnFind;
         private System.Windows.Forms.PictureBox picUsername;
         private System.Windows.Forms.Panel panelMenuMind;
         private System.Windows.Forms.Button btnAcount;
