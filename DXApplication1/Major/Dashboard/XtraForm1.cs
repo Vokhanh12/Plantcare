@@ -24,6 +24,7 @@ using System.Configuration;
 using DXApplication1.Statup.Information_user;
 using Dapper;
 using DXApplication1.Major.Dashboard;
+using DXApplication1.Major.Manager;
 
 namespace DXApplication1
 {
@@ -51,6 +52,7 @@ namespace DXApplication1
         private System.Windows.Forms.ToolStripMenuItem Item_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem User_ToolStripMenuItem;
 
+        private System.Windows.Forms.ToolStripMenuItem Manager_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Employee_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Supplier_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ImportDocuments_ToolStripMenuItem;
@@ -149,6 +151,7 @@ namespace DXApplication1
 
             //Open rjDropdownMenu_Work
             this.rjDropdownMenu_Work = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+            this.Manager_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Employee_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Item_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.User_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -168,6 +171,7 @@ namespace DXApplication1
             this.rjDropdownMenu_Work.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.rjDropdownMenu_Work.IsMainMenu = false;
             this.rjDropdownMenu_Work.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Manager_ToolStripMenuItem,
             this.Employee_ToolStripMenuItem,
             this.Item_ToolStripMenuItem,
             this.User_ToolStripMenuItem,
@@ -183,7 +187,13 @@ namespace DXApplication1
             this.rjDropdownMenu_Work.PrimaryColor = System.Drawing.Color.Empty;
             this.rjDropdownMenu_Work.Size = new System.Drawing.Size(250, 368);
 
-
+            //
+            //Manager_ToolStripMenuItem
+            //
+            this.Manager_ToolStripMenuItem.Name = "Manager_ToolStripMenuItem";
+            this.Manager_ToolStripMenuItem.Size = new System.Drawing.Size(240, 46);
+            this.Manager_ToolStripMenuItem.Text = "Quản lý";
+            this.Manager_ToolStripMenuItem.Click += new System.EventHandler(this.Manager_ToolStripMenuItem_Click);
             //
             // Employee_ToolStripMenuItem
             //
@@ -574,7 +584,19 @@ namespace DXApplication1
 
         }
 
+
+
         // Button click DropdownMenu
+        private void Manager_ToolStripMenuItem_Click(Object sender,EventArgs e)
+        {
+            FormManager frmManager = new FormManager();
+            frmManager.MdiParent = this;
+            frmManager.Show();
+        }
+
+
+
+
         private void Employee_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 

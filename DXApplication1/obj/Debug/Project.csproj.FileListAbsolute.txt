@@ -683,3 +683,4 @@ C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\DXAppli
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.exe.manifest
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.application
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.Statup.Information_user.watchInformation.resources
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.Major.Manager.FormManager.resources

@@ -140,6 +140,13 @@
   <ItemGroup>
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
     <Compile Include="Major\Dashboard\DashBoardClass.cs" />
+    <Compile Include="Major\Manager\FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Major\Manager\FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Major\Manager\ManagerDTO.cs" />
     <Compile Include="Reports\KH_MH_DTO.cs" />
     <Compile Include="Reports\ReportALL.cs">
       <SubType>Form</SubType>
@@ -250,6 +257,9 @@
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="_Funtion.cs" />
+    <EmbeddedResource Include="Major\Manager\FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportALL.resx">
       <DependentUpon>ReportALL.cs</DependentUpon>
     </EmbeddedResource>
