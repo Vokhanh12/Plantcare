@@ -21,7 +21,7 @@ namespace DXApplication1.Subject.Login
         public string MaNV { get; set; }
         public string TenAD { get; set; }
         public string MaAD { get; set; }
-        public DateTime NGAY_DANG_NHAP { get; set; }
+        public DateTime NGAY_DANG_KY { get; set; }
     }
     
 }

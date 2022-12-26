@@ -23,12 +23,14 @@ using System.Data.SqlClient;
 using System.Configuration;
 using DXApplication1.Statup.Information_user;
 using Dapper;
+using DXApplication1.Major.Dashboard;
 
 namespace DXApplication1
 {
 
     public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
     {
+
         //Send data to Form login
         public static XtraForm1 instance;
 
@@ -84,7 +86,6 @@ namespace DXApplication1
             InitializeComponent();
 
             instance = this;
-
 
 
             btnAccount_DB = btnAcount;
@@ -377,12 +378,13 @@ namespace DXApplication1
             panelMenu.Controls.Add(ClinkChangeColor.leftBorderBtn);
             //Form
 
-
+            
 
 
 
 
         }
+
         //Structs Color
         private struct RGBColors
         {
@@ -409,7 +411,10 @@ namespace DXApplication1
 
             rjDropdownMenu_Report.IsMainMenu = true;
 
-
+            //Permission to use for Employee
+            DashBoardClass.Permission(FormLogin.Checkcall, Employee_ToolStripMenuItem);
+           
+            
 
 
 

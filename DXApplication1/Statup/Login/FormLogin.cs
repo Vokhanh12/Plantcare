@@ -9,6 +9,7 @@ using DXApplication1.Subject.Login;
 using DXApplication1.Subject.Dashboard;
 using System.Linq;
 using DXApplication1.Statup.Information_user;
+using DXApplication1.Major.Dashboard;
 
 namespace DXApplication1
 {
@@ -20,6 +21,8 @@ namespace DXApplication1
 
         public static FormLogin instance;
 
+        public static string Checkcall { get; set; }
+
         public FormLogin()
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace DXApplication1
 
         }
 
+        //this the function used get informations in the watchInformation form
         public void checkSytem_sendInfomation(string Check,string ChucVu,string Username)
         {
             XtraForm1 dashboard = new XtraForm1();
@@ -44,9 +48,9 @@ namespace DXApplication1
                     if (db.State == ConnectionState.Closed)
                         db.Open();
 
-                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
-                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG,mcc.NGAY_DANG_NHAP FROM APPLICATION_USER ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataAD = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaAD,mcc.TenAD,mcc.TAI_KHOANG,mcc.NGAY_DANG_KY FROM DATA_APPLICATION_USER ncc,DATA_APPLICATION_FOR_ADMIN mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataQL = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaQL,mcc.TenQL,mcc.TAI_KHOANG,mcc.NGAY_DANG_KY FROM DATA_APPLICATION_USER ncc,DATA_APPLICATION_FOR_MANAGER mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
+                    var dataNV = db.Query<LoginDTO>($"SELECT ncc.ID,ncc.UserName,ncc.UserPassword,mcc.MaNV,mcc.TenNV,mcc.TAI_KHOANG,mcc.NGAY_DANG_KY FROM DATA_APPLICATION_USER ncc,DATA_APPLICATION_FOR_EMPLOYEE mcc WHERE mcc.UserName='{Username}' and ncc.Username='{Username}'", commandType: CommandType.Text);
 
                     switch (ChucVu)
                     {
@@ -55,7 +59,7 @@ namespace DXApplication1
                             {
                                 //Send data to XtraForm
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenAD;
-
+                                
                                 //Send data to watchInformation
                                 watchInformation.instance.mlbID_AT.Text = p.ID.ToString();
                                 watchInformation.instance.mlbTK_AT.Text = p.UserName;
@@ -67,7 +71,7 @@ namespace DXApplication1
                                 watchInformation.instance.mlbMTK_AT.Text = p.MaAD;
                                 watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                 watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
+                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_KY).ToString();
                                
                             }
                             break;
@@ -88,7 +92,7 @@ namespace DXApplication1
                                watchInformation.instance.mlbMTK_AT.Text = p.MaQL;
                                watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                               watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
+                               watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_KY).ToString();
                                 
                             }
                             break;
@@ -97,6 +101,7 @@ namespace DXApplication1
                             {
                                 //Send data to XtraForm
                                 XtraForm1.instance.btnAccount_DB.Text = p.TenNV;
+                                
 
                                 //Send data to watchInformation
                                 watchInformation.instance.mlbID_AT.Text = p.ID.ToString();
@@ -109,8 +114,10 @@ namespace DXApplication1
                                 watchInformation.instance.mlbMTK_AT.Text = p.MaNV;
                                 watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                 watchInformation.instance.mlbDC_AT.Text = "ADMIN";
-                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_NHAP).ToString();
-                                 
+                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_KY).ToString();
+
+                                Checkcall = "EMPLOYEE";
+
                             }
                             break;
 
@@ -124,6 +131,9 @@ namespace DXApplication1
                 this.Hide();
                
                 dashboard.Show();
+
+                
+
                 wIF.Show();
 
                 wIF.Hide();
@@ -140,7 +150,7 @@ namespace DXApplication1
                 if (db.State == ConnectionState.Closed)
                     db.Open();
 
-                var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG,UserName FROM dbo.APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
+                var data = db.Query<LoginDTO>($"IF EXISTS(SELECT 1 FROM dbo.DATA_APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' AND PWDCOMPARE('{txtPassword_Login.Text}',UserPassword)=1) BEGIN SELECT 'Login Successfully' as 'SYSTEM',TAI_KHOANG,UserName FROM dbo.DATA_APPLICATION_USER WHERE UserName = '{txtUsername_Login.Text}' END ELSE BEGIN SELECT 'Incorrect login attempt.' as 'SYSTEM' END", commandType: CommandType.Text);
 
                 LoginDTO loginDTO = new LoginDTO();
 
@@ -159,6 +169,7 @@ namespace DXApplication1
         private void FormLogin_Load(object sender, EventArgs e)
         {
             WinAPI.AnimateWindow(this.Handle, 1000, WinAPI.HOR_NEGATIVE);
+
           
         }
         private void textBox1_Click(object sender, EventArgs e)

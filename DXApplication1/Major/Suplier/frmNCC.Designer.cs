@@ -33,6 +33,15 @@ namespace DXApplication1.Subject.Suplier
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -53,15 +62,6 @@ namespace DXApplication1.Subject.Suplier
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -125,6 +125,42 @@ namespace DXApplication1.Subject.Suplier
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
             this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Mã cung cấp";
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Tên cung cấp";
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Mã mặt hàng";
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Tên mặt hàng";
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Loại";
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Số lượng (Kg)";
+            // 
+            // columnHeader19
+            // 
+            this.columnHeader19.Text = "Giá";
+            // 
+            // columnHeader20
+            // 
+            this.columnHeader20.Text = "SDT nhà cung cấp";
+            // 
+            // columnHeader21
+            // 
+            this.columnHeader21.Text = "Địa chỉ nhà cung cấp";
             // 
             // panel4
             // 
@@ -213,7 +249,7 @@ namespace DXApplication1.Subject.Suplier
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.ForeColor = System.Drawing.Color.Black;
             this.materialLabel1.Location = new System.Drawing.Point(3, 24);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -356,50 +392,15 @@ namespace DXApplication1.Subject.Suplier
             // 
             this.sqlDataSource1.Name = "sqlDataSource1";
             // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Mã cung cấp";
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Tên cung cấp";
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Mã mặt hàng";
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Tên mặt hàng";
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Loại";
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Số lượng (Kg)";
-            // 
-            // columnHeader19
-            // 
-            this.columnHeader19.Text = "Giá";
-            // 
-            // columnHeader20
-            // 
-            this.columnHeader20.Text = "SDT nhà cung cấp";
-            // 
-            // columnHeader21
-            // 
-            this.columnHeader21.Text = "Địa chỉ nhà cung cấp";
-            // 
             // frmNCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 540);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmNCC";
-            this.Text = "frmNCC";
+            this.Text = "Danh sách nhà cung cấp";
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

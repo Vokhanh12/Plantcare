@@ -59,12 +59,12 @@ namespace DXApplication1.Subject.ExportDocuments
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -169,7 +169,7 @@ namespace DXApplication1.Subject.ExportDocuments
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.ForeColor = System.Drawing.Color.White;
             this.materialLabel1.Location = new System.Drawing.Point(3, 24);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -368,6 +368,10 @@ namespace DXApplication1.Subject.ExportDocuments
             // 
             this.columnHeader10.Text = "Số lượng (Kg)";
             // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Ngày lấy";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel3);
@@ -406,16 +410,13 @@ namespace DXApplication1.Subject.ExportDocuments
             this.panel5.Size = new System.Drawing.Size(1141, 404);
             this.panel5.TabIndex = 0;
             // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Ngày lấy";
-            // 
             // frmCTXH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 540);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmCTXH";
             this.Text = "Chứng từ xuất hàng";
             ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).EndInit();

@@ -33,6 +33,10 @@ namespace DXApplication1.Subject.Warehouse
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -53,10 +57,6 @@ namespace DXApplication1.Subject.Warehouse
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimeChartRangeControlClient1 = new DevExpress.XtraEditors.DateTimeChartRangeControlClient();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -115,6 +115,22 @@ namespace DXApplication1.Subject.Warehouse
             this.materialListView1.UseCompatibleStateImageBehavior = false;
             this.materialListView1.View = System.Windows.Forms.View.Details;
             this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Mã kho ";
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Tên kho";
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Tổng số lượng";
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Bao nhiêu loại";
             // 
             // panel4
             // 
@@ -203,7 +219,7 @@ namespace DXApplication1.Subject.Warehouse
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.ForeColor = System.Drawing.Color.Black;
             this.materialLabel1.Location = new System.Drawing.Point(12, 21);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
@@ -346,30 +362,15 @@ namespace DXApplication1.Subject.Warehouse
             // 
             this.sqlDataSource1.Name = "sqlDataSource1";
             // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Mã kho ";
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Tên kho";
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Tổng số lượng";
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Bao nhiêu loại";
-            // 
             // frmKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 540);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmKho";
-            this.Text = "frnKho";
+            this.Text = "Danh sách kho";
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

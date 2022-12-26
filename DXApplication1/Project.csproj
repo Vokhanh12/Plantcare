@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
+    <Compile Include="Major\Dashboard\DashBoardClass.cs" />
     <Compile Include="Reports\KH_MH_DTO.cs" />
     <Compile Include="Reports\ReportALL.cs">
       <SubType>Form</SubType>
