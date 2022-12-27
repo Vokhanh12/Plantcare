@@ -9,7 +9,7 @@ namespace DXApplication1.Major.Dashboard
 {
     class DashBoardClass
     {
-        public static void Permission(string Chucvu,ToolStripMenuItem thisMenuItem)
+        public static void Permission(string Chucvu,ToolStripMenuItem menuItem, ToolStripMenuItem menuItem1)
         {
             
 
@@ -21,10 +21,12 @@ namespace DXApplication1.Major.Dashboard
                     break;
                 case "MANAGER":
                     MessageBox.Show("Đăng nhập thành công");
+                    menuItem.Visible = false; //hide Manager_ToolStripMenu 
                     break;
                 case "EMPLOYEE":
                     MessageBox.Show("Đăng nhập thành công");
-                    thisMenuItem.Visible = false;
+                    menuItem.Visible = false;//hide Manager_ToolStripMenu 
+                    menuItem1.Visible = false;//hide Employee_ToolStripMenu 
                     break;
             }
             

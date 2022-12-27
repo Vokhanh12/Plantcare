@@ -72,6 +72,8 @@ namespace DXApplication1
                                 watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                 watchInformation.instance.mlbDC_AT.Text = "ADMIN";
                                 watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_KY).ToString();
+
+                                Checkcall = "ADMIN";
                                
                             }
                             break;
@@ -93,6 +95,8 @@ namespace DXApplication1
                                watchInformation.instance.mlbLTK_AT.Text = p.TAI_KHOANG;
                                watchInformation.instance.mlbDC_AT.Text = "ADMIN";
                                watchInformation.instance.mlbNDK_AT.Text = (p.NGAY_DANG_KY).ToString();
+
+                                Checkcall = "MANAGER";
                                 
                             }
                             break;

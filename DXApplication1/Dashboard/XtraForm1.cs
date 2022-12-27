@@ -388,7 +388,7 @@ namespace DXApplication1
             panelMenu.Controls.Add(ClinkChangeColor.leftBorderBtn);
             //Form
 
-            
+
 
 
 
@@ -422,10 +422,7 @@ namespace DXApplication1
             rjDropdownMenu_Report.IsMainMenu = true;
 
             //Permission to use for Employee
-            DashBoardClass.Permission(FormLogin.Checkcall, Employee_ToolStripMenuItem);
-           
-            
-
+            DashBoardClass.Permission(FormLogin.Checkcall, Manager_ToolStripMenuItem, Employee_ToolStripMenuItem);
 
 
         }
@@ -436,59 +433,52 @@ namespace DXApplication1
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
 
         }
-        private void ibt_Work_Click(object sender, EventArgs e)
+        private void ibtWork_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
 
-            rjDropdownMenu_Work.Show(ibt_Work, ibt_Work.Width, 0);
+            rjDropdownMenu_Work.Show(ibtWork, ibtWork.Width, 0);
         }
-        private void ibt_Follow_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-        }
-
-        private void ibt_Report_Click(object sender, EventArgs e)
-        {
-            ClinkChangeColor.DisableButton();
-            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
-
-            rjDropdownMenu_Report.Show(ibt_Report, ibt_Work.Width, 0);
-        }
-
-
-        private void ibt_Help_Click(object sender, EventArgs e)
+        private void ibtFollow_Click(object sender, EventArgs e)
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void ibtReport_Click(object sender, EventArgs e)
         {
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
 
+            rjDropdownMenu_Report.Show(ibtReport, ibtWork.Width, 0);
         }
 
-        private void lbDashbroad_Click(object sender, EventArgs e)
-        {
 
+        private void ibtHelp_Click(object sender, EventArgs e)
+        {
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void panelMenuLeft_Paint(object sender, PaintEventArgs e)
+        private void ibtBuy_Click(object sender, EventArgs e)
         {
-
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void cbList_SelectedIndexChanged(object sender, EventArgs e)
+        private void ibtQuestion_Click(object sender, EventArgs e)
         {
-
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
 
-        private void panelDashbroad_Paint(object sender, PaintEventArgs e)
+        private void ibtBrowseJob_Click(object sender, EventArgs e)
         {
-
+            ClinkChangeColor.DisableButton();
+            ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
         }
+
         //Event mouseEnter and mouseLeave button => change Backcolor button
         //Open
         private void ibtHome_MouseEnter(object sender, EventArgs e)
@@ -500,17 +490,6 @@ namespace DXApplication1
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
         }
-        private void ibt_Help_MouseEnter(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
-        }
-
-        private void ibt_Help_MouseLeave(object sender, EventArgs e)
-        {
-            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
-        }
-
-
         private void ibt_Report_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
@@ -541,6 +520,36 @@ namespace DXApplication1
             ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
         }
 
+        private void ibtQuestion_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
+        }
+
+        private void ibtQuestion_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+
+        private void ibtBrowseJob_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
+        }
+
+        private void ibtBrowseJob_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+
+        private void ibtHelp_MouseLeave(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorLeave);
+        }
+
+        private void ibtHelp_MouseEnter(object sender, EventArgs e)
+        {
+            ClinkChangeColor.ChangeButtonColor(sender, RGBColors.ColorEnter);
+        }
+
         //Close
 
         //the use the windows is closed
@@ -549,45 +558,14 @@ namespace DXApplication1
             this.Close();
         }
 
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RjDropdownMenu_Work_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void RjDropdownMenu_Work_Opening_1(object sender, CancelEventArgs e)
-        {
-
-        }
 
         private void buttonAcount_Click(object sender, EventArgs e)
         {
             rjDropdownMenu1.Show(btnAcount, btnAcount.Width - rjDropdownMenu1.Width, btnAcount.Height + 3);
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
         // Button click DropdownMenu
-        private void Manager_ToolStripMenuItem_Click(Object sender,EventArgs e)
+        private void Manager_ToolStripMenuItem_Click(Object sender, EventArgs e)
         {
             FormManager frmManager = new FormManager();
             frmManager.MdiParent = this;
@@ -702,12 +680,6 @@ namespace DXApplication1
                 db.Close();
             }
         }
-
-        private void txtFind_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void txtFind_MouseEnter(object sender, EventArgs e)
         {
             ClinkChangeColor.ActivatepnChange(pnFind, RGBColors.ColorEnter);
@@ -719,5 +691,7 @@ namespace DXApplication1
                 ClinkChangeColor.ActivatepnChange(pnFind, RGBColors.ColorEnter);
             else ClinkChangeColor.ActivatepnChange(pnFind, Color.White);
         }
+
+      
     }
 }
