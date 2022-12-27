@@ -340,6 +340,21 @@ namespace DXApplication1
             MessageBox.Show("test");
         }
 
+        private void btRegister_Click(object sender, EventArgs e)
+        {
+            if (chlb_Register.Checked == true)
+            {
+                MessageBox.Show("Đăng ký thành công");
+                MessageBox.Show("Hãy kiểm qua Email");
+                OpenSQL();
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn chấp nhận những điều khoảng");
+            }
+        }
+
 
         /* private void timer1_Tick(object sender, EventArgs e)
           {

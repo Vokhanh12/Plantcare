@@ -138,12 +138,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrowseJob\BrowseJob.cs">
+    <Compile Include="BrowseJob\frmBrowseJob.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BrowseJob\BrowseJob.Designer.cs">
-      <DependentUpon>BrowseJob.cs</DependentUpon>
+    <Compile Include="BrowseJob\frmBrowseJob.Designer.cs">
+      <DependentUpon>frmBrowseJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="BrowseJob\BrowseJobDTO.cs" />
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
     <Compile Include="Dashboard\DashBoardClass.cs" />
     <Compile Include="Major\Manager\FormManager.cs">
@@ -263,8 +264,8 @@
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
     <Compile Include="_Funtion.cs" />
-    <EmbeddedResource Include="BrowseJob\BrowseJob.resx">
-      <DependentUpon>BrowseJob.cs</DependentUpon>
+    <EmbeddedResource Include="BrowseJob\frmBrowseJob.resx">
+      <DependentUpon>frmBrowseJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Major\Manager\FormManager.resx">
       <DependentUpon>FormManager.cs</DependentUpon>

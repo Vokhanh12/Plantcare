@@ -129,6 +129,7 @@
             this.txtUsername_Login.TabStop = false;
             this.txtUsername_Login.Text = "Username";
             this.txtUsername_Login.Click += new System.EventHandler(this.textBox1_Click);
+            this.txtUsername_Login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_Login_KeyPress);
             // 
             // txtPassword_Login
             // 
@@ -146,6 +147,7 @@
             this.txtPassword_Login.TabStop = false;
             this.txtPassword_Login.Text = "Password";
             this.txtPassword_Login.Click += new System.EventHandler(this.textBox2_Click);
+            this.txtPassword_Login.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_Login_KeyPress);
             // 
             // timer1
             // 
@@ -218,7 +220,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(546, 241);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 

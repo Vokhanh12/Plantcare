@@ -25,6 +25,7 @@ using DXApplication1.Statup.Information_user;
 using Dapper;
 using DXApplication1.Major.Dashboard;
 using DXApplication1.Major.Manager;
+using DXApplication1.BrowseJob;
 
 namespace DXApplication1
 {
@@ -477,6 +478,10 @@ namespace DXApplication1
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
+
+            frmBrowseJob formBrowseJob = new frmBrowseJob();
+            formBrowseJob.MdiParent = this;
+            formBrowseJob.Show();
         }
 
         //Event mouseEnter and mouseLeave button => change Backcolor button

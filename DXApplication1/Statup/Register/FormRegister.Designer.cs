@@ -181,6 +181,7 @@ namespace DXApplication1
             this.btRegister.TabIndex = 32;
             this.btRegister.Text = "Create Account";
             this.btRegister.UseVisualStyleBackColor = false;
+            this.btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
             // txtPassword_Register
             // 

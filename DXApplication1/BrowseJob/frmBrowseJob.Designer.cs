@@ -1,7 +1,7 @@
 ﻿
 namespace DXApplication1.BrowseJob
 {
-    partial class BrowseJob
+    partial class frmBrowseJob
     {
         /// <summary>
         /// Required designer variable.
@@ -55,10 +55,11 @@ namespace DXApplication1.BrowseJob
             this.cH_EmailAdress = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cH_Dateofbirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cH_Ngaydangky = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.cH_Tinhtrang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cH_Taikhoang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cH_Tinhtrang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).BeginInit();
@@ -277,6 +278,7 @@ namespace DXApplication1.BrowseJob
             this.cH_EmailAdress,
             this.cH_Dateofbirth,
             this.cH_Ngaydangky,
+            this.cH_Taikhoang,
             this.cH_Tinhtrang});
             this.materialListView1.Depth = 0;
             this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -330,10 +332,10 @@ namespace DXApplication1.BrowseJob
             this.cH_Ngaydangky.Text = "Ngày đăng ký";
             this.cH_Ngaydangky.Width = 113;
             // 
-            // cH_Tinhtrang
+            // cH_Taikhoang
             // 
-            this.cH_Tinhtrang.Text = "Tình trạng";
-            this.cH_Tinhtrang.Width = 97;
+            this.cH_Taikhoang.Text = "Tài khoảng";
+            this.cH_Taikhoang.Width = 97;
             // 
             // sqlDataSource1
             // 
@@ -360,14 +362,18 @@ namespace DXApplication1.BrowseJob
             this.panel5.Size = new System.Drawing.Size(1000, 444);
             this.panel5.TabIndex = 0;
             // 
-            // BrowseJob
+            // cH_Tinhtrang
+            // 
+            this.cH_Tinhtrang.Text = "Tình trạng";
+            // 
+            // frmBrowseJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 580);
             this.Controls.Add(this.panel1);
-            this.Name = "BrowseJob";
-            this.Text = "BrowseJob";
+            this.Name = "frmBrowseJob";
+            this.Text = "Duyệt tài khoảng";
             this.Load += new System.EventHandler(this.BrowseJob_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -413,9 +419,10 @@ namespace DXApplication1.BrowseJob
         private System.Windows.Forms.ColumnHeader cH_EmailAdress;
         private System.Windows.Forms.ColumnHeader cH_Dateofbirth;
         private System.Windows.Forms.ColumnHeader cH_Ngaydangky;
-        private System.Windows.Forms.ColumnHeader cH_Tinhtrang;
+        private System.Windows.Forms.ColumnHeader cH_Taikhoang;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.ColumnHeader cH_Tinhtrang;
     }
 }

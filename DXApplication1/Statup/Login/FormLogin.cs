@@ -293,9 +293,20 @@ namespace DXApplication1
            
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void txtUsername_Login_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btLogin_Click(sender, e);
+            }
+        }
 
+        private void txtPassword_Login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btLogin_Click(sender, e);
+            }
         }
         //END
     }
