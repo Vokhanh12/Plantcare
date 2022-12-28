@@ -2118,14 +2118,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DXApplication1.exe" size="506848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DXApplication1.exe" size="511968">
       <assemblyIdentity name="DXApplication1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>92qHov/jx6rA8XjJTRGb3cUMiQdq3vO4BUAGdNHj22w=</dsig:DigestValue>
+        <dsig:DigestValue>z82L5QFWuXtI4dikbO41JpfIM+gbJ2RPMpmB4HIkC0M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

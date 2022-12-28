@@ -382,7 +382,7 @@ namespace DXApplication1.FolderMajor
             // 
             this.dateEdit_NGAYSINH.EditValue = null;
             this.dateEdit_NGAYSINH.Location = new System.Drawing.Point(324, 364);
-            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateEdit_NGAYSINH.Margin = new System.Windows.Forms.Padding(4);
             this.dateEdit_NGAYSINH.Name = "dateEdit_NGAYSINH";
             this.dateEdit_NGAYSINH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -390,6 +390,7 @@ namespace DXApplication1.FolderMajor
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit_NGAYSINH.Size = new System.Drawing.Size(197, 22);
             this.dateEdit_NGAYSINH.TabIndex = 50;
+            this.dateEdit_NGAYSINH.EditValueChanged += new System.EventHandler(this.dateEdit_NGAYSINH_EditValueChanged);
             // 
             // iconButton9
             // 

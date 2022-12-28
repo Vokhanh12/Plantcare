@@ -30,7 +30,6 @@ namespace DXApplication1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.pn3_Register = new System.Windows.Forms.Panel();
             this.txtFristname_Register = new System.Windows.Forms.TextBox();
             this.pn1_Register = new System.Windows.Forms.Panel();
@@ -53,25 +52,25 @@ namespace DXApplication1
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dE_Brithday = new DevExpress.XtraEditors.DateEdit();
+            this.cE_Male = new DevExpress.XtraEditors.CheckEdit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cE_Famale = new DevExpress.XtraEditors.CheckEdit();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.tmChColor_checkedit = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cE_Male.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cE_Famale.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Image = global::DXApplication1.Properties.Resources.Màu_chàm_và_Xanh_dương_Hiện_đại_Màu_chuyển_tiếp_Bác_sĩ_Biểu_trưng_Y_tế__1_;
-            this.label1.Location = new System.Drawing.Point(210, 238);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Register";
             // 
             // pn3_Register
             // 
             this.pn3_Register.BackColor = System.Drawing.Color.White;
-            this.pn3_Register.Location = new System.Drawing.Point(80, 377);
+            this.pn3_Register.Location = new System.Drawing.Point(76, 346);
             this.pn3_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn3_Register.Name = "pn3_Register";
             this.pn3_Register.Size = new System.Drawing.Size(350, 1);
@@ -84,7 +83,7 @@ namespace DXApplication1
             this.txtFristname_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFristname_Register.ForeColor = System.Drawing.Color.White;
             this.txtFristname_Register.HideSelection = false;
-            this.txtFristname_Register.Location = new System.Drawing.Point(80, 299);
+            this.txtFristname_Register.Location = new System.Drawing.Point(76, 268);
             this.txtFristname_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFristname_Register.Name = "txtFristname_Register";
             this.txtFristname_Register.Size = new System.Drawing.Size(169, 21);
@@ -96,7 +95,7 @@ namespace DXApplication1
             // pn1_Register
             // 
             this.pn1_Register.BackColor = System.Drawing.Color.White;
-            this.pn1_Register.Location = new System.Drawing.Point(80, 326);
+            this.pn1_Register.Location = new System.Drawing.Point(76, 295);
             this.pn1_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn1_Register.Name = "pn1_Register";
             this.pn1_Register.Size = new System.Drawing.Size(169, 1);
@@ -105,7 +104,7 @@ namespace DXApplication1
             // pn2_Register
             // 
             this.pn2_Register.BackColor = System.Drawing.Color.White;
-            this.pn2_Register.Location = new System.Drawing.Point(300, 326);
+            this.pn2_Register.Location = new System.Drawing.Point(296, 295);
             this.pn2_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn2_Register.Name = "pn2_Register";
             this.pn2_Register.Size = new System.Drawing.Size(129, 1);
@@ -118,7 +117,7 @@ namespace DXApplication1
             this.txtLastname_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname_Register.ForeColor = System.Drawing.Color.White;
             this.txtLastname_Register.HideSelection = false;
-            this.txtLastname_Register.Location = new System.Drawing.Point(300, 299);
+            this.txtLastname_Register.Location = new System.Drawing.Point(296, 268);
             this.txtLastname_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastname_Register.Name = "txtLastname_Register";
             this.txtLastname_Register.Size = new System.Drawing.Size(129, 21);
@@ -134,7 +133,7 @@ namespace DXApplication1
             this.txtUsername_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername_Register.ForeColor = System.Drawing.Color.White;
             this.txtUsername_Register.HideSelection = false;
-            this.txtUsername_Register.Location = new System.Drawing.Point(80, 350);
+            this.txtUsername_Register.Location = new System.Drawing.Point(76, 319);
             this.txtUsername_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername_Register.Name = "txtUsername_Register";
             this.txtUsername_Register.Size = new System.Drawing.Size(350, 21);
@@ -142,6 +141,7 @@ namespace DXApplication1
             this.txtUsername_Register.TabStop = false;
             this.txtUsername_Register.Text = "Username";
             this.txtUsername_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtUsername_Register_MouseClick);
+            this.txtUsername_Register.TextChanged += new System.EventHandler(this.txtUsername_Register_TextChanged);
             // 
             // txtEmail_Register
             // 
@@ -150,7 +150,7 @@ namespace DXApplication1
             this.txtEmail_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail_Register.ForeColor = System.Drawing.Color.White;
             this.txtEmail_Register.HideSelection = false;
-            this.txtEmail_Register.Location = new System.Drawing.Point(80, 458);
+            this.txtEmail_Register.Location = new System.Drawing.Point(75, 418);
             this.txtEmail_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail_Register.Name = "txtEmail_Register";
             this.txtEmail_Register.Size = new System.Drawing.Size(350, 21);
@@ -162,7 +162,7 @@ namespace DXApplication1
             // pn5_Register
             // 
             this.pn5_Register.BackColor = System.Drawing.Color.White;
-            this.pn5_Register.Location = new System.Drawing.Point(80, 485);
+            this.pn5_Register.Location = new System.Drawing.Point(75, 445);
             this.pn5_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn5_Register.Name = "pn5_Register";
             this.pn5_Register.Size = new System.Drawing.Size(350, 1);
@@ -190,7 +190,7 @@ namespace DXApplication1
             this.txtPassword_Register.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword_Register.ForeColor = System.Drawing.Color.White;
             this.txtPassword_Register.HideSelection = false;
-            this.txtPassword_Register.Location = new System.Drawing.Point(79, 403);
+            this.txtPassword_Register.Location = new System.Drawing.Point(75, 369);
             this.txtPassword_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword_Register.Name = "txtPassword_Register";
             this.txtPassword_Register.Size = new System.Drawing.Size(350, 21);
@@ -202,7 +202,7 @@ namespace DXApplication1
             // pn4_Register
             // 
             this.pn4_Register.BackColor = System.Drawing.Color.White;
-            this.pn4_Register.Location = new System.Drawing.Point(80, 428);
+            this.pn4_Register.Location = new System.Drawing.Point(76, 394);
             this.pn4_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pn4_Register.Name = "pn4_Register";
             this.pn4_Register.Size = new System.Drawing.Size(350, 1);
@@ -213,7 +213,7 @@ namespace DXApplication1
             this.chlb_Register.AutoSize = true;
             this.chlb_Register.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chlb_Register.ForeColor = System.Drawing.Color.White;
-            this.chlb_Register.Location = new System.Drawing.Point(80, 505);
+            this.chlb_Register.Location = new System.Drawing.Point(76, 513);
             this.chlb_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chlb_Register.Name = "chlb_Register";
             this.chlb_Register.Size = new System.Drawing.Size(125, 21);
@@ -227,7 +227,7 @@ namespace DXApplication1
             this.hyperlinkLabelControl1.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl1.Appearance.Options.UseFont = true;
             this.hyperlinkLabelControl1.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(202, 507);
+            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(198, 515);
             this.hyperlinkLabelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
             this.hyperlinkLabelControl1.Size = new System.Drawing.Size(125, 16);
@@ -240,7 +240,7 @@ namespace DXApplication1
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(332, 507);
+            this.labelControl1.Location = new System.Drawing.Point(328, 515);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(43, 16);
@@ -253,7 +253,7 @@ namespace DXApplication1
             this.hyperlinkLabelControl2.Appearance.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.hyperlinkLabelControl2.Appearance.Options.UseFont = true;
             this.hyperlinkLabelControl2.Appearance.Options.UseForeColor = true;
-            this.hyperlinkLabelControl2.Location = new System.Drawing.Point(381, 507);
+            this.hyperlinkLabelControl2.Location = new System.Drawing.Point(377, 515);
             this.hyperlinkLabelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hyperlinkLabelControl2.Name = "hyperlinkLabelControl2";
             this.hyperlinkLabelControl2.Size = new System.Drawing.Size(76, 16);
@@ -286,12 +286,81 @@ namespace DXApplication1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DXApplication1.Properties.Resources.onpic;
-            this.pictureBox1.Location = new System.Drawing.Point(2, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(546, 241);
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label1.Location = new System.Drawing.Point(202, 217);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 29);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Register";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // dE_Brithday
+            // 
+            this.dE_Brithday.EditValue = null;
+            this.dE_Brithday.Location = new System.Drawing.Point(147, 469);
+            this.dE_Brithday.Name = "dE_Brithday";
+            this.dE_Brithday.Properties.Appearance.BackColor = System.Drawing.Color.White;
+            this.dE_Brithday.Properties.Appearance.Options.UseBackColor = true;
+            this.dE_Brithday.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dE_Brithday.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dE_Brithday.Size = new System.Drawing.Size(98, 22);
+            this.dE_Brithday.TabIndex = 45;
+            // 
+            // cE_Male
+            // 
+            this.cE_Male.Location = new System.Drawing.Point(297, 468);
+            this.cE_Male.Name = "cE_Male";
+            this.cE_Male.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cE_Male.Properties.Appearance.Options.UseForeColor = true;
+            this.cE_Male.Properties.Caption = "Male";
+            this.cE_Male.Size = new System.Drawing.Size(70, 24);
+            this.cE_Male.TabIndex = 46;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.HideSelection = false;
+            this.textBox1.Location = new System.Drawing.Point(76, 468);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(65, 21);
+            this.textBox1.TabIndex = 48;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = "Birthday";
+            // 
+            // cE_Famale
+            // 
+            this.cE_Famale.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cE_Famale.Location = new System.Drawing.Point(360, 468);
+            this.cE_Famale.Margin = new System.Windows.Forms.Padding(0);
+            this.cE_Famale.Name = "cE_Famale";
+            this.cE_Famale.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.cE_Famale.Properties.Appearance.Options.UseForeColor = true;
+            this.cE_Famale.Properties.Caption = "Famale";
+            this.cE_Famale.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+            this.cE_Famale.Size = new System.Drawing.Size(70, 24);
+            this.cE_Famale.TabIndex = 47;
+            // 
+            // tmChColor_checkedit
+            // 
+            this.tmChColor_checkedit.Interval = 1000;
+            this.tmChColor_checkedit.Tick += new System.EventHandler(this.tmChColor_checkedit_Tick);
             // 
             // FormRegister
             // 
@@ -302,6 +371,11 @@ namespace DXApplication1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 641);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cE_Famale);
+            this.Controls.Add(this.cE_Male);
+            this.Controls.Add(this.dE_Brithday);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.hyperlinkLabelControl3);
             this.Controls.Add(this.labelControl3);
@@ -320,7 +394,6 @@ namespace DXApplication1
             this.Controls.Add(this.pn2_Register);
             this.Controls.Add(this.txtFristname_Register);
             this.Controls.Add(this.pn3_Register);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormRegister";
@@ -328,13 +401,17 @@ namespace DXApplication1
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FormRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cE_Male.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cE_Famale.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pn3_Register;
         private System.Windows.Forms.TextBox txtFristname_Register;
         private System.Windows.Forms.Panel pn1_Register;
@@ -357,6 +434,13 @@ namespace DXApplication1
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.DateEdit dE_Brithday;
+        private DevExpress.XtraEditors.CheckEdit cE_Male;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.CheckEdit cE_Famale;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private System.Windows.Forms.Timer tmChColor_checkedit;
     }
 }
 

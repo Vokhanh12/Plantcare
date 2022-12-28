@@ -16,11 +16,17 @@ namespace DXApplication1.BrowseJob
 {
     public partial class frmBrowseJob : MaterialSkin.Controls.MaterialForm
     {
+
+        public static frmBrowseJob instance;
         public frmBrowseJob()
         {
             InitializeComponent();
 
             openSQL();
+
+            instance = this;
+
+
         }
 
         public void openSQL()
@@ -49,6 +55,8 @@ namespace DXApplication1.BrowseJob
                     materialListView1.Items.Add(item);
 
                 }
+
+
                 db.Close();
             }
         }

@@ -8,6 +8,11 @@ namespace DXApplication1.Subject.Register
 {
     class RegisterDTO
     {
+        public int RETURN_COUNTCOLUMN { get; set; }
+
+        public string UserName { get; set; }
+        public string UserPassword { get; set; }
+        public string EmailAdress { get; set; }
 
     }
 }

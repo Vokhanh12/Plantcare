@@ -19,6 +19,11 @@ namespace DXApplication1.FolderMajor
        // fsEdit Edit = new fsEdit();
         public TextBox txt0, txt1, txt2, txt3, txt4, txt5, txt6,txt7,txt8;
 
+        private void dateEdit_NGAYSINH_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void iconButton1_Click(object sender, EventArgs e)
         {
 
