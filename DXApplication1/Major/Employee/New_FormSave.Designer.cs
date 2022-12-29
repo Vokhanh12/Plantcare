@@ -57,6 +57,8 @@ namespace DXApplication1.FolderMajor
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.txt_DIACHI = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btLogin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NGAYSINH.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NGAYSINH.Properties)).BeginInit();
@@ -432,13 +434,46 @@ namespace DXApplication1.FolderMajor
             this.panel9.Size = new System.Drawing.Size(245, 1);
             this.panel9.TabIndex = 51;
             // 
+            // btLogin
+            // 
+            this.btLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            this.btLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogin.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLogin.ForeColor = System.Drawing.Color.White;
+            this.btLogin.Location = new System.Drawing.Point(66, 607);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(195, 39);
+            this.btLogin.TabIndex = 54;
+            this.btLogin.Text = "Save";
+            this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(76)))), ((int)(((byte)(121)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(307, 607);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 39);
+            this.button1.TabIndex = 55;
+            this.button1.Text = "Cancel";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // New_FormSave
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 579);
+            this.ClientSize = new System.Drawing.Size(535, 680);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btLogin);
             this.Controls.Add(this.iconButton9);
             this.Controls.Add(this.txt_DIACHI);
             this.Controls.Add(this.panel9);
@@ -507,5 +542,7 @@ namespace DXApplication1.FolderMajor
         private FontAwesome.Sharp.IconButton iconButton9;
         private System.Windows.Forms.TextBox txt_DIACHI;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button btLogin;
+        private System.Windows.Forms.Button button1;
     }
 }

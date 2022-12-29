@@ -145,6 +145,13 @@
       <DependentUpon>frmBrowseJob.cs</DependentUpon>
     </Compile>
     <Compile Include="BrowseJob\BrowseJobDTO.cs" />
+    <Compile Include="BrowseJob\newFormSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseJob\newFormSave.Designer.cs">
+      <DependentUpon>newFormSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseJob\sqlOpen.cs" />
     <Compile Include="ChangeColorButton\ClinkChangeColor.cs" />
     <Compile Include="Dashboard\DashBoardClass.cs" />
     <Compile Include="Major\Manager\FormManager.cs">
@@ -176,7 +183,7 @@
     <Compile Include="Major\Employee\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Major\Employee\fsEdit.cs" />
+    <Compile Include="fsEdit.cs" />
     <Compile Include="Major\Employee\New_FormSave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -266,6 +273,9 @@
     <Compile Include="_Funtion.cs" />
     <EmbeddedResource Include="BrowseJob\frmBrowseJob.resx">
       <DependentUpon>frmBrowseJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseJob\newFormSave.resx">
+      <DependentUpon>newFormSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Major\Manager\FormManager.resx">
       <DependentUpon>FormManager.cs</DependentUpon>

@@ -435,7 +435,7 @@ namespace DXApplication1
                     //Return a count of the table DATA_APPLICATION_REGISTER and column USERNAME
                     var data = db.Query<RegisterDTO>("SELECT COUNT (UserName) as 'RETURN_COUNTCOLUMN' from DATA_APPLICATION_REGISTER ", commandType: CommandType.Text);
                     //Select DATA OF APPLLCATION_REGISTER
-                    var data1 = db.Query<RegisterDTO>("SELECT UserName FROM DATA_APPLICATION_REGISTER", commandType: CommandType.Text);
+                    var data1 = db.Query<RegisterDTO>("SELECT * FROM DATA_APPLICATION_REGISTER", commandType: CommandType.Text);
 
                     foreach (RegisterDTO p in data1)
                     {
@@ -445,11 +445,13 @@ namespace DXApplication1
                             break;
                         }
 
-                        if (_Userpassword == p.UserPassword)
+                        //Not use for register because that's password
+                       /* if (_Userpassword == p.UserPassword)
                         {
                             MessageBox.Show("Đã có người đặt mật khẩu này.Vui lòng đặt mật khẩu khác");
                             break;
                         }
+                       */
 
                         if (_Emailadress == p.EmailAdress)
                         {

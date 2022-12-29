@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using DevExpress.XtraEditors;
+using DXApplication1.FolderMajor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,11 +19,15 @@ namespace DXApplication1.BrowseJob
     {
 
         public static frmBrowseJob instance;
+
+        public sqlOpen sql = new sqlOpen();
+
         public frmBrowseJob()
         {
             InitializeComponent();
 
-            openSQL();
+            
+            
 
             instance = this;
 
@@ -61,6 +66,11 @@ namespace DXApplication1.BrowseJob
             }
         }
 
+        public void sqlDelete()
+        {
+
+        }
+
         private void BrowseJob_Load(object sender, EventArgs e)
         {
             materialListView1.Columns[0].Width = 170;
@@ -74,10 +84,59 @@ namespace DXApplication1.BrowseJob
             materialListView1.Columns[8].Width = 120;
 
 
+            sql.Select(materialListView1);
+
+
         }
 
         private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void mRB_Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mRB_New_Click(object sender, EventArgs e)
+        {
+            /* newFormSave newfrmSave = new newFormSave();
+             newfrmSave.Show();
+
+             fsEdit edit = new fsEdit();
+
+             try
+             {
+                 //newFormSave.instance.txtID_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
+                 // newFormSave.instance.txtUsercode_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
+                 //newFormSave.instance.txtNameUser_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
+
+                 newFormSave.instance.txtUsername_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[0].ToString());
+                 newFormSave.instance.txtUserpassword_A.Text = "********";
+                 //newFormSave.instance.txtUserpassword_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
+
+                 newFormSave.instance.txtFristName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[2].ToString());
+                 newFormSave.instance.txtLastName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[3].ToString());
+                 newFormSave.instance.txtEmail_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[4].ToString());
+                 newFormSave.instance.txtDOB_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[5].ToString());
+                 newFormSave.instance.txtNDK_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[6].ToString());
+
+                 newFormSave.instance.txtSDT_A.Text = "+84";
+
+
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show("Nhap click vao ban de chinh sua");
+             }
+            */
+
+            sql.jobAccept(materialListView1);
+
+
+
+
 
         }
     }

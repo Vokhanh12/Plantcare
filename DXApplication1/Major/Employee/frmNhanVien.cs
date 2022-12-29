@@ -334,31 +334,31 @@ namespace DXApplication1.FolderNV
             var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
             try
             {
-                New_FormSave.instance.txt0.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
-                New_FormSave.instance.txt1.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[1].ToString());
+                New_FormSave.instance.txt0.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[0].ToString().Replace(" ", ""));
+                New_FormSave.instance.txt1.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[1].ToString());
 
                 //Lương
-                New_FormSave.instance.txt2.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
+                New_FormSave.instance.txt2.Text = String.Format(info, "{0:c}", Convert.ToDecimal(Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[2].ToString())) / 10000);
 
                 //Thưởng = %
                 specifier = "P";
                 culture = CultureInfo.InvariantCulture;
-                New_FormSave.instance.txt3.Text = (Convert.ToDouble(Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
+                New_FormSave.instance.txt3.Text = (Convert.ToDouble(Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[3].ToString())) / 100).ToString(specifier, culture);
                 // Displays:    #.00 %
 
-                New_FormSave.instance.txt4.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ", ""));
-                New_FormSave.instance.dtNgaysinh.DateTime = Convert.ToDateTime(((((frmNhanVien.instance.mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{", "")).Replace("}", "")));
+                New_FormSave.instance.txt4.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[4].ToString().Replace(" ", ""));
+                New_FormSave.instance.dtNgaysinh.DateTime = Convert.ToDateTime((((mLV.SelectedItems[0].SubItems[5].ToString()).Substring(17)).Replace("{", "")).Replace("}", ""));
 
                 //txt5.Text = Edit.deleteCharacter(frmNhanVien.instance.materialListView1.SelectedItems[0].SubItems[5].ToString());
-                New_FormSave.instance.txt6.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[6].ToString());
-                New_FormSave.instance.txt7.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[7].ToString());
-                New_FormSave.instance.txt8.Text = Edit.deleteCharacter(frmNhanVien.instance.mLV.SelectedItems[0].SubItems[8].ToString());
+                New_FormSave.instance.txt6.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[6].ToString());
+                New_FormSave.instance.txt7.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[7].ToString());
+                New_FormSave.instance.txt8.Text = Edit.deleteCharacter(mLV.SelectedItems[0].SubItems[8].ToString());
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Nhap click vao ban de chinh sua");
-                this.Close();
+               
             }
         }
        

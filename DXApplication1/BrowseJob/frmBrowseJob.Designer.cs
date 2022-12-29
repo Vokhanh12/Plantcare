@@ -56,10 +56,10 @@ namespace DXApplication1.BrowseJob
             this.cH_Dateofbirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cH_Ngaydangky = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cH_Taikhoang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cH_Tinhtrang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cH_Tinhtrang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeChartRangeControlClient1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbE_Select.Properties)).BeginInit();
@@ -239,6 +239,7 @@ namespace DXApplication1.BrowseJob
             this.mRB_Save.TabIndex = 11;
             this.mRB_Save.Text = "Xóa";
             this.mRB_Save.UseVisualStyleBackColor = true;
+            this.mRB_Save.Click += new System.EventHandler(this.mRB_Save_Click);
             // 
             // mRB_New
             // 
@@ -247,7 +248,7 @@ namespace DXApplication1.BrowseJob
             this.mRB_New.Depth = 0;
             this.mRB_New.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mRB_New.Icon = null;
-            this.mRB_New.Location = new System.Drawing.Point(189, 17);
+            this.mRB_New.Location = new System.Drawing.Point(184, 17);
             this.mRB_New.MouseState = MaterialSkin.MouseState.HOVER;
             this.mRB_New.Name = "mRB_New";
             this.mRB_New.Primary = true;
@@ -255,6 +256,7 @@ namespace DXApplication1.BrowseJob
             this.mRB_New.TabIndex = 10;
             this.mRB_New.Text = "Duyệt";
             this.mRB_New.UseVisualStyleBackColor = true;
+            this.mRB_New.Click += new System.EventHandler(this.mRB_New_Click);
             // 
             // panel4
             // 
@@ -337,6 +339,10 @@ namespace DXApplication1.BrowseJob
             this.cH_Taikhoang.Text = "Tài khoảng";
             this.cH_Taikhoang.Width = 97;
             // 
+            // cH_Tinhtrang
+            // 
+            this.cH_Tinhtrang.Text = "Tình trạng";
+            // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.Name = "sqlDataSource1";
@@ -361,10 +367,6 @@ namespace DXApplication1.BrowseJob
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1000, 444);
             this.panel5.TabIndex = 0;
-            // 
-            // cH_Tinhtrang
-            // 
-            this.cH_Tinhtrang.Text = "Tình trạng";
             // 
             // frmBrowseJob
             // 
