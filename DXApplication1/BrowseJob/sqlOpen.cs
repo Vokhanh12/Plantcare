@@ -56,8 +56,6 @@ namespace DXApplication1.BrowseJob
                     item.SubItems.Add(p.TINH_TRANG);
                     frmListview.Items.Add(item);
 
-                    TINH_TRANG = p.TINH_TRANG;
-
                 }
 
                 db.Close();
@@ -66,9 +64,6 @@ namespace DXApplication1.BrowseJob
 
         public void jobAccept(MaterialListView frmListview)
         {
-
-             newFormSave newfrmSave = new newFormSave();
-             newfrmSave.Show();
 
              fsEdit edit = new fsEdit();
 
@@ -98,54 +93,70 @@ namespace DXApplication1.BrowseJob
              }
 
 
-            try
-            {
-                    var ID= newFormSave.instance.txtID_A.Text;
-                    var Usercode = newFormSave.instance.txtUsercode_A.Text;
-                    var Nameuser = newFormSave.instance.txtNameUser_A.Text;
-                    var Username = newFormSave.instance.txtUsername_A.Text;
-                    var Userpassword = newFormSave.instance.txtUserpassword_A.Text;
-                    var Fristname = newFormSave.instance.txtFristName_A.Text;
-                    var Lastname = newFormSave.instance.txtLastName_A.Text;
-                    var EmailAdress = newFormSave.instance.txtEmail_A.Text;
-                    var DateofBirth = newFormSave.instance.txtDOB_A.Text;
-                    var NGAY_DANG_KY = newFormSave.instance.txtNDK_A.Text;
-                    var TAI_KHOANG = newFormSave.instance.cbBrowse_A.Text;
+            //try
+            //{
+            //        var ID= newFormSave.instance.txtID_A.Text;
+            //        var Usercode = newFormSave.instance.txtUsercode_A.Text;
+            //        var Nameuser = newFormSave.instance.txtNameUser_A.Text;
+            //        var Username = newFormSave.instance.txtUsername_A.Text;
+            //        var Userpassword = newFormSave.instance.txtUserpassword_A.Text;
+            //        var Fristname = newFormSave.instance.txtFristName_A.Text;
+            //        var Lastname = newFormSave.instance.txtLastName_A.Text;
+            //        var EmailAdress = newFormSave.instance.txtEmail_A.Text;
+            //        var SDT_USER = newFormSave.instance.txtSDT_A;
+            //        var DateofBirth = newFormSave.instance.txtDOB_A.Text;
+            //        var NGAY_DANG_KY = newFormSave.instance.txtNDK_A.Text;
+            //        var TAI_KHOANG = newFormSave.instance.cbBrowse_A.Text;
                    
 
 
 
-                using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
-                {
-                    if (TINH_TRANG == "CHƯA DUYỆT")
-                    {
+            //    using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            //    {
 
-                        if (db.State == ConnectionState.Closed)
-                            db.Open();
+            //         if (db.State == ConnectionState.Closed)
+            //             db.Open();
+
+            //         //get item in DATA_APPLICATION_USER
+            //         var dataAP_USER = db.ExecuteAsync($"SET IDENTITY_INSERT dbo.DATA_APPLICATION_USER ON INSERT INTO dbo.DATA_APPLICATION_USER(ID,UserName,UserPassword,TAI_KHOANG) SELECT '{ID}','{Username}','{Userpassword}','{TAI_KHOANG}' SET IDENTITY_INSERT dbo.DATA_APPLICATION_USER OFF");
+            //         var DataUsername = db.Query<BrowseJobDTO>("SELECT ncc.ID,mcc.UserName FROM DATA_APPLICATION_REGISTER mcc,DATA_APPLICATION_USER ncc WHERE ncc.UserName=mcc.UserName", commandType: CommandType.Text);
+                    
+            //         foreach (BrowseJobDTO p in DataUsername)
+            //         {
+            //             if(Username == p.UserName)
+            //                 {
+            //                    MessageBox.Show("Đã có người đặt Username này");
+            //                    break;
+            //                 }
+            //            else if(ID == p.ID)
+            //                {
+            //                    MessageBox.Show("Đã có người đặt ID này");
+            //                    break;
+            //                }
+            //            else if (TAI_KHOANG == "Manager")
+            //                {
+            //                    var dataManager = db.Query<BrowseJobDTO>($"SET IDENTITY_INSERT dbo.DATA_APPLICATION_FOR_EMPLOYEE ON INSERT INTO dbo.DATA_APPLICATION_FOR_EMPLOYEE (ID,MaNV,TenNV,UserName,UserPassword,FristName,LastName,EmailAdress,SDT_EMPLOYEE,TAI_KHOANG,NGAY_DANG_KY) SELECT DATA_APPLICATION_USER.ID,'{Usercode}','{Nameuser}', DATA_APPLICATION_USER.UserName, DATA_APPLICATION_USER.UserPassword,'{Fristname}','{Lastname}','{EmailAdress}','{SDT_USER}',DATA_APPLICATION_USER.TAI_KHOANG,'{NGAY_DANG_KY}' FROM DATA_APPLICATION_USER WHERE DATA_APPLICATION_USER.ID={ID} and DATA_APPLICATION_USER.UserName='{Username}'; SET IDENTITY_INSERT dbo.DATA_APPLICATION_FOR_EMPLOYE OFF ", commandType: CommandType.Text);
+            //                    MessageBox.Show("Duyệt thành công");
+            //                    break;
+            //                }
+            //           else if (TAI_KHOANG == "Employee")
+            //                {
+            //                    var dataEmployee = db.Query<BrowseJobDTO>($"SET IDENTITY_INSERT dbo.DATA_APPLICATION_FOR_MANAGER ON INSERT INTO dbo.DATA_APPLICATION_FOR_MANAGER (ID,MaQL,TenQL,UserName,UserPassword,FristName,LastName,EmailAdress,SDT_MANAGER,TAI_KHOANG,NGAY_DANG_KY) SELECT DATA_APPLICATION_USER.ID,'{Usercode}','{Nameuser}', DATA_APPLICATION_USER.UserName, DATA_APPLICATION_USER.UserPassword,'{Fristname}','{Lastname}','{EmailAdress}','{SDT_USER}',DATA_APPLICATION_USER.TAI_KHOANG,'{NGAY_DANG_KY}' FROM DATA_APPLICATION_USER WHERE DATA_APPLICATION_USER.ID={ID} and DATA_APPLICATION_USER.UserName='{Username}'; SET IDENTITY_INSERT dbo.DATA_APPLICATION_FOR_EMPLOYE OFF ", commandType: CommandType.Text);
+            //                    MessageBox.Show("Duyệt thành công");
+            //                    break;
+            //                }
 
 
-                        if (TINH_TRANG == "Mannager")
-                        {
-                            var dataManager = db.Query<BrowseJobDTO>("INSERT INTO DATA_APPLICATION_FOR_MANAGER", commandType: CommandType.Text);
 
-                        }
+            //        }
+                   
 
-                        if (TINH_TRANG == "Employee")
-                        {
-                            var dataEmployee = db.Query<BrowseJobDTO>("INSERT INTO DATA_APPLICATION_FOR_EMPLOYEE", commandType: CommandType.Text);
-
-                        }
-
-
-
-
-                    }
-                }
-            }
-            catch(Exception ex)
-            {
-
-            }
+            //    }
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show("" + ex);
+            //}
         }
 
 

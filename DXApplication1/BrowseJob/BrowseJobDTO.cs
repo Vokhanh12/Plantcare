@@ -8,6 +8,7 @@ namespace DXApplication1.BrowseJob
 {
     class BrowseJobDTO
     {
+        public string ID { get; set; }
         public string UserName { get; set; }
         public string UserPassword { get; set; }
         public string FristName { get; set; }

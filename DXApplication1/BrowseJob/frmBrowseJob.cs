@@ -31,7 +31,7 @@ namespace DXApplication1.BrowseJob
 
             instance = this;
 
-
+            sql.Select(materialListView1);
         }
 
         public void openSQL()
@@ -84,7 +84,7 @@ namespace DXApplication1.BrowseJob
             materialListView1.Columns[8].Width = 120;
 
 
-            sql.Select(materialListView1);
+            
 
 
         }

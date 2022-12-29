@@ -19,9 +19,12 @@ namespace DXApplication1.BrowseJob
 
         public TextBox txtID_A, txtUsercode_A, txtNameUser_A, txtFristName_A, txtLastName_A, txtUsername_A, txtUserpassword_A, txtSDT_A, txtDOB_A, txtEmail_A, txtNDK_A;
 
+        public sqlOpen sql = new sqlOpen();
+      
+
         private void btSave_Click(object sender, EventArgs e)
         {
-
+            sql.jobAccept(frmBrowseJob.instance.materialListView1);
         }
 
         public newFormSave()
