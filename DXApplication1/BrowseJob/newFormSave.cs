@@ -19,12 +19,31 @@ namespace DXApplication1.BrowseJob
 
         public TextBox txtID_A, txtUsercode_A, txtNameUser_A, txtFristName_A, txtLastName_A, txtUsername_A, txtUserpassword_A, txtSDT_A, txtDOB_A, txtEmail_A, txtNDK_A;
 
+        private void txtNameUser_Click(object sender, EventArgs e)
+        {
+            txtNameUser.Text = "";
+
+        }
+
+        private void txtUsercode_Click(object sender, EventArgs e)
+        {
+            txtUsercode.Text = "";
+
+        }
+
         public sqlOpen sql = new sqlOpen();
       
 
         private void btSave_Click(object sender, EventArgs e)
         {
-            sql.jobAccept(frmBrowseJob.instance.materialListView1);
+            if (txtID.Text == "ID")
+                MessageBox.Show("Vui lòng nhập ID");
+            else if (txtUsercode.Text == "UserCode")
+                MessageBox.Show("Vui lòng nhập UserCode");
+            else if (txtNameUser.Text == "NameUser")
+                MessageBox.Show("Vui lòng nhập UserName");
+            else { sql.jobAccept(frmBrowseJob.instance.materialListView1); }
+
         }
 
         public newFormSave()
@@ -48,6 +67,13 @@ namespace DXApplication1.BrowseJob
 
             //ComboboxEdit
             cbBrowse_A = cbBrowse;
+
+        }
+
+        private void txtID_Click(object sender, EventArgs e)
+        {
+            txtID.Text = "";
+
 
         }
 

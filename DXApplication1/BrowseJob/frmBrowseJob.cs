@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using DevExpress.XtraEditors;
 using DXApplication1.FolderMajor;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,8 @@ namespace DXApplication1.BrowseJob
 
         public sqlOpen sql = new sqlOpen();
 
+        public MaterialListView mlvBrowse_A;
+
         public frmBrowseJob()
         {
             InitializeComponent();
@@ -32,6 +35,9 @@ namespace DXApplication1.BrowseJob
             instance = this;
 
             sql.Select(materialListView1);
+
+            mlvBrowse_A = materialListView1;
+
         }
 
         public void openSQL()
@@ -85,6 +91,7 @@ namespace DXApplication1.BrowseJob
 
 
             
+            
 
 
         }
@@ -101,42 +108,37 @@ namespace DXApplication1.BrowseJob
 
         private void mRB_New_Click(object sender, EventArgs e)
         {
-            /* newFormSave newfrmSave = new newFormSave();
-             newfrmSave.Show();
-
+             newFormSave newfrmSave = new newFormSave();
              fsEdit edit = new fsEdit();
 
-             try
-             {
-                 //newFormSave.instance.txtID_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
-                 // newFormSave.instance.txtUsercode_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
-                 //newFormSave.instance.txtNameUser_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
 
-                 newFormSave.instance.txtUsername_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[0].ToString());
-                 newFormSave.instance.txtUserpassword_A.Text = "********";
-                 //newFormSave.instance.txtUserpassword_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
+            if (materialListView1.SelectedItems.Count == 1)
+            {
 
-                 newFormSave.instance.txtFristName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[2].ToString());
-                 newFormSave.instance.txtLastName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[3].ToString());
-                 newFormSave.instance.txtEmail_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[4].ToString());
-                 newFormSave.instance.txtDOB_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[5].ToString());
-                 newFormSave.instance.txtNDK_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[6].ToString());
+                //Open Form NewfrmSave
+                newfrmSave.Show();
 
-                 newFormSave.instance.txtSDT_A.Text = "+84";
+                
 
+                //newFormSave.instance.txtID_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
+                // newFormSave.instance.txtUsercode_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
+                //newFormSave.instance.txtNameUser_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
 
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show("Nhap click vao ban de chinh sua");
-             }
-            */
+                newFormSave.instance.txtUsername_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[0].ToString());
+                newFormSave.instance.txtUserpassword_A.Text = "********";
+                //newFormSave.instance.txtUserpassword_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
 
-            sql.jobAccept(materialListView1);
+                newFormSave.instance.txtFristName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[2].ToString());
+                newFormSave.instance.txtLastName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[3].ToString());
+                newFormSave.instance.txtEmail_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[4].ToString());
+                newFormSave.instance.txtDOB_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[5].ToString());
+                newFormSave.instance.txtNDK_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[6].ToString());
+
+                newFormSave.instance.txtSDT_A.Text = "+84";
 
 
-
-
+            }
+            else MessageBox.Show("Vui lòng click vào hàng để chỉnh sửa");
 
         }
     }

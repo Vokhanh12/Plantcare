@@ -351,7 +351,7 @@ namespace DXApplication1.BrowseJob
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Computer;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(274, 114);
+            this.iconButton2.Location = new System.Drawing.Point(274, 110);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton2.Size = new System.Drawing.Size(48, 39);
@@ -367,7 +367,7 @@ namespace DXApplication1.BrowseJob
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(274, 176);
+            this.iconButton1.Location = new System.Drawing.Point(274, 179);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 0);
             this.iconButton1.Size = new System.Drawing.Size(48, 39);
@@ -381,13 +381,14 @@ namespace DXApplication1.BrowseJob
             this.txtNameUser.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameUser.ForeColor = System.Drawing.Color.White;
             this.txtNameUser.HideSelection = false;
-            this.txtNameUser.Location = new System.Drawing.Point(322, 192);
+            this.txtNameUser.Location = new System.Drawing.Point(322, 195);
             this.txtNameUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameUser.Name = "txtNameUser";
             this.txtNameUser.Size = new System.Drawing.Size(197, 21);
             this.txtNameUser.TabIndex = 60;
             this.txtNameUser.TabStop = false;
             this.txtNameUser.Text = "NameUser";
+            this.txtNameUser.Click += new System.EventHandler(this.txtNameUser_Click);
             // 
             // txtUsercode
             // 
@@ -396,18 +397,19 @@ namespace DXApplication1.BrowseJob
             this.txtUsercode.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsercode.ForeColor = System.Drawing.Color.White;
             this.txtUsercode.HideSelection = false;
-            this.txtUsercode.Location = new System.Drawing.Point(322, 130);
+            this.txtUsercode.Location = new System.Drawing.Point(322, 126);
             this.txtUsercode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsercode.Name = "txtUsercode";
             this.txtUsercode.Size = new System.Drawing.Size(197, 21);
             this.txtUsercode.TabIndex = 59;
             this.txtUsercode.TabStop = false;
             this.txtUsercode.Text = "UserCode";
+            this.txtUsercode.Click += new System.EventHandler(this.txtUsercode_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(274, 220);
+            this.panel2.Location = new System.Drawing.Point(274, 223);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(245, 1);
@@ -416,7 +418,7 @@ namespace DXApplication1.BrowseJob
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(274, 158);
+            this.panel1.Location = new System.Drawing.Point(274, 154);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 1);
@@ -513,6 +515,7 @@ namespace DXApplication1.BrowseJob
             this.txtID.TabIndex = 94;
             this.txtID.TabStop = false;
             this.txtID.Text = "ID";
+            this.txtID.Click += new System.EventHandler(this.txtID_Click);
             // 
             // panel10
             // 
