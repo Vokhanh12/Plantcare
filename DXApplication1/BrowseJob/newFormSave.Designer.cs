@@ -29,6 +29,7 @@ namespace DXApplication1.BrowseJob
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btCancel = new System.Windows.Forms.Button();
             this.btSave = new System.Windows.Forms.Button();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
@@ -66,6 +67,7 @@ namespace DXApplication1.BrowseJob
             this.iconButton11 = new FontAwesome.Sharp.IconButton();
             this.txtNDK = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbBrowse.Properties)).BeginInit();
             this.SuspendLayout();
@@ -566,6 +568,10 @@ namespace DXApplication1.BrowseJob
             this.panel11.Size = new System.Drawing.Size(245, 1);
             this.panel11.TabIndex = 96;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            // 
             // newFormSave
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
@@ -659,5 +665,6 @@ namespace DXApplication1.BrowseJob
         private FontAwesome.Sharp.IconButton iconButton11;
         private System.Windows.Forms.TextBox txtNDK;
         private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Timer timer1;
     }
 }

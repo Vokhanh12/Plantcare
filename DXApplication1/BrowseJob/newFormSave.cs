@@ -79,8 +79,8 @@ namespace DXApplication1.BrowseJob
 
         private void newFormSave_Load(object sender, EventArgs e)
         {
-            cbBrowse.Properties.Items.Add("Manager");
-            cbBrowse.Properties.Items.Add("Employee");
+            cbBrowse.Properties.Items.Add("MANAGER");
+            cbBrowse.Properties.Items.Add("EMPLOYEE");
         }
 
         private void iconButton9_Click(object sender, EventArgs e)

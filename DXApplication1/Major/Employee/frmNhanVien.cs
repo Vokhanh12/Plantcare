@@ -429,7 +429,7 @@ namespace DXApplication1.FolderNV
 
         private void ibtRefesh_Click(object sender, EventArgs e)
         {
-
+            OpenSql();
         }
 
         private void iconButton6_Click(object sender, EventArgs e)

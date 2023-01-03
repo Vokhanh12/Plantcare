@@ -25,6 +25,7 @@ namespace DXApplication1.BrowseJob
 
         public MaterialListView mlvBrowse_A;
 
+
         public frmBrowseJob()
         {
             InitializeComponent();
@@ -103,7 +104,15 @@ namespace DXApplication1.BrowseJob
 
         private void mRB_Save_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                sql.Delete(materialListView1, materialListView1.SelectedItems[0].SubItems[0].ToString());
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Vui long click vao dong de xoa");
+            }
+            
         }
 
         private void mRB_New_Click(object sender, EventArgs e)
@@ -111,14 +120,11 @@ namespace DXApplication1.BrowseJob
              newFormSave newfrmSave = new newFormSave();
              fsEdit edit = new fsEdit();
 
-
             if (materialListView1.SelectedItems.Count == 1)
             {
 
                 //Open Form NewfrmSave
                 newfrmSave.Show();
-
-                
 
                 //newFormSave.instance.txtID_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();
                 // newFormSave.instance.txtUsercode_A.Text = materialListView1.SelectedItems[0].SubItems[0].ToString();

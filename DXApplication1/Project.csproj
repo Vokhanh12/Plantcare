@@ -138,6 +138,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BrowseJob\CheckDTO.cs" />
     <Compile Include="BrowseJob\frmBrowseJob.cs">
       <SubType>Form</SubType>
     </Compile>
