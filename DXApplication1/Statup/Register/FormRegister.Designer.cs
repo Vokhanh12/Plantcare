@@ -59,6 +59,7 @@ namespace DXApplication1
             this.cE_Famale = new DevExpress.XtraEditors.CheckEdit();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.tmChColor_checkedit = new System.Windows.Forms.Timer(this.components);
+            this.timer_loadpw = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dE_Brithday.Properties)).BeginInit();
@@ -197,7 +198,10 @@ namespace DXApplication1
             this.txtPassword_Register.TabIndex = 34;
             this.txtPassword_Register.TabStop = false;
             this.txtPassword_Register.Text = "Password";
+            this.txtPassword_Register.Click += new System.EventHandler(this.txtPassword_Register_Click);
             this.txtPassword_Register.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtPassword_Register_MouseClick);
+            this.txtPassword_Register.MouseEnter += new System.EventHandler(this.txtPassword_Register_MouseEnter);
+            this.txtPassword_Register.MouseLeave += new System.EventHandler(this.txtPassword_Register_MouseLeave);
             // 
             // pn4_Register
             // 
@@ -362,6 +366,10 @@ namespace DXApplication1
             this.tmChColor_checkedit.Interval = 1000;
             this.tmChColor_checkedit.Tick += new System.EventHandler(this.tmChColor_checkedit_Tick);
             // 
+            // timer_loadpw
+            // 
+            this.timer_loadpw.Tick += new System.EventHandler(this.timer_loadpw_Tick);
+            // 
             // FormRegister
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(29)))), ((int)(((byte)(55)))));
@@ -441,6 +449,7 @@ namespace DXApplication1
         private DevExpress.XtraEditors.CheckEdit cE_Famale;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private System.Windows.Forms.Timer tmChColor_checkedit;
+        private System.Windows.Forms.Timer timer_loadpw;
     }
 }
 

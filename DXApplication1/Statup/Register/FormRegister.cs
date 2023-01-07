@@ -22,6 +22,8 @@ namespace DXApplication1
         public FormRegister()
         {
             InitializeComponent();
+
+            
         }
 
 
@@ -508,6 +510,9 @@ namespace DXApplication1
         private void FormRegister_Load(object sender, EventArgs e)
         {
             tmChColor_checkedit.Start();
+
+
+           
             
             
         }
@@ -528,6 +533,11 @@ namespace DXApplication1
             {
                 MessageBox.Show("Vui lòng chọn chấp nhận những điều khoảng");
             }
+
+            //this line will use to stop timer load password when user clicked button register
+            timer_loadpw.Stop();
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -563,6 +573,29 @@ namespace DXApplication1
 
             
            
+        }
+
+        private void txtPassword_Register_Click(object sender, EventArgs e)
+        {
+            timer_loadpw.Start();
+        }
+
+        private void txtPassword_Register_MouseEnter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPassword_Register_MouseLeave(object sender, EventArgs e)
+        {
+        }
+
+        private void timer_loadpw_Tick(object sender, EventArgs e)
+        {
+            if (txtPassword_Register.Text != "" && txtPassword_Register.Text!="Password")
+            {
+                txtPassword_Register.PasswordChar = '●';
+            }
+            else txtPassword_Register.PasswordChar = '\0';
         }
 
 

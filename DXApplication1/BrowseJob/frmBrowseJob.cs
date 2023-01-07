@@ -106,13 +106,15 @@ namespace DXApplication1.BrowseJob
         {
             try
             {
-                sql.Delete(materialListView1, materialListView1.SelectedItems[0].SubItems[0].ToString());
+                sql.Delete(materialListView1);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Vui long click vao dong de xoa");
             }
-            
+
+            //Restart MaterialListView in the sreen
+            openSQL();
         }
 
         private void mRB_New_Click(object sender, EventArgs e)
@@ -131,7 +133,7 @@ namespace DXApplication1.BrowseJob
                 //newFormSave.instance.txtNameUser_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
 
                 newFormSave.instance.txtUsername_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[0].ToString());
-                newFormSave.instance.txtUserpassword_A.Text = "********";
+                newFormSave.instance.txtUserpassword_A.Text = "●●●●●●●●";
                 //newFormSave.instance.txtUserpassword_A.Text = materialListView1.SelectedItems[0].SubItems[1].ToString();
 
                 newFormSave.instance.txtFristName_A.Text = edit.deleteCharacter1(materialListView1.SelectedItems[0].SubItems[2].ToString());

@@ -44,7 +44,7 @@ namespace DXApplication1.BrowseJob
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.mRB_Save = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.mRB_Delete = new MaterialSkin.Controls.MaterialRaisedButton();
             this.mRB_New = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
@@ -193,7 +193,7 @@ namespace DXApplication1.BrowseJob
             // 
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.materialLabel1);
-            this.panel9.Controls.Add(this.mRB_Save);
+            this.panel9.Controls.Add(this.mRB_Delete);
             this.panel9.Controls.Add(this.mRB_New);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
@@ -224,22 +224,22 @@ namespace DXApplication1.BrowseJob
             this.materialLabel1.TabIndex = 13;
             this.materialLabel1.Text = "BROWSE JOB";
             // 
-            // mRB_Save
+            // mRB_Delete
             // 
-            this.mRB_Save.AutoSize = true;
-            this.mRB_Save.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.mRB_Save.Depth = 0;
-            this.mRB_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mRB_Save.Icon = null;
-            this.mRB_Save.Location = new System.Drawing.Point(300, 17);
-            this.mRB_Save.MouseState = MaterialSkin.MouseState.HOVER;
-            this.mRB_Save.Name = "mRB_Save";
-            this.mRB_Save.Primary = true;
-            this.mRB_Save.Size = new System.Drawing.Size(56, 36);
-            this.mRB_Save.TabIndex = 11;
-            this.mRB_Save.Text = "Xóa";
-            this.mRB_Save.UseVisualStyleBackColor = true;
-            this.mRB_Save.Click += new System.EventHandler(this.mRB_Save_Click);
+            this.mRB_Delete.AutoSize = true;
+            this.mRB_Delete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.mRB_Delete.Depth = 0;
+            this.mRB_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mRB_Delete.Icon = null;
+            this.mRB_Delete.Location = new System.Drawing.Point(300, 17);
+            this.mRB_Delete.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mRB_Delete.Name = "mRB_Delete";
+            this.mRB_Delete.Primary = true;
+            this.mRB_Delete.Size = new System.Drawing.Size(56, 36);
+            this.mRB_Delete.TabIndex = 11;
+            this.mRB_Delete.Text = "Xóa";
+            this.mRB_Delete.UseVisualStyleBackColor = true;
+            this.mRB_Delete.Click += new System.EventHandler(this.mRB_Save_Click);
             // 
             // mRB_New
             // 
@@ -410,7 +410,7 @@ namespace DXApplication1.BrowseJob
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialRaisedButton mRB_Save;
+        private MaterialSkin.Controls.MaterialRaisedButton mRB_Delete;
         private MaterialSkin.Controls.MaterialRaisedButton mRB_New;
         private System.Windows.Forms.Panel panel4;
         public MaterialSkin.Controls.MaterialListView materialListView1;
