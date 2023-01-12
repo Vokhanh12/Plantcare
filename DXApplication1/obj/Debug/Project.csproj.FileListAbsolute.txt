@@ -646,7 +646,6 @@ C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\de\DevE
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
-C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\Project.csproj.AssemblyReference.cache
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FormRegister.resources
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.FormLogin.resources
 C:\Users\Khanh\Source\Repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.Properties.Resources.resources
@@ -686,3 +685,4 @@ C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXAppli
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.Major.Manager.FormManager.resources
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.BrowseJob.frmBrowseJob.resources
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.BrowseJob.newFormSave.resources
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\Project.csproj.AssemblyReference.cache

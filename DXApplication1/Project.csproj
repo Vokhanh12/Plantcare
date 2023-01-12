@@ -219,6 +219,12 @@
     <Compile Include="Major\Items\frmMathang.Designer.cs">
       <DependentUpon>frmMathang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setup_Design\CircleButton\CircleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Setup_Design\CirclePictureBox\CirclePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Statup\Information user\infomationDTO.cs" />
     <Compile Include="Statup\Information user\watchInformation.cs">
       <SubType>Form</SubType>
@@ -459,9 +465,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Setup_Design\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

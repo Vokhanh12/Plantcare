@@ -22,7 +22,16 @@ namespace DXApplication1.Statup.Information_user
 
         public MaterialLabel mlbID_AT,mlbTK_AT, mlbMK_AT, mlbTTK_AT, mlbMTK_AT, mlbLTK_AT, mlbDC_AT, mlbNDK_AT;
 
-        
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         public string casechange;
         public watchInformation()
