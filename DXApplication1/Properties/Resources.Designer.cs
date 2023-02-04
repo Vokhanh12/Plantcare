@@ -63,6 +63,16 @@ namespace DXApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20210602_144348_507977_rau_ma_tac_dung_max_1800x1800 {
+            get {
+                object obj = ResourceManager.GetObject("20210602_144348_507977_rau-ma-tac-dung.max-1800x1800", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _27224554 {
             get {
                 object obj = ResourceManager.GetObject("27224554", resourceCulture);

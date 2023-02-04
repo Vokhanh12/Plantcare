@@ -686,3 +686,4 @@ C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXAppli
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.BrowseJob.frmBrowseJob.resources
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.BrowseJob.newFormSave.resources
 C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\Khanh\source\repos\Vokhanh12\Plantcare\DXApplication1\obj\Debug\DXApplication1.Transaction.formBanHang.resources

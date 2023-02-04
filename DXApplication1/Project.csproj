@@ -254,6 +254,12 @@
     <Compile Include="test.Designer.cs">
       <DependentUpon>test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaction\formBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\formBanHang.Designer.cs">
+      <DependentUpon>formBanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="winAPI.cs" />
     <Compile Include="Statup\Register\FormRegister.cs">
       <SubType>Form</SubType>
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\formBanHang.resx">
+      <DependentUpon>formBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -435,6 +444,7 @@
     <Content Include="Content\svg-with-js.min.css" />
     <Content Include="Content\v4-shims.css" />
     <Content Include="Content\v4-shims.min.css" />
+    <None Include="Resources\20210602_144348_507977_rau-ma-tac-dung.max-1800x1800.jpg" />
     <Content Include="Scripts\fontawesome\all.js" />
     <Content Include="Scripts\fontawesome\all.min.js" />
     <Content Include="Scripts\fontawesome\brands.js" />

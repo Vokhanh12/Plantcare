@@ -26,6 +26,7 @@ using Dapper;
 using DXApplication1.Major.Dashboard;
 using DXApplication1.Major.Manager;
 using DXApplication1.BrowseJob;
+using DXApplication1.Transaction;
 
 namespace DXApplication1
 {
@@ -466,6 +467,10 @@ namespace DXApplication1
         {
             ClinkChangeColor.DisableButton();
             ClinkChangeColor.ActivateButton(sender, RGBColors.color6);
+
+            formBanHang formBanHang1 = new formBanHang();
+            formBanHang1.MdiParent = this;
+            formBanHang1.Show();
         }
 
         private void ibtQuestion_Click(object sender, EventArgs e)

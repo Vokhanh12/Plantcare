@@ -31,6 +31,8 @@ namespace DXApplication1.Statup.Information_user
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtwcUser = new MaterialSkin.Controls.MaterialLabel();
+            this.circlePictureBox1 = new DXApplication1.Setup_Design.CirclePictureBox.CirclePictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.mlbID = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
@@ -48,11 +50,9 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.circlePictureBox1 = new DXApplication1.Setup_Design.CirclePictureBox.CirclePictureBox();
-            this.txtwcUser = new MaterialSkin.Controls.MaterialLabel();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +74,31 @@ namespace DXApplication1.Statup.Information_user
             this.panel2.Size = new System.Drawing.Size(1000, 280);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // txtwcUser
+            // 
+            this.txtwcUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtwcUser.AutoSize = true;
+            this.txtwcUser.Depth = 0;
+            this.txtwcUser.Font = new System.Drawing.Font("Roboto", 11F);
+            this.txtwcUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtwcUser.Location = new System.Drawing.Point(419, 217);
+            this.txtwcUser.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtwcUser.Name = "txtwcUser";
+            this.txtwcUser.Size = new System.Drawing.Size(143, 24);
+            this.txtwcUser.TabIndex = 36;
+            this.txtwcUser.Text = "Xin chào Admin";
+            // 
+            // circlePictureBox1
+            // 
+            this.circlePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circlePictureBox1.Image = global::DXApplication1.Properties.Resources.userlogo;
+            this.circlePictureBox1.Location = new System.Drawing.Point(394, 6);
+            this.circlePictureBox1.Name = "circlePictureBox1";
+            this.circlePictureBox1.Size = new System.Drawing.Size(203, 181);
+            this.circlePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circlePictureBox1.TabIndex = 35;
+            this.circlePictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -104,12 +129,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbID.AutoSize = true;
             this.mlbID.Depth = 0;
-            this.mlbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbID.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbID.Location = new System.Drawing.Point(439, 16);
             this.mlbID.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbID.Name = "mlbID";
-            this.mlbID.Size = new System.Drawing.Size(172, 29);
+            this.mlbID.Size = new System.Drawing.Size(136, 24);
             this.mlbID.TabIndex = 50;
             this.mlbID.Text = "materialLabel8";
             // 
@@ -118,12 +143,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel9.Location = new System.Drawing.Point(400, 16);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(42, 29);
+            this.materialLabel9.Size = new System.Drawing.Size(32, 24);
             this.materialLabel9.TabIndex = 49;
             this.materialLabel9.Text = "ID:";
             // 
@@ -132,12 +157,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbNDK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbNDK.AutoSize = true;
             this.mlbNDK.Depth = 0;
-            this.mlbNDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbNDK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbNDK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbNDK.Location = new System.Drawing.Point(873, 239);
             this.mlbNDK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbNDK.Name = "mlbNDK";
-            this.mlbNDK.Size = new System.Drawing.Size(70, 25);
+            this.mlbNDK.Size = new System.Drawing.Size(66, 24);
             this.mlbNDK.TabIndex = 48;
             this.mlbNDK.Text = "mlbTK";
             // 
@@ -146,12 +171,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbDC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbDC.AutoSize = true;
             this.mlbDC.Depth = 0;
-            this.mlbDC.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbDC.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbDC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbDC.Location = new System.Drawing.Point(305, 185);
             this.mlbDC.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbDC.Name = "mlbDC";
-            this.mlbDC.Size = new System.Drawing.Size(85, 29);
+            this.mlbDC.Size = new System.Drawing.Size(66, 24);
             this.mlbDC.TabIndex = 47;
             this.mlbDC.Text = "mlbTK";
             // 
@@ -160,12 +185,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbLTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbLTK.AutoSize = true;
             this.mlbLTK.Depth = 0;
-            this.mlbLTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbLTK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbLTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbLTK.Location = new System.Drawing.Point(844, 126);
             this.mlbLTK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbLTK.Name = "mlbLTK";
-            this.mlbLTK.Size = new System.Drawing.Size(85, 29);
+            this.mlbLTK.Size = new System.Drawing.Size(66, 24);
             this.mlbLTK.TabIndex = 46;
             this.mlbLTK.Text = "mlbTK";
             // 
@@ -174,12 +199,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbMTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbMTK.AutoSize = true;
             this.mlbMTK.Depth = 0;
-            this.mlbMTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbMTK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbMTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbMTK.Location = new System.Drawing.Point(844, 185);
             this.mlbMTK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbMTK.Name = "mlbMTK";
-            this.mlbMTK.Size = new System.Drawing.Size(85, 29);
+            this.mlbMTK.Size = new System.Drawing.Size(66, 24);
             this.mlbMTK.TabIndex = 45;
             this.mlbMTK.Text = "mlbTK";
             // 
@@ -188,12 +213,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbTTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbTTK.AutoSize = true;
             this.mlbTTK.Depth = 0;
-            this.mlbTTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbTTK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbTTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbTTK.Location = new System.Drawing.Point(844, 72);
             this.mlbTTK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbTTK.Name = "mlbTTK";
-            this.mlbTTK.Size = new System.Drawing.Size(85, 29);
+            this.mlbTTK.Size = new System.Drawing.Size(66, 24);
             this.mlbTTK.TabIndex = 44;
             this.mlbTTK.Text = "mlbTK";
             // 
@@ -202,12 +227,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbMK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbMK.AutoSize = true;
             this.mlbMK.Depth = 0;
-            this.mlbMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbMK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbMK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbMK.Location = new System.Drawing.Point(305, 126);
             this.mlbMK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbMK.Name = "mlbMK";
-            this.mlbMK.Size = new System.Drawing.Size(85, 29);
+            this.mlbMK.Size = new System.Drawing.Size(66, 24);
             this.mlbMK.TabIndex = 43;
             this.mlbMK.Text = "mlbTK";
             // 
@@ -216,12 +241,12 @@ namespace DXApplication1.Statup.Information_user
             this.mlbTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mlbTK.AutoSize = true;
             this.mlbTK.Depth = 0;
-            this.mlbTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mlbTK.Font = new System.Drawing.Font("Roboto", 11F);
             this.mlbTK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.mlbTK.Location = new System.Drawing.Point(305, 72);
             this.mlbTK.MouseState = MaterialSkin.MouseState.HOVER;
             this.mlbTK.Name = "mlbTK";
-            this.mlbTK.Size = new System.Drawing.Size(85, 29);
+            this.mlbTK.Size = new System.Drawing.Size(66, 24);
             this.mlbTK.TabIndex = 42;
             this.mlbTK.Text = "mlbTK";
             // 
@@ -230,12 +255,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel7.Location = new System.Drawing.Point(739, 239);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(138, 25);
+            this.materialLabel7.Size = new System.Drawing.Size(130, 24);
             this.materialLabel7.TabIndex = 41;
             this.materialLabel7.Text = "Ngày đăng ký:";
             // 
@@ -244,12 +269,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel6.Location = new System.Drawing.Point(170, 185);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(126, 29);
+            this.materialLabel6.Size = new System.Drawing.Size(102, 24);
             this.materialLabel6.TabIndex = 40;
             this.materialLabel6.Text = "Được cấp :";
             // 
@@ -258,12 +283,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel5.Location = new System.Drawing.Point(651, 126);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(187, 29);
+            this.materialLabel5.Size = new System.Drawing.Size(149, 24);
             this.materialLabel5.TabIndex = 39;
             this.materialLabel5.Text = " Loại tài khoảng:";
             // 
@@ -272,12 +297,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel4.Location = new System.Drawing.Point(666, 185);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(168, 29);
+            this.materialLabel4.Size = new System.Drawing.Size(135, 24);
             this.materialLabel4.TabIndex = 38;
             this.materialLabel4.Text = "Mã tài khoảng:";
             // 
@@ -286,12 +311,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel3.Location = new System.Drawing.Point(660, 72);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(178, 29);
+            this.materialLabel3.Size = new System.Drawing.Size(139, 24);
             this.materialLabel3.TabIndex = 37;
             this.materialLabel3.Text = "Tên tài khoảng:";
             // 
@@ -300,12 +325,12 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel2.Location = new System.Drawing.Point(178, 126);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(115, 29);
+            this.materialLabel2.Size = new System.Drawing.Size(93, 24);
             this.materialLabel2.TabIndex = 36;
             this.materialLabel2.Text = "Mật khẩu:";
             // 
@@ -314,39 +339,14 @@ namespace DXApplication1.Statup.Information_user
             this.materialLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel1.Location = new System.Drawing.Point(160, 72);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(139, 29);
+            this.materialLabel1.Size = new System.Drawing.Size(108, 24);
             this.materialLabel1.TabIndex = 35;
             this.materialLabel1.Text = "Tài khoảng:";
-            // 
-            // circlePictureBox1
-            // 
-            this.circlePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.circlePictureBox1.Image = global::DXApplication1.Properties.Resources.userlogo;
-            this.circlePictureBox1.Location = new System.Drawing.Point(405, 6);
-            this.circlePictureBox1.Name = "circlePictureBox1";
-            this.circlePictureBox1.Size = new System.Drawing.Size(203, 181);
-            this.circlePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circlePictureBox1.TabIndex = 35;
-            this.circlePictureBox1.TabStop = false;
-            // 
-            // txtwcUser
-            // 
-            this.txtwcUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtwcUser.AutoSize = true;
-            this.txtwcUser.Depth = 0;
-            this.txtwcUser.Font = new System.Drawing.Font("Microsoft JhengHei", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtwcUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtwcUser.Location = new System.Drawing.Point(379, 209);
-            this.txtwcUser.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtwcUser.Name = "txtwcUser";
-            this.txtwcUser.Size = new System.Drawing.Size(275, 43);
-            this.txtwcUser.TabIndex = 36;
-            this.txtwcUser.Text = "Xin chào Admin";
             // 
             // watchInformation
             // 
@@ -361,9 +361,9 @@ namespace DXApplication1.Statup.Information_user
             this.Load += new System.EventHandler(this.watchInformation_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
