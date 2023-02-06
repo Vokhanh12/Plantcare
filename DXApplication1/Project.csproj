@@ -260,6 +260,10 @@
     <Compile Include="Transaction\formBanHang.Designer.cs">
       <DependentUpon>formBanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaction\KhungBH.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Transaction\ThongTinSanPham.cs" />
     <Compile Include="winAPI.cs" />
     <Compile Include="Statup\Register\FormRegister.cs">
       <SubType>Form</SubType>

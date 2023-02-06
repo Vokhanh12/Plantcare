@@ -15,9 +15,19 @@ namespace DXApplication1.Transaction
     public partial class formBanHang : MaterialSkin.Controls.MaterialForm
     {
         MaterialSkinManager skinManager;
+
+        KhungBH pnKhungBH = new KhungBH();
+        KhungBH khungBH1 = new KhungBH();
+        KhungBH khungBH2 = new KhungBH();
+        KhungBH khungBH3 = new KhungBH();
+        KhungBH khungBH4 = new KhungBH();
+        KhungBH khungBH5 = new KhungBH();
+
+
         public formBanHang()
         {
             InitializeComponent();
+
 
             skinManager = MaterialSkinManager.Instance;
             skinManager.AddFormToManage(this);
@@ -30,8 +40,16 @@ namespace DXApplication1.Transaction
 
         private void formBanHang_Load(object sender, EventArgs e)
         {
+           
 
+            flowLayoutPanel1.Controls.Add(pnKhungBH);
+            flowLayoutPanel1.Controls.Add(khungBH1);
+            flowLayoutPanel1.Controls.Add(khungBH2);
+            flowLayoutPanel1.Controls.Add(khungBH3);
+            flowLayoutPanel1.Controls.Add(khungBH4);
+            flowLayoutPanel1.Controls.Add(khungBH5);
         }
+
 
         private void materialLabel2_Click(object sender, EventArgs e)
         {
@@ -44,6 +62,11 @@ namespace DXApplication1.Transaction
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
