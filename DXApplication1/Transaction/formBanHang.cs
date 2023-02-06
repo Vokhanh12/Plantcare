@@ -1,9 +1,14 @@
-﻿using DevExpress.XtraEditors;
+﻿using Dapper;
+using DevExpress.XtraEditors;
+using DXApplication1.Subject.Items;
 using MaterialSkin;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,17 +17,16 @@ using System.Windows.Forms;
 
 namespace DXApplication1.Transaction
 {
+ 
     public partial class formBanHang : MaterialSkin.Controls.MaterialForm
     {
+
         MaterialSkinManager skinManager;
 
-        KhungBH pnKhungBH = new KhungBH();
-        KhungBH khungBH1 = new KhungBH();
-        KhungBH khungBH2 = new KhungBH();
-        KhungBH khungBH3 = new KhungBH();
-        KhungBH khungBH4 = new KhungBH();
-        KhungBH khungBH5 = new KhungBH();
+       
 
+        ArrayList ArraySP = new ArrayList();
+        string[] arrName;
 
         public formBanHang()
         {
@@ -38,16 +42,15 @@ namespace DXApplication1.Transaction
 
         }
 
+        
         private void formBanHang_Load(object sender, EventArgs e)
         {
-           
+            OpenSqlGetItems();
 
-            flowLayoutPanel1.Controls.Add(pnKhungBH);
-            flowLayoutPanel1.Controls.Add(khungBH1);
-            flowLayoutPanel1.Controls.Add(khungBH2);
-            flowLayoutPanel1.Controls.Add(khungBH3);
-            flowLayoutPanel1.Controls.Add(khungBH4);
-            flowLayoutPanel1.Controls.Add(khungBH5);
+           foreach(string item in arrName)
+            {
+                flowLayoutPanel1.Controls.Add(new KhungBH(item));
+            }
         }
 
 
@@ -70,5 +73,42 @@ namespace DXApplication1.Transaction
         {
 
         }
+
+        //
+
+        //Contructor used to got the infomation of items in ArraySP
+        public void OpenSqlGetItems()
+        {
+            int i = 0;
+
+            using (IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["LAPTOP-JN4FK6OT"].ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+
+                var data = db.Query<MathangDTO>("SELECT * FROM MATHANG", commandType: CommandType.Text);
+                foreach (MathangDTO p in data)
+                {
+                    ArraySP.Add(new ThongTinSanPham(p.MAMATHANG, p.TENMATHANG, p.LOAI, p.SL, p.GIA));
+
+                }
+
+                arrName = new string[ArraySP.Count];
+
+                foreach (MathangDTO p in data)
+                {
+
+                    arrName[i] = p.TENMATHANG;
+                    i++;
+
+                }
+
+
+                db.Close();
+            }
+            
+           
+        }
+
     }
 }

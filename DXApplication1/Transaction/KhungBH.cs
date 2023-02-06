@@ -8,26 +8,38 @@ using System.Windows.Forms;
 
 namespace DXApplication1.Transaction
 {
-    
+    class LabelBH : Label
+    {
+      public LabelBH()
+            {
+            this.Size = new Size(120, 25);
+            this.Font = new Font("Calibri", 12);
+            this.ForeColor = Color.White;
+        }
+    }
  
 
     class KhungBH:Panel
     {
-        //SP+ID
-       ThongTinSanPham SP1 = new ThongTinSanPham("B01", "BUOI", "TRAICAY", 1, 20000);
+        private string tenSP;
+        private decimal giaSP;
 
+        //SP+ID
         Panel pnTop = new Panel();
         Panel pnBotton= new Panel();
 
         Panel pnBottonName = new Panel();
         Panel pnBottonPrice = new Panel();
 
-        Label lbName = new Label();
-        Label lbPrice = new Label();
+        LabelBH lbName = new LabelBH();
+        LabelBH lbPrice = new LabelBH();
 
      
-       public KhungBH()
+       public KhungBH(string tenSP)
        {
+            this.tenSP = tenSP;
+
+
             settingPanel();
             settingKhungBH();
 
@@ -69,7 +81,7 @@ namespace DXApplication1.Transaction
             pnBottonPrice.Controls.Add(lbPrice);
 
             //set label in this panel
-            lbName.Text = "ABCD";
+            lbName.Text = ""+tenSP;
             lbName.Location = new Point(pnBottonName.Width / 2 - lbName.Width / 2, lbName.Location.Y);
             lbPrice.Text = "30000";
             lbPrice.Location = new Point(pnBottonName.Width / 2 - lbName.Width / 2, lbName.Location.Y);

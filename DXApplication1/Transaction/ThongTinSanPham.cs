@@ -12,11 +12,11 @@ namespace DXApplication1.Transaction
             private string tenSP;
             private string loai;
             private int SL;
-            private double giaSP;
+            private decimal giaSP;
 
 
 
-            public ThongTinSanPham(string MaSP,string tenSP,string loai,int SL,double giaSP)
+            public ThongTinSanPham(string MaSP,string tenSP,string loai,int SL,decimal giaSP)
             {
                 this.MaSP = MaSP;
                 this.tenSP = tenSP;
