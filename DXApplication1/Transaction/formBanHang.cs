@@ -17,16 +17,22 @@ using System.Windows.Forms;
 
 namespace DXApplication1.Transaction
 {
- 
+
     public partial class formBanHang : MaterialSkin.Controls.MaterialForm
     {
 
         MaterialSkinManager skinManager;
 
-       
+
+        const int NEXT_ITEM = 9;
+        int page = 1;
+        int firstItemPage = 0;
+        int lastItemPage = 9;
+
 
         ArrayList ArraySP = new ArrayList();
         string[] arrName;
+        decimal[] arrPrice;
 
         public formBanHang()
         {
@@ -42,35 +48,18 @@ namespace DXApplication1.Transaction
 
         }
 
-        
+
         private void formBanHang_Load(object sender, EventArgs e)
         {
             OpenSqlGetItems();
 
-           foreach(string item in arrName)
+            for(int i = 0; i < NEXT_ITEM; i++)
             {
-                flowLayoutPanel1.Controls.Add(new KhungBH(item));
+                flowLayoutPanel1.Controls.Add(new KhungBH(arrName[i], arrPrice[i]));
             }
-        }
 
 
-        private void materialLabel2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -94,11 +83,13 @@ namespace DXApplication1.Transaction
                 }
 
                 arrName = new string[ArraySP.Count];
+                arrPrice = new decimal[ArraySP.Count];
 
                 foreach (MathangDTO p in data)
                 {
 
                     arrName[i] = p.TENMATHANG;
+                    arrPrice[i] = p.GIA;
                     i++;
 
                 }
@@ -106,9 +97,91 @@ namespace DXApplication1.Transaction
 
                 db.Close();
             }
-            
-           
+
+
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            page--;
+
+            if (page > 0)
+            {
+                for (int i = (page - 1) * NEXT_ITEM; i < lastItemPage * page; i++)
+                {
+                    try
+                    {
+                        flowLayoutPanel1.Controls.Add(new KhungBH(arrName[i], arrPrice[i]));
+                    }
+                    catch (Exception ex) { };
+                }
+            }
+            else
+            {
+                page = 1;
+                MessageBox.Show("Het page");
+
+                for (int i = (page - 1) * NEXT_ITEM; i < lastItemPage * page; i++)
+                {
+                    try
+                    {
+                        flowLayoutPanel1.Controls.Add(new KhungBH(arrName[i], arrPrice[i]));
+                    }
+                    catch (Exception ex) { };
+                }
+
+            }
+
+
+        }
+
+       // const int NEXT_ITEM = 9;
+        //int page = 0;
+        //int checkNextPage = 9; // check load 9 items
+        //int TestNextPage = 0;
+
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            page++;
+
+            if (page <= (ArraySP.Count / NEXT_ITEM)+1)
+            {
+                for (int i = (page - 1) * NEXT_ITEM; i < lastItemPage * page; i++)
+                {
+                    try
+                    {
+                        flowLayoutPanel1.Controls.Add(new KhungBH(arrName[i], arrPrice[i]));
+                    }
+                    catch (Exception ex) { };
+                }
+            }
+            else
+            {
+                page = ArraySP.Count / NEXT_ITEM;
+                MessageBox.Show("Het page"+ ArraySP.Count);
+
+                for (int i = (page - 1) * NEXT_ITEM; i < lastItemPage * page; i++)
+                {
+                    try
+                    {
+                        flowLayoutPanel1.Controls.Add(new KhungBH(arrName[i], arrPrice[i]));
+                    }
+                    catch (Exception ex) { };
+                }
+            }
+
+           
+
+        }
     }
 }

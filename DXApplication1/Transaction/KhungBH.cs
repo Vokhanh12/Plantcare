@@ -35,10 +35,10 @@ namespace DXApplication1.Transaction
         LabelBH lbPrice = new LabelBH();
 
      
-       public KhungBH(string tenSP)
+       public KhungBH(string tenSP,decimal giaSP)
        {
             this.tenSP = tenSP;
-
+            this.giaSP = giaSP;
 
             settingPanel();
             settingKhungBH();
@@ -83,7 +83,7 @@ namespace DXApplication1.Transaction
             //set label in this panel
             lbName.Text = ""+tenSP;
             lbName.Location = new Point(pnBottonName.Width / 2 - lbName.Width / 2, lbName.Location.Y);
-            lbPrice.Text = "30000";
+            lbPrice.Text = ""+giaSP;
             lbPrice.Location = new Point(pnBottonName.Width / 2 - lbName.Width / 2, lbName.Location.Y);
 
             
