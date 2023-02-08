@@ -31,8 +31,14 @@ namespace DXApplication1.Transaction
 
 
         ArrayList ArraySP = new ArrayList();
+
+        string[] arrCode;
         string[] arrName;
         decimal[] arrPrice;
+        string[] arrLoai;
+        int[] arrSL;
+
+
 
         public formBanHang()
         {
@@ -84,12 +90,19 @@ namespace DXApplication1.Transaction
 
                 arrName = new string[ArraySP.Count];
                 arrPrice = new decimal[ArraySP.Count];
+                arrLoai = new string[ArraySP.Count];
+                arrCode = new string[ArraySP.Count];
+                arrSL = new int[ArraySP.Count];
 
                 foreach (MathangDTO p in data)
                 {
 
+                    arrCode[i] = p.MAMATHANG;
                     arrName[i] = p.TENMATHANG;
                     arrPrice[i] = p.GIA;
+                    arrLoai[i] = p.LOAI;
+                    arrSL[i] = p.SL;
+
                     i++;
 
                 }
@@ -167,7 +180,7 @@ namespace DXApplication1.Transaction
             }
             else
             {
-                page = ArraySP.Count / NEXT_ITEM;
+                page = (ArraySP.Count / NEXT_ITEM)+1;
                 MessageBox.Show("Het page"+ ArraySP.Count);
 
                 for (int i = (page - 1) * NEXT_ITEM; i < lastItemPage * page; i++)
@@ -181,6 +194,11 @@ namespace DXApplication1.Transaction
             }
 
            
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
 
         }
     }
