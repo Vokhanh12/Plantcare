@@ -1,6 +1,7 @@
 "# PlantcareIOT" 
 
-Lưu ý:Sản phẩm chưa hoàn thành
+Lưu ý:Sản phẩm đang trong giai đoạn phát triển
+Xem demo tại:
 
 <h1>Phần mềm bán hàng và chăm sóc cây trồng</h1>
 
@@ -16,6 +17,7 @@ Mỗi lượt bán hàng của mỗi nhân viên khác nhau có thể được b
 ![sododoanplantcare1](https://user-images.githubusercontent.com/36543564/223024112-b6018be5-9f32-49ab-9252-226fd53d4e96.jpg)
 
 <h3>Các mô hình ERD trong phần mềm:</h3>
+<h6>Xem tại mục(Plantcare/Diagram/Cautruc/DIAGRAM_SOFTWARE.drawio)</h6>
 <h6>1.Nghiệp vụ:</h6>
 
 ![image](https://user-images.githubusercontent.com/36543564/223024830-3c3d5ed0-2eee-4285-91b8-ff87eb32916c.png)
@@ -66,7 +68,11 @@ Mỗi lượt bán hàng của mỗi nhân viên khác nhau có thể được b
 ![image](https://user-images.githubusercontent.com/36543564/223029262-bf2e5173-14f5-4a44-bb39-71c3b232b4e9.png)
 
 <h6>5.Thông tin tài khoảng</h6>
+
 ![image](https://user-images.githubusercontent.com/36543564/223029385-678b6115-8624-460a-9908-469ca0eac9eb.png)
+
+Lợi ích:
+Những điều còn ở phần mềm:
 
 
 
