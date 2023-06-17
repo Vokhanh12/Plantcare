@@ -1,0 +1,103 @@
+
+//Khai bao
+private RJDropdownMenu RjDropdownMenu_Work;
+private System.Windows.Forms.ToolStripMenuItem Item_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem User_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem Supplier_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem ImportDocuments_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem ExportDocuments_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem CollectDocuments_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem SpendDocuments_ToolStripMenuItem;
+private System.Windows.Forms.ToolStripMenuItem Warehouse_ToolStripMenuItem;
+
+
+
+
+this.rjDropdownMenu_Work = new DXApplication1.RJControls.RJDropdownMenu(this.components);
+this.Item_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.User_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.Supplier_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.ImportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.ExportDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.CollectDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.SpendDocuments_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+this.Warehouse_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+
+
+
+this.rjDropdownMenu_Work.SuspendLayout();
+
+
+
+  // 
+            // rjDropdownMenu_Work
+            // 
+            this.rjDropdownMenu_Work.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.rjDropdownMenu_Work.IsMainMenu = false;
+            this.rjDropdownMenu_Work.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sảnPhẩmToolStripMenuItem,
+            this.kháchHàngToolStripMenuItem,
+            this.nhàCungCấpToolStripMenuItem,
+            this.chứngTừNhậpHàngToolStripMenuItem,
+            this.chứngTừXuấtHàngToolStripMenuItem,
+            this.chứngTừNhậpHàngToolStripMenuItem1,
+            this.chứngTừChiToolStripMenuItem,
+            this.khoHàngToolStripMenuItem});
+            this.rjDropdownMenu_Work.MenuItemHeight = 25;
+            this.rjDropdownMenu_Work.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Work.Name = "rjDropdownMenu2";
+            this.rjDropdownMenu_Work.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu_Work.Size = new System.Drawing.Size(214, 196);
+
+ // 
+            // Item_ToolStripMenuItem
+            // 
+            this.Item_ToolStripMenuItem.Name = "Item_ToolStripMenuItem";
+            this.Item_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.Item_ToolStripMenuItem.Text = "Sản phẩm";
+            // 
+            // User_ToolStripMenuItem
+            // 
+            this.User_ToolStripMenuItem.Name = "User_ToolStripMenuItem";
+            this.User_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.User_ToolStripMenuItem.Text = "Khách hàng";
+            // 
+            // Supplier_ToolStripMenuItem
+            // 
+            this.Supplier_ToolStripMenuItem.Name = "Supplier_ToolStripMenuItem";
+            this.Supplier_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.Supplier_ToolStripMenuItem.Text = "Nhà cung cấp";
+            // 
+            // ImportDocuments_ToolStripMenuItem
+            // 
+            this.ImportDocuments_ToolStripMenuItem.Name = "ImportDocuments_ToolStripMenuItem";
+            this.ImportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.ImportDocuments_ToolStripMenuItem.Text = "Chứng từ nhập hàng";
+            // 
+            // ExportDocuments_ToolStripMenuItem
+            // 
+            this.ExportDocuments_ToolStripMenuItem.Name = "ExportDocuments_ToolStripMenuItem";
+            this.ExportDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.ExportDocuments_ToolStripMenuItem.Text = "Chứng từ xuất hàng";
+            // 
+            // CollectDocuments_ToolStripMenuItem
+            // 
+            this.CollectDocuments_ToolStripMenuItem.Name = "CollectDocuments_ToolStripMenuItem";
+            this.CollectDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.CollectDocuments_ToolStripMenuItem.Text = "Chứng từ thu";
+            // 
+            // SpendDocuments_ToolStripMenuItem
+            // 
+            this.SpendDocuments_ToolStripMenuItem.Name = "SpendDocuments_ToolStripMenuItem";
+            this.SpendDocuments_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.SpendDocuments_ToolStripMenuItem.Text = "Chứng từ chi";
+            // 
+            // Warehouse_ToolStripMenuItem
+            // 
+            this.Warehouse_ToolStripMenuItem.Name = "Warehouse_ToolStripMenuItem";
+            this.Warehouse_ToolStripMenuItem.Size = new System.Drawing.Size(213, 24);
+            this.Warehouse_ToolStripMenuItem.Text = "Kho hàng";
+
+
+
+this.rjDropdownMenu2.ResumeLayout(false);

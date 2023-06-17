@@ -1,0 +1,55 @@
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+C:\Users\Toro\AppData\Local\Temporary Projects\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+D:\6 Belajar\Riset bersama\180709 Interface Thoyib Remark\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+D:\Riset bersama\180709 Interface Thoyib Remark 600\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+D:\Riset bersama\190211 Dianggi\UDP\UDP Ardhuino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+D:\Riset bersama\190211 Dianggi\PROGAM\UDP\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\190211 Dianggi\PROGAM\UDP\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\190211 Dianggi\PROGAM\Winform\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\190211 Dianggi\PROGAM\Winform\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+D:\Riset bersama\999999 PENGALMAN\UDP Arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.Cache
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.exe
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\bin\Debug\ConsoleApplication2udp.pdb
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.AssemblyReference.cache
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Form1.resources
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.Properties.Resources.resources
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.GenerateResource.cache
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.csproj.CoreCompileInputs.cache
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.exe
+C:\Users\Khanh\OneDrive\Máy tính\inventory\arduino\ConsoleApplication2udp Client\ConsoleApplication2udp\obj\x86\Debug\ConsoleApplication2udp.pdb

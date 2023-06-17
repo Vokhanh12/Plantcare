@@ -1,0 +1,4 @@
+Một ứng dụng Bán hàng (rau củ các loại....) số lượng lớn cho các khách hàng từ các nhân viên
+Các nhân viên được quản lý bởi Quản lý.Nhân viên có thể (bán hàng or Xuất hàng)(sản phẩm).Quản lý có nhiệm vụ Nhập hàng về
+Báo cáo Thống kê được chỉ có thể quản lý xem được.Mỗi nhân viên được quản lý cấp cho 1 tài khoảng bán hàng (Xuất hàng)
+Mỗi lượt bán hàng của mỗi nhân viên khác nhau có thể được boa thêm tùy theo (2% đơn hàng Bán cho người khác).
