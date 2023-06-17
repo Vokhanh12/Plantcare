@@ -1,7 +1,7 @@
 "# PlantcareIOT" 
 
 Lưu ý:Sản phẩm đang trong giai đoạn phát triển
-Xem demo tại:
+Xem demo tại:https://github.com/Vokhanh12/Plantcare/tree/master/Demo
 
 <h1>Phần mềm bán hàng và chăm sóc cây trồng</h1>
 
